@@ -22,6 +22,7 @@
   ],
   "redirects": [
     { "source": "/opportunity/", "destination": "/opportunity", "permanent": true },
-    { "source": "/index.html", "destination": "/", "permanent": true }
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/about", "destination": "/about/jonathan-kennedy", "permanent": true }
   ]
 }

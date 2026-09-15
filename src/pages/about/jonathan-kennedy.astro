@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PhoneIcon from '../../components/PhoneIcon.astro';
+import CallCta from '../../components/CallCta.astro';
+import Faq from '../../components/Faq.astro';
+import { site, tel, sms } from '../../config';
+import { getCollection } from 'astro:content';
+
+const smsBody = 'Hi Jon, here is my statement for a free analysis.';
+const articles = (await getCollection('articles', ({ data }) => !data.draft)).sort((a, b) => b.data.updated.getTime() - a.data.updated.getTime());
+const picks = ['guides/how-to-read-a-merchant-statement', 'dual-pricing/dual-pricing-vs-surcharging-vs-cash-discount', 'clover/reseller-vs-direct', 'gateways/authorize-net-fees', 'gateways/pricing', 'gateways/helcim-review'].map((id) => articles.find((a) => a.id === id)).filter(Boolean);
+
+const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${site.url}${site.founderUrl}#person`,
+  name: site.founderName,
+  url: `${site.url}${site.founderUrl}`,
+  image: `${site.url}${site.founderPhoto}`,
+  jobTitle: 'Founder',
+  worksFor: { '@id': `${site.url}/#organization` },
+  sameAs: [site.social.linkedin],
+  description: 'Payments industry veteran with more than 21 years across independent sales organizations, processors and payments marketing. Founder of Allied Card Processing (sold), TecPay, Juris Payments and Nextdoor Payments. Has sold and boarded more than 2,000 merchants.',
+  knowsAbout: ['merchant services', 'credit card processing', 'interchange', 'dual pricing', 'cash discount programs', 'payment gateways', 'Authorize.net', 'NMI', 'accept.blue', 'Clover POS', 'Dejavoo terminals', 'QuickBooks payments', 'payments marketing', 'ISO sales'],
+  areaServed: site.areaServed,
+  telephone: site.phoneE164,
+};
+const faq = [
+  { q: 'Who writes the articles on nextdoorpayments.com?', a: `${site.founderName}, the founder. Every article carries his byline, a published date and an updated date. Prices quoted from other companies are dated and linked to the source they were taken from.` },
+  { q: 'How are the numbers on this site checked?', a: 'Third-party prices (Clover, Authorize.net, Stripe, QuickBooks Payments, Helcim, Shopify and others) are taken from the provider’s own pricing page or documentation on the date shown on the page, and rechecked when the page is updated. Reseller-priced gateways are described as ranges we see on real statements, and labeled as such. Rules on surcharging and dual pricing are summarized from card-brand rules and state law, and are not legal advice.' },
+  { q: 'Is Nextdoor Payments an ISO?', a: 'Yes. Nextdoor Payments is an independent merchant services provider that boards merchants with sponsor processors and places equipment through its own programs. That is the same model as the companies Jon spent two decades inside, run with the terms he wished those companies had offered: month to month, no leases, fee schedule on one page.' },
+  { q: 'Can I hire Jon for consulting?', a: 'Occasionally. Jon has consulted for payments companies on sales, marketing and product for years. For merchants, the free statement analysis is the consulting. For ISOs, agents and software companies with a payments question, call the number on this page.' },
+];
+const schema = [person, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+  { '@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: { '@id': `${site.url}${site.founderUrl}#person` } }];
+---
+<Layout title="Jonathan Kennedy, Founder of Nextdoor Payments" description="Twenty-one years in payments: Card Service International, an independent sales office for most major processors, founder of Allied Card Processing (sold), TecPay and Juris Payments, 2,000+ merchants boarded. Now on the merchant's side." schema={schema} smsBody={smsBody} ogImage={site.founderPhoto}>
+  <section class="phero"><div class="c">
+    <div class="about-hero">
+      <img src={site.founderPhoto} alt={site.founderName} width="220" height="220" loading="eager" class="about-photo">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>About</span></nav>
+        <div class="sg">Founder</div>
+        <h1>Jonathan Kennedy</h1>
+        <p class="lead">Twenty-one years inside the payments industry. Started on the phones at Card Service International, ran an independent sales office for most of the major processors, founded and sold one company, built two more, and boarded more than 2,000 merchants along the way. Now he runs Nextdoor Payments, which exists to show business owners the fees the rest of the industry is built on hiding.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:18px">
+          <a href={tel} class="bp" data-cta="about-call"><PhoneIcon />Call Jon: {site.phoneDisplay}</a>
+          <a href={sms(smsBody)} class="bo" data-cta="about-text">Text a statement</a>
+          <a href={site.social.linkedin} class="bo" rel="me noopener" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="sec"><div class="c" style="max-width:860px">
+    <div class="prose">
+      <h2>The short version</h2>
+      <p>Jon has sold merchant accounts, trained the people who sell them, written the marketing that processors use to sell them, and built the companies that do the selling. He knows what a "1.69%" rate sheet is for, why a lease costs four times the terminal, where the PCI non-compliance fee comes from, and how a rate increase gets slipped into a statement footer. Nextdoor Payments is what happens when someone who knows all of that decides to work for the merchant instead.</p>
+
+      <h2>Twenty-one years, in chapters</h2>
+      <div class="chapters">
+        <div class="chap"><div class="ck">Card Service International</div><p>Started in the business at Card Service International, a national independent sales organization, learning the trade the way everyone did then: on the phone and on the road, one merchant at a time. This is where he learned how accounts are priced, how they are sold, and what the statement looks like six months later.</p></div>
+        <div class="chap"><div class="ck">Independent sales office for the majors</div><p>Over the following years he ran an independent sales office representing almost every major processor in the country. Different logos, same economics. Seeing the same merchant priced by five different companies is a fast education in where the margin hides.</p></div>
+        <div class="chap"><div class="ck">Allied Card Processing, founded and sold</div><p>Founded his own company, Allied Card Processing, grew it, and sold it to a partner. Building a portfolio from zero and handing it over intact is the part of the business most agents never get to.</p></div>
+        <div class="chap"><div class="ck">TecPay</div><p>Started TecPay, focused on the technology side of merchant services: terminals, gateways and integrations, and the operational side of getting a merchant live without downtime.</p></div>
+        <div class="chap"><div class="ck">Juris Payments</div><p>Moved on to Juris Payments, bringing the same approach to a new book of merchants, and continuing the consulting work for payments companies that has run alongside every chapter: sales process, agent programs, product positioning and marketing.</p></div>
+        <div class="chap"><div class="ck">Nextdoor Payments</div><p>The current chapter. A merchant services company in Southern California with the terms he spent two decades wishing his employers would offer: month to month, no leases, free equipment placement, dual pricing so the merchant's processing cost goes to zero, and a fee schedule on one page before anything is signed.</p></div>
+      </div>
+
+      <h2>By the numbers</h2>
+      <table>
+        <thead><tr><th>Figure</th><th>What it means</th></tr></thead>
+        <tbody>
+          <tr><td>21+ years</td><td>Continuous work in payments since Card Service International, as a salesperson, sales office owner, founder, marketer and consultant</td></tr>
+          <tr><td>2,000+ merchants</td><td>Personally sold and boarded, across restaurants, retail, service trades, professional practices and ecommerce</td></tr>
+          <tr><td>3 companies founded</td><td>Allied Card Processing (sold to a partner), TecPay, and Nextdoor Payments</td></tr>
+          <tr><td>Most major processors</td><td>Represented as an independent sales office, which is why the comparisons on this site name real products and real prices</td></tr>
+          <tr><td>Payments marketing</td><td>Years of writing and running the marketing that processors and ISOs use, which is why he knows exactly how a misleading rate sheet is built</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What he believes, and how it shows up in the work</h2>
+      <ul>
+        <li><strong>The statement is the truth.</strong> Every engagement starts with a real statement and an effective rate, not a rate sheet. If the current deal is good, he says keep it. That has cost him sales and earned him referrals.</li>
+        <li><strong>Dual pricing is the honest version of what the industry already does.</strong> Every merchant already builds card fees into prices. Showing the customer both prices and letting them choose is more transparent, not less, and it takes the merchant's processing cost to zero.</li>
+        <li><strong>Leases are the one thing he will not sell.</strong> A 48-month non-cancellable lease on a $300 terminal is the worst product in merchant services. Equipment is placed or purchased, never leased.</li>
+        <li><strong>Month to month or nothing.</strong> A processor that needs a three-year contract to keep a merchant is telling you something about the second year.</li>
+        <li><strong>Publish the prices.</strong> Every comparison on this site names the product and the number and dates it. Competitors' better deals are called better.</li>
+      </ul>
+
+      <h2>How this site's content is produced</h2>
+      <p>Every article on nextdoorpayments.com is written under Jon's byline with a published date and an updated date. Third-party prices (Clover, Authorize.net, Stripe, Braintree, Helcim, QuickBooks Payments, Shopify and the rest) are taken from the provider's own pricing page or documentation on the date shown and rechecked monthly. Reseller-priced products are described as ranges seen on real merchant statements and labeled as such. Rules on surcharging, cash discounting and dual pricing are summarized from card-brand rules and state law and are explicitly not legal advice. Where a competitor is the better choice for a given business, the page says so, because the referrals are worth more than the sale.</p>
+      <p>Corrections: if a number on this site is wrong or out of date, text or call {site.phoneDisplay} and it gets fixed with the updated date changed.</p>
+
+      <h2>Where to start reading</h2>
+      <ul class="picks">
+        {picks.map((a) => <li><a href={`/${a.id}`}>{a.data.h1 ?? a.data.title}</a><span>{a.data.description}</span></li>)}
+      </ul>
+
+      <h2>Where he works</h2>
+      <p>Based in Southern California, with in-person installs and support across San Diego, Los Angeles and Orange County and phone and remote setup for businesses nationwide. {site.hours}</p>
+    </div>
+    <CallCta heading="Talk to Jon directly" body="No sales team, no queue. Text a photo of your processing statement and you get an itemized breakdown and a written quote from the person who wrote every page on this site." smsBody={smsBody} />
+    <Faq items={faq} />
+  </div></section>
+</Layout>
+<style>
+.about-hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center}
+.about-photo{border-radius:20px;width:160px;height:160px;object-fit:cover;box-shadow:0 8px 30px rgba(0,0,0,.12)}
+@media(min-width:720px){.about-hero{grid-template-columns:220px 1fr;gap:36px}.about-photo{width:220px;height:220px}}
+.chapters{display:grid;gap:12px;margin:0 0 1.5em}
+.chap{border-left:4px solid var(--teal);background:var(--bg);border-radius:0 12px 12px 0;padding:14px 18px}
+.chap .ck{font-family:var(--fd);font-weight:800;color:var(--h);margin-bottom:4px}
+.chap p{margin:0;font-size:.98rem}
+.picks{list-style:none;padding:0;display:grid;gap:10px}
+.picks li a{font-family:var(--fd);font-weight:700;color:var(--navy);text-decoration:none}
+.picks li a:hover{color:var(--teal)}
+.picks li span{display:block;font-size:.88rem;color:var(--muted)}
+</style>

@@ -1,0 +1,20 @@
+---
+import { site } from '../config';
+---
+<aside class="authorbox" aria-label="About the author">
+  <img src={site.founderPhoto} alt={site.founderName} width="72" height="72" loading="lazy">
+  <div>
+    <div class="lbl">Written by</div>
+    <a href={site.founderUrl} class="nm">{site.founderName}</a>
+    <p>{site.founderTitle}. Twenty-one years in payments: started at Card Service International, ran an independent sales office for most of the major processors, founded and sold Allied Card Processing, then built TecPay and Juris Payments before Nextdoor Payments. Has sold and boarded more than 2,000 merchants. <a href={site.founderUrl}>Full background and how this site's numbers are checked.</a></p>
+  </div>
+</aside>
+<style>
+.authorbox{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:start;background:var(--bg);border:1px solid var(--border);border-radius:var(--r2);padding:18px 20px;margin-top:2.5em}
+.authorbox img{border-radius:12px;width:72px;height:72px;object-fit:cover}
+.authorbox .lbl{font-family:var(--fd);font-weight:700;font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.authorbox .nm{font-family:var(--fd);font-weight:800;font-size:1.05rem;color:var(--h);display:inline-block;margin:2px 0 6px}
+.authorbox p{font-size:.88rem;line-height:1.55;margin:0}
+.authorbox p a{color:var(--teal);text-decoration:underline}
+@media(max-width:480px){.authorbox{grid-template-columns:1fr}}
+</style>

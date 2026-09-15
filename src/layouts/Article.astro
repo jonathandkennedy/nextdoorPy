@@ -3,6 +3,7 @@ import Layout from './Layout.astro';
 import Tldr from '../components/Tldr.astro';
 import Faq from '../components/Faq.astro';
 import CallCta from '../components/CallCta.astro';
+import AuthorBox from '../components/AuthorBox.astro';
 import PhoneIcon from '../components/PhoneIcon.astro';
 import { site, tel, sms } from '../config';
 import { getCollection } from 'astro:content';
@@ -35,7 +36,7 @@ const article = {
   description: d.description,
   datePublished: d.published.toISOString(),
   dateModified: d.updated.toISOString(),
-  author: { '@type': 'Person', name: d.author, url: `${site.url}/contact` },
+  author: d.author === site.founderName ? { '@id': `${site.url}${site.founderUrl}#person` } : { '@type': 'Person', name: d.author },
   publisher: { '@id': `${site.url}/#organization` },
   mainEntityOfPage: `${site.url}${path}`,
   keywords: d.keywords.join(', '),
@@ -57,7 +58,17 @@ const crumbs = {
     { '@type': 'ListItem', position: 3, name: d.h1 ?? d.title, item: `${site.url}${path}` },
   ],
 };
-const schema = [article, crumbs, ...(faq ? [faq] : [])];
+const personRef = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${site.url}${site.founderUrl}#person`,
+  name: site.founderName,
+  url: `${site.url}${site.founderUrl}`,
+  jobTitle: 'Founder',
+  worksFor: { '@id': `${site.url}/#organization` },
+  sameAs: Object.values(site.social),
+};
+const schema = [article, crumbs, ...(faq ? [faq] : []), ...(d.author === site.founderName ? [personRef] : [])];
 const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
 const smsBody = d.cta?.smsBody ?? 'Hi, here is my statement for a free analysis.';
 ---
@@ -69,7 +80,7 @@ const smsBody = d.cta?.smsBody ?? 'Hi, here is my statement for a free analysis.
       <h1>{d.h1 ?? d.title}</h1>
       <p class="lead">{d.description}</p>
       <div class="byline">
-        <span>By <strong>{d.author}</strong>, {site.name}</span>
+        <span>By <strong>{d.author === site.founderName ? <a href={site.founderUrl} style="color:inherit">{d.author}</a> : d.author}</strong>, {site.founderTitle}</span>
         <span>Updated <strong><time datetime={d.updated.toISOString()}>{fmt(d.updated)}</time></strong></span>
         <span>Published <time datetime={d.published.toISOString()}>{fmt(d.published)}</time></span>
       </div>
@@ -90,6 +101,7 @@ const smsBody = d.cta?.smsBody ?? 'Hi, here is my statement for a free analysis.
         </article>
         <CallCta heading={d.cta?.heading} body={d.cta?.body} smsBody={smsBody} />
         <Faq items={d.faq} />
+        <AuthorBox />
         {related.length > 0 && (
           <section class="related">
             <h2>Related reading</h2>

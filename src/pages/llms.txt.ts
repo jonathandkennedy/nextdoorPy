@@ -19,6 +19,7 @@ Business facts: month-to-month agreements, free equipment placement programs, 24
 - [Dual pricing explained](${site.url}/dual-pricing): What dual pricing is, how it differs from surcharging and cash discounts, and when it is legal.
 - [Clover POS](${site.url}/clover): Clover hardware, software plans, processing rates and how dealer pricing differs from clover.com.
 - [Payment gateways](${site.url}/gateways): Authorize.net alternatives, gateway fees, and how to switch without breaking integrations.
+- [About Jonathan Kennedy](${site.url}${site.founderUrl}): Founder. 21+ years in payments, founder of Allied Card Processing (sold), TecPay, Juris Payments and Nextdoor Payments; 2,000+ merchants boarded. Author of every article on the site.
 - [Contact](${site.url}/contact): Phone, text and hours.
 
 ## Clover POS

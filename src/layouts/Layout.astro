@@ -37,7 +37,8 @@ const org = {
   email: site.email,
   priceRange: '$$',
   areaServed: site.areaServed.map((a) => ({ '@type': 'Place', name: a })),
-  founder: { '@type': 'Person', name: site.founderName },
+  founder: { '@type': 'Person', '@id': `${site.url}${site.founderUrl}#person`, name: site.founderName, url: `${site.url}${site.founderUrl}` },
+  sameAs: Object.values(site.social),
   knowsAbout: ['credit card processing', 'dual pricing', 'cash discount programs', 'Clover POS', 'payment gateways', 'Authorize.net', 'accept.blue', 'QuickBooks payments', 'Dejavoo terminals', 'Exatouch POS'],
   contactPoint: [{ '@type': 'ContactPoint', telephone: site.phoneE164, contactType: 'sales', availableLanguage: ['English', 'Spanish'], areaServed: 'US' }],
 };

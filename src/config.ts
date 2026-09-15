@@ -15,7 +15,11 @@ export const site = {
   hours: 'Mon to Sat, 7am to 7pm PT. Text any time.',
   areaServed: ['San Diego, CA', 'Los Angeles, CA', 'Orange County, CA', 'California', 'United States'],
   founderName: 'Jonathan Kennedy',
-  social: {} as Record<string, string>,
+  founderTitle: 'Founder, Nextdoor Payments',
+  founderUrl: '/about/jonathan-kennedy',
+  // Replace with /images/jonathan-kennedy.jpg once the headshot is uploaded to public/images.
+  founderPhoto: '/images/jonathan-kennedy-placeholder.svg',
+  social: { linkedin: 'https://www.linkedin.com/in/merchantmafia/' } as Record<string, string>,
   // Set in .env for production. Empty values disable the feature.
   // Google Tag Manager container. Fires on every page; call_click, text_click and lead_submit are pushed to dataLayer.
   gtmId: (import.meta.env.PUBLIC_GTM_ID as string | undefined) || 'GTM-THTHFFN9',
