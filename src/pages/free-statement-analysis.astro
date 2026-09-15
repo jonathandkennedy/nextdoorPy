@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Faq from '../components/Faq.astro';
+import PhoneIcon from '../components/PhoneIcon.astro';
+import { site, tel, sms } from '../config';
+const smsBody = 'Hi, here is my statement for a free analysis.';
+const faq = [
+  { q: 'What do you need from me?', a: 'One recent monthly statement from your current processor, as a photo or PDF. A full page is best because the fee schedule is usually on page two or three. If your processor hides the statement in a portal, screenshots work.' },
+  { q: 'How fast is the turnaround?', a: 'Within 24 hours on business days, usually the same day. You get a written breakdown by text or email, then a short call if you want to talk through it.' },
+  { q: 'Is it really free, and what is the catch?', a: 'It is free and there is no obligation. The catch is that most statements show avoidable fees, and once you see them you tend to want them gone. If your current deal is good, we tell you to keep it.' },
+  { q: 'Will you call my current processor?', a: 'No. Nothing changes until you decide to switch. When you do, we handle the paperwork, equipment programming and cutover so you are never without a way to take payments.' },
+  { q: 'What is an effective rate?', a: 'Total fees divided by total card volume for the month. It is the only number that lets you compare processors honestly, because it includes every percentage, per-item and monthly fee. Most small businesses on tiered or flat-rate pricing run 3% to 4%. We show you yours.' },
+];
+const schema = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+  { '@context': 'https://schema.org', '@type': 'Service', name: 'Free credit card processing statement analysis', provider: { '@id': `${site.url}/#organization` }, areaServed: 'US', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, description: 'Itemized review of a merchant processing statement showing effective rate, hidden fees and a written side-by-side quote, returned within 24 hours.' }];
+---
+<Layout title="Free Merchant Statement Analysis (24-Hour Turnaround)" description={`Text or upload your credit card processing statement. Get your true effective rate, every hidden fee, and a written quote within 24 hours. Free, no contract. ${site.phoneDisplay}.`} schema={schema} smsBody={smsBody}>
+  <section class="phero">
+    <div class="c">
+      <div class="sg">Free statement analysis</div>
+      <h1>Find Out What You Are Really Paying to Take Cards</h1>
+      <p class="lead">Send one statement. Within 24 hours you get your effective rate, every junk fee we find, and a written side-by-side of what you would pay with us. If we cannot beat your deal, we say so.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
+        <a href={sms(smsBody)} class="bp big" data-cta="fsa-text">Text a photo to {site.phoneDisplay}</a>
+        <a href={tel} class="bo" data-cta="fsa-call"><PhoneIcon />Or call and read it to us</a>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="c art-grid">
+      <div>
+        <div class="prose">
+          <h2>What we look for on your statement</h2>
+          <table>
+            <thead><tr><th>Line item</th><th>What it usually means</th><th>Typical avoidable cost</th></tr></thead>
+            <tbody>
+              <tr><td>Qualified, mid-qualified, non-qualified rates</td><td>Tiered pricing. Most of your cards get downgraded to the expensive tier.</td><td>0.5% to 1.5% of volume</td></tr>
+              <tr><td>PCI non-compliance fee</td><td>A penalty for not completing a questionnaire nobody told you about.</td><td>$20 to $99 per month</td></tr>
+              <tr><td>Annual or membership fee</td><td>Pure margin billed once a year, usually in a slow month.</td><td>$99 to $199 per year</td></tr>
+              <tr><td>Statement, batch, gateway and regulatory fees</td><td>Small recurring items that add up to a second monthly minimum.</td><td>$15 to $60 per month</td></tr>
+              <tr><td>Equipment lease</td><td>A 48-month lease on a $300 terminal, often non-cancellable.</td><td>$30 to $80 per month</td></tr>
+              <tr><td>Rate increase notices</td><td>Buried in the statement footer. Silence counts as consent.</td><td>0.1% to 0.5% per increase</td></tr>
+            </tbody>
+          </table>
+          <h2>What you get back</h2>
+          <ol>
+            <li><strong>Your effective rate.</strong> Total fees divided by total volume. This is the number that matters.</li>
+            <li><strong>Every fee, labeled.</strong> Which are interchange (unavoidable), which are processor markup, and which are junk.</li>
+            <li><strong>A written quote.</strong> Dual pricing (your fees go to zero) and a traditional interchange-plus option, side by side, so you can choose.</li>
+            <li><strong>A recommendation.</strong> Sometimes that is "stay where you are." We would rather earn a referral than a bad fit.</li>
+          </ol>
+          <h2>Three ways to send it</h2>
+          <ul>
+            <li><strong>Text a photo</strong> of each page to <a href={tel}>{site.phoneDisplay}</a>. Fastest.</li>
+            <li><strong>Email a PDF</strong> to <a href={`mailto:${site.email}`}>{site.email}</a>.</li>
+            <li><strong>Use the form</strong> on this page and we text you a secure upload link.</li>
+          </ul>
+        </div>
+        <Faq items={faq} />
+      </div>
+      <aside class="side">
+        <LeadForm kind="statement" />
+      </aside>
+    </div>
+  </section>
+</Layout>

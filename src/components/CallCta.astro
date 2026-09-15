@@ -1,0 +1,18 @@
+---
+import { site, tel, sms } from '../config';
+import PhoneIcon from './PhoneIcon.astro';
+const {
+  heading = 'Want a straight answer for your business?',
+  body = 'Text a photo of your last processing statement. We reply within 24 hours with what you are paying, what you would pay with us, and whether switching is worth it.',
+  smsBody = 'Hi, here is my statement for a free analysis.',
+  id,
+} = Astro.props;
+---
+<div class="cta-inline" id={id}>
+  <h3>{heading}</h3>
+  <p>{body}</p>
+  <div class="row">
+    <a href={tel} class="bp" data-cta="inline-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+    <a href={sms(smsBody)} class="bo" data-cta="inline-text">Text a statement photo</a>
+  </div>
+</div>

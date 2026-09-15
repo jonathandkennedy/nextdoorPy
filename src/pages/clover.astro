@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HubList from '../components/HubList.astro';
+import CallCta from '../components/CallCta.astro';
+import Faq from '../components/Faq.astro';
+import PhoneIcon from '../components/PhoneIcon.astro';
+import { site, tel, sms } from '../config';
+const smsBody = 'Hi, I am interested in Clover POS pricing.';
+const faq = [
+  { q: 'Is Clover cheaper from a dealer or from clover.com?', a: 'Usually cheaper from a dealer, if the dealer publishes its terms. Clover.com sells hardware at list price with a fixed 2.3% + 10¢ in-person rate on most plans. An independent dealer sets its own processing pricing, can place hardware through a free-equipment program, and can run dual pricing so your processing cost goes to zero. The risk with dealers is undisclosed contracts and leases, which is why we put everything in writing before you sign.' },
+  { q: 'Can I run dual pricing on Clover?', a: 'Yes. Clover supports dual pricing and cash discount programs through the processor configuration and approved apps. The card price and cash price display on the customer-facing screen and print on the receipt, which is what the card brands require.' },
+  { q: 'Do you require a contract or a lease for Clover?', a: 'No long-term processing contract. Hardware is placed through a free-equipment program for qualifying merchants, or purchased outright. We do not do 48-month non-cancellable leases.' },
+  { q: 'Can you reprogram a Clover I already own?', a: 'Sometimes. Clover devices are tied to the merchant account they were boarded on. If your current processor releases the device and it is a supported generation, it can be re-boarded. If not, a free-equipment placement usually costs less than fighting over the old unit. Call and we will check the serial number.' },
+  { q: 'Which Clover is right for a restaurant?', a: 'Station Duo at the counter with Flex handhelds for pay-at-table is the most common setup. Kiosk for quick service with lines. A single Mini works for a coffee shop or small counter-service spot.' },
+];
+const schema = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+  { '@context': 'https://schema.org', '@type': 'Service', name: 'Clover POS sales, setup and processing', serviceType: 'Point of sale system installation and merchant services', provider: { '@id': `${site.url}/#organization` }, areaServed: site.areaServed, description: 'Clover Station Duo, Station Solo, Mini, Flex, Compact and Kiosk with dealer pricing, dual pricing configuration, menu and inventory setup, staff training and local support.' }];
+const devices = [
+  { name: 'Clover Station Duo', use: 'Counter POS with customer-facing screen. Restaurants, retail with lines.', list: '$1,899 list on clover.com' },
+  { name: 'Clover Station Solo', use: 'Single-screen counter POS. Retail, service businesses.', list: '$1,799 list' },
+  { name: 'Clover Mini', use: 'Compact countertop. Coffee shops, salons, small counters.', list: '$849 list' },
+  { name: 'Clover Flex', use: 'Handheld. Pay-at-table, curbside, deliveries, trade shows.', list: '$749 list' },
+  { name: 'Clover Kiosk', use: 'Self-order. Quick service, fast casual.', list: 'Quote' },
+  { name: 'Clover Compact / Go', use: 'Terminal-only or mobile reader when you do not need a full POS.', list: '$199 list for Go' },
+];
+---
+<Layout title="Clover POS From a Local Dealer: Pricing, Dual Pricing, Setup" description={`Clover Station Duo, Mini, Flex and Kiosk with dealer pricing, dual pricing to eliminate processing fees, free equipment programs and local setup in Southern California. Call ${site.phoneDisplay}.`} schema={schema} smsBody={smsBody}>
+  <section class="phero"><div class="c">
+    <div class="sg">Clover POS</div>
+    <h1>Clover POS With Dealer Pricing, Dual Pricing and a Local Installer</h1>
+    <p class="lead">Same Clover hardware and software you see on clover.com. Different economics: dual pricing takes your processing cost to zero, hardware is placed through a free-equipment program where you qualify, and setup is done by us in person or over the phone instead of a ticket queue.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
+      <a href={tel} class="bp big" data-cta="clover-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+      <a href={sms(smsBody)} class="bo" data-cta="clover-text">Text for a Clover quote</a>
+    </div>
+  </div></section>
+
+  <section class="sec"><div class="c">
+    <div class="sh"><div class="sg">Hardware</div><h2>Which Clover Fits Your Counter</h2><p>List prices below are what clover.com charges for the device outright as of September 2026. Ask us about placement programs before paying list.</p></div>
+    <div class="grid3">
+      {devices.map((d) => <div class="card"><h3>{d.name}</h3><p>{d.use}</p><div class="more" style="color:var(--muted)">{d.list}</div></div>)}
+    </div>
+  </div></section>
+
+  <section class="sec alt"><div class="c">
+    <div class="sh"><div class="sg">Guides</div><h2>Clover Pricing, Fees and Setup, Explained</h2><p>Written by the people who install it. Updated when Clover changes its prices.</p></div>
+    <HubList category="clover" />
+  </div></section>
+
+  <section class="sec"><div class="c" style="max-width:860px">
+    <div class="prose">
+      <h2>What you get from us that you do not get from clover.com</h2>
+      <table>
+        <thead><tr><th>Item</th><th>clover.com direct</th><th>Nextdoor Payments</th></tr></thead>
+        <tbody>
+          <tr><td>In-person processing rate</td><td>2.3% + 10¢ (2.6% + 10¢ on Basic plans)</td><td>Dual pricing: 0% to you. Or interchange-plus on request.</td></tr>
+          <tr><td>Hardware</td><td>List price or 36-month payments</td><td>Free-equipment program for qualifying merchants, or buy outright</td></tr>
+          <tr><td>Contract</td><td>No long-term contract</td><td>No long-term contract, in writing</td></tr>
+          <tr><td>Menu and inventory setup</td><td>Self-serve</td><td>Done for you before install day</td></tr>
+          <tr><td>Support</td><td>Clover phone and chat</td><td>Us first, then Clover. Same-day fixes in San Diego and LA.</td></tr>
+        </tbody>
+      </table>
+      <p>Clover is sold through Fiserv and a network of independent dealers. Prices and rates on clover.com are Fiserv's direct offer and change without notice. Our comparison is current as of the date on each guide. When a direct deal is better for you, we say so.</p>
+    </div>
+    <CallCta heading="Get a Clover quote with the real numbers" body="Tell us your business type and monthly card volume. You get hardware options, monthly software cost and your processing cost under dual pricing, in writing, usually the same day." smsBody={smsBody} />
+    <Faq items={faq} />
+  </div></section>
+</Layout>

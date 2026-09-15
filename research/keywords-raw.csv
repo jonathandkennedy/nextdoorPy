@@ -1,0 +1,824 @@
+seed,kw,vol,kd,cpc,intent,comp
+authorize.net fees,authorize.net login,12100,69,14.64,navigational,0.01
+authorize.net fees,authorize net login,12100,69,14.64,navigational,0.01
+authorize.net fees,authorize.net merchant login,880,67,28.39,navigational,0.01
+authorize.net fees,authorize.net customer service,880,37,15.21,navigational,0.03
+authorize.net fees,authorize net customer service,720,37,8.67,navigational,0.05
+authorize.net fees,pay with echeck online instantly,320,8,14.76,transactional,0.63
+authorize.net fees,authorize.net payment gateway,320,20,34.86,navigational,0.18
+authorize.net fees,authorize.net sandbox,320,54,6.39,navigational,0.01
+authorize.net fees,authorize net sandbox,320,54,6.39,navigational,0.01
+authorize.net fees,authorize net payment gateway,320,12,34.86,transactional,0.18
+authorize.net fees,authorize net phone number,320,43,6.2,informational,0.23
+authorize.net fees,echeck payment processing,320,11,59.01,transactional,0.26
+authorize.net fees,dangers of echeck,320,0,43.85,informational,0.03
+authorize.net fees,authorize.net phone number,320,43,6.2,navigational,0.23
+authorize.net fees,authorize net support,260,33,2.79,navigational,0.22
+authorize.net fees,authorize.net pricing,210,22,8.54,commercial,0.53
+authorize.net fees,echeck payment online,210,23,50.14,navigational,0.43
+authorize.net fees,authorize.net api,210,59,9.78,navigational,0.26
+authorize.net fees,authorize.net fees,170,19,8.34,informational,0.48
+authorize.net fees,authorize net vs stripe,170,12,12.94,navigational,0.4
+authorize.net fees,authorize net fees,170,19,8.34,transactional,0.48
+authorize.net fees,authorize.net vs stripe,170,12,12.94,navigational,0.4
+authorize.net fees,authorize net status,170,24,,navigational,0
+authorize.net fees,authorize net sandbox login,140,33,,transactional,0
+authorize.net fees,accept echeck payments,110,2,70.34,transactional,0.64
+authorize.net fees,pay with echeck online no verification,110,1,17.28,transactional,0.43
+authorize.net fees,send echeck online free,110,5,18.43,transactional,0.68
+authorize.net fees,authorize net api documentation,110,49,,informational,0.02
+authorize.net fees,authorize.net apple pay,90,0,6.55,navigational,0.09
+authorize.net fees,authorize net sign up,70,18,32.85,navigational,0.73
+authorize.net fees,authorize net app,70,27,11.93,navigational,0.34
+authorize.net fees,authorize net echeck,70,1,7.47,transactional,0.36
+authorize.net fees,echeck app,70,11,8.97,navigational,0.49
+authorize.net fees,cash echeck online instantly,70,5,20.47,transactional,0.67
+authorize.net fees,authorize.net sign up,70,14,37.17,navigational,0.64
+authorize.net fees,echeck payment gateway,50,0,117.25,navigational,0.62
+authorize.net fees,authorize net virtual terminal,50,29,3.48,navigational,0.45
+authorize.net fees,pay with echeck online instantly no verification,50,1,23.26,transactional,0.61
+authorize.net fees,authorize net status page,50,50,,navigational,0
+authorize.net fees,authorize net sign in,50,65,1.29,navigational,0.26
+authorize.net fees,echeck payment processing time,40,12,,informational,0.08
+authorize.net fees,pay with echeck online casino,40,0,19.42,transactional,0.42
+authorize.net fees,authorize net merchant support,40,44,9.62,navigational,0.2
+authorize.net fees,authorize net payment link,40,25,17.45,transactional,0.39
+authorize.net fees,authorize net ach fees,30,9,3.25,informational,0.37
+authorize.net fees,authorize net partner login,30,72,,navigational,0
+authorize.net fees,authorize net documentation,30,43,9.7,informational,0.04
+authorize.net fees,amazon pay vs paypal,30,13,,informational,0
+authorize.net fees,echeck merchant,30,0,100.9,commercial,0.65
+authorize.net fees,authorize.net vs square,20,0,10.55,navigational,0.4
+authorize.net fees,authorize.net vs paypal,20,0,23.96,commercial,0.28
+authorize.net fees,authorize net email,20,39,8.3,navigational,0.37
+authorize.net fees,authorize net sandbox test cards,20,,,transactional,0
+authorize.net fees,authorize net developer account,20,,15.61,navigational,0.31
+authorize.net fees,authorize net support email,20,,9.87,navigational,0.1
+authorize.net fees,authorize net merchant support phone number,20,,37.74,informational,0.1
+authorize.net fees,square vs authorize net,20,0,10.55,navigational,0.4
+authorize.net fees,authorize net test account,20,65,,navigational,0.05
+authorize.net fees,authorize net fees vs paypal,10,33,,commercial,0.25
+authorize.net fees,who accepts echeck payments online,10,,15.66,commercial,0.37
+authorize.net fees,authorize.net supported countries,10,42,,informational,0.46
+authorize.net fees,authorize.net vs stripe reddit,10,,,navigational,0.02
+authorize.net fees,authorize net supported countries,10,42,,informational,0.46
+authorize.net fees,authorize net app for iphone,10,,,informational,0.14
+authorize.net fees,authorize net app for android,10,,,informational,
+authorize.net fees,authorize.net mobile card reader,10,,2.66,navigational,0.29
+authorize.net fees,authorize net sandbox sign up,10,,16.6,navigational,0.21
+authorize.net fees,authorize net sandbox credentials,10,,,transactional,0.1
+authorize.net fees,authorize net sandbox api,10,,,informational,0.04
+authorize.net fees,authorize net echeck fees,10,42,1.99,transactional,0.29
+authorize.net fees,paypal woocommerce fees,10,53,,informational,
+authorize.net fees,authorize net vs transfirst,10,,,navigational,
+authorize.net fees,authorize.net paypal,10,0,9.11,navigational,0.32
+authorize.net fees,amazon payment processing fees,10,50,,informational,0.07
+authorize.net fees,merchant account vs paypal,10,44,,informational,0.79
+authorize.net fees,authorize.net echeck fees,10,42,1.99,transactional,0.29
+authorize.net fees,authorize net echeck test account number,10,50,,transactional,0
+authorize.net fees,accept echeck payments online,10,,,transactional,0.75
+authorize.net fees,2checkout supported countries,10,,,navigational,
+authorize.net fees,authorize.net debit card,10,,16.26,navigational,0.86
+authorize.net fees,authorize.net international payments,10,59,,informational,0.49
+authorize.net fees,braintree supported countries,10,33,,navigational,0.06
+authorize.net fees,authorize net customer service email,10,,,transactional,0
+authorize.net fees,authorize net payment gateway woocommerce,10,,,transactional,0.14
+authorize.net fees,authorize net sandbox card numbers,10,,,transactional,0
+authorize.net fees,authorize net features,10,,,informational,
+authorize.net fees,does authorize net accept debit cards,10,,,informational,0.14
+authorize.net fees,authorize.net vs paypal vs stripe,10,,,commercial,
+authorize.net fees,authorize.net uk,10,,,navigational,0
+authorize.net fees,authorize net virtual terminal login,10,,,transactional,
+authorize.net fees,authorize net email receipt,10,,,transactional,0.04
+authorize.net fees,authorize net github,10,,,navigational,0
+authorize.net fees,authorize.net bluetooth card reader,0,,,navigational,
+authorize.net fees,authorize net echeck user guide,0,,,informational,
+authorize.net fees,authorize net customer service phone number,0,,,navigational,
+authorize.net fees,authorize net customer service hours,0,,,transactional,
+authorize.net fees,authorize net email address,0,,,navigational,
+clover pos pricing,clover login,110000,26,16.19,navigational,0
+clover pos pricing,fiserv stock,90500,14,0.79,informational,0
+clover pos pricing,clover dashboard,27100,17,13.28,navigational,0.01
+clover pos pricing,square pos system,27100,59,23.59,navigational,0.98
+clover pos pricing,clover pos,9900,19,36.89,informational,1
+clover pos pricing,clover pos system,8100,14,47,navigational,1
+clover pos pricing,clover flex,4400,1,26.39,transactional,1
+clover pos pricing,clover app,4400,39,19.71,navigational,0.36
+clover pos pricing,clover mini,2900,0,14.07,transactional,1
+clover pos pricing,clover reddit,1900,12,23.47,navigational,0
+clover pos pricing,clover go login,1900,20,15.02,navigational,0.02
+clover pos pricing,clover pos pricing,1600,0,33.43,commercial,0.61
+clover pos pricing,clover vs square,1300,0,15.61,informational,0.81
+clover pos pricing,clover compact,1300,0,8.44,transactional,1
+clover pos pricing,clover devices,1300,5,20.58,navigational,1
+clover pos pricing,clover systems,1000,14,35.55,navigational,1
+clover pos pricing,clover mini iron,1000,0,0.32,transactional,1
+clover pos pricing,clover flex pocket,590,0,10.45,transactional,1
+clover pos pricing,who owns clover pos,480,10,5.72,informational,0.01
+clover pos pricing,clover mini 3,390,0,12.05,transactional,1
+clover pos pricing,clover monthly fees,320,0,25.7,informational,0.73
+clover pos pricing,clover mini pos,210,0,18.73,transactional,1
+clover pos pricing,clover mini pos system,210,0,19.47,transactional,0.82
+clover pos pricing,clover pocket,210,0,7.25,transactional,1
+clover pos pricing,clover rates vs square,170,0,15.18,informational,0.75
+clover pos pricing,clover flex price,170,0,20.48,commercial,1
+clover pos pricing,clover pos devices,170,0,23.04,navigational,0.53
+clover pos pricing,clover flex 3,170,1,21.81,transactional,1
+clover pos pricing,clover mini with cash drawer,140,0,3.33,transactional,0.99
+clover pos pricing,clover mini cash drawer,140,0,3.33,transactional,0.99
+clover pos pricing,clover mini price,110,0,13.08,commercial,1
+clover pos pricing,free clover pos system,90,0,50.88,informational,0.99
+clover pos pricing,square vs clover for small business,90,0,19.47,commercial,1
+clover pos pricing,cost of clover pos system,90,7,27.15,informational,1
+clover pos pricing,clover pos demo,70,0,47.88,informational,0.6
+clover pos pricing,clover pos system training,50,0,18.22,navigational,0.35
+clover pos pricing,clover vs square vs stripe,50,0,14.84,informational,0.88
+clover pos pricing,clover systems llc,50,14,,navigational,0.06
+clover pos pricing,clover flex 2,50,0,31.76,transactional,1
+clover pos pricing,clover vs square reddit,40,0,12.56,informational,0.53
+clover pos pricing,clover vs square vs toast,40,0,32.02,informational,0.65
+clover pos pricing,used clover pos system for sale,40,0,9.21,transactional,1
+clover pos pricing,clover pos manual pdf,40,0,,informational,0.04
+clover pos pricing,clover pos screen,40,0,0.32,navigational,0.96
+clover pos pricing,clover pos stock,40,0,,informational,0
+clover pos pricing,clover flex 4 price,40,0,15.26,commercial,1
+clover pos pricing,clover flex machine,40,0,23.43,transactional,1
+clover pos pricing,clover mini 2,40,0,8.34,transactional,1
+clover pos pricing,clover flex 4 pocket,40,0,9.2,transactional,1
+clover pos pricing,clover pos for sale,30,11,39.68,transactional,0.63
+clover pos pricing,clover training,30,0,,informational,0.01
+clover pos pricing,clover mini c305,30,0,9.82,transactional,0.95
+clover pos pricing,clover flex c405,30,0,8.07,transactional,0.81
+clover pos pricing,clover pos pricing per month,20,,28.53,commercial,0.95
+clover pos pricing,clover pos products,20,,11.62,navigational,0.96
+clover pos pricing,where to buy clover pos system,20,,52.88,transactional,0.98
+clover pos pricing,clover flex pocket price,20,0,4.48,commercial,1
+clover pos pricing,toast vs square fees,20,,7.89,commercial,0.6
+clover pos pricing,clover mini 4,20,,,transactional,0.71
+clover pos pricing,sell clover pos system,20,,,transactional,0.62
+clover pos pricing,clover flex manual,20,4,,informational,0
+clover pos pricing,clover flex 4 starter kit,20,,9,commercial,1
+clover pos pricing,clover essentials plan price,10,,15.06,commercial,0.51
+clover pos pricing,clover vs square reviews,10,,18.12,informational,0.51
+clover pos pricing,clover pos training videos,10,0,,navigational,0.15
+clover pos pricing,clover mini pos price,10,5,50.8,commercial,1
+clover pos pricing,clover vs square vs shopify,10,0,6.83,commercial,0.76
+clover pos pricing,clover test mode,10,19,,informational,0.02
+clover pos pricing,clover pos youtube,10,11,10.58,navigational,0.2
+clover pos pricing,clover demo video,10,24,,informational,0.2
+clover pos pricing,how to program clover pos,10,,,informational,0.48
+clover pos pricing,clover pos manual pdf free download,10,,,informational,
+clover pos pricing,clover user manual,10,4,,informational,0.02
+clover pos pricing,clover station duo manual,10,0,,informational,0
+clover pos pricing,clover mini c302u,10,0,0.03,transactional,0.95
+clover pos pricing,clover pos stock symbol,10,1,,informational,0
+clover pos pricing,clover corporation jewelry,10,,,navigational,0.19
+clover pos pricing,clover flex 4 c406,10,,23.8,informational,1
+clover pos pricing,clover flex 4 vs flex 3,10,,,commercial,1
+clover pos pricing,clover flex 4 manual,10,,,navigational,0.08
+clover pos pricing,clover flex monthly fee,10,45,6.07,informational,0.95
+clover pos pricing,clover pos models,0,,,navigational,
+clover pos pricing,clover mini amazon,0,,,transactional,
+payment gateway integration,paypal login,1830000,100,0.06,navigational,0.04
+payment gateway integration,helcim,12100,18,9.23,informational,0.52
+payment gateway integration,stripe dashboard,12100,80,42.97,navigational,0.03
+payment gateway integration,stripe checkout,2900,39,6.56,navigational,0.34
+payment gateway integration,stripe support,2900,57,25.98,informational,0.01
+payment gateway integration,stripe::webhook,1900,12,14.45,navigational,0.02
+payment gateway integration,stripe fees calculator,1600,1,6.52,informational,0.03
+payment gateway integration,stripe api docs,1300,77,13.58,navigational,0.01
+payment gateway integration,stripe developer,1000,43,23.38,navigational,0.13
+payment gateway integration,stripe api key,1000,35,32.92,informational,0.11
+payment gateway integration,payment depot,720,2,41.8,navigational,0.5
+payment gateway integration,stripe fees vs square,480,0,12.97,informational,0.44
+payment gateway integration,stripe payment api,390,60,5.89,informational,0.27
+payment gateway integration,payment gateway pricing,260,13,28.93,commercial,0.09
+payment gateway integration,payment gateway integration,210,14,51.22,commercial,0.12
+payment gateway integration,lowest credit card processing fees for small business,140,8,44.04,commercial,0.75
+payment gateway integration,cheapest way to accept credit card payments online,140,19,47.68,commercial,0.81
+payment gateway integration,razorpay payment gateway,140,3,15.73,navigational,0.08
+payment gateway integration,stripe checkout api,140,51,39.35,navigational,0.06
+payment gateway integration,stripe payment gateway integration,110,50,12.06,navigational,0.13
+payment gateway integration,stripe payout fees,110,22,5.04,informational,0.3
+payment gateway integration,types of payment gateway,110,7,9.54,informational,0.04
+payment gateway integration,payment gateway india,110,52,15.62,navigational,0.27
+payment gateway integration,payment gateway integration api,70,0,,commercial,0.13
+payment gateway integration,payment gateway integration in website,70,3,4.02,informational,0.03
+payment gateway integration,best online payment processor for small business,70,20,58.67,commercial,0.65
+payment gateway integration,stripe vs square for small business,70,0,10.75,informational,0.64
+payment gateway integration,stripe developer api,50,29,163.79,navigational,0.22
+payment gateway integration,stripe american express fees,40,11,,informational,0.05
+payment gateway integration,payu payment gateway,40,24,8.69,navigational,0.37
+payment gateway integration,stripe payment gateway charges,30,18,3.63,informational,0.22
+payment gateway integration,payment integration in website,30,8,57.16,informational,0.2
+payment gateway integration,paypal payment gateway integration,30,28,,commercial,0
+payment gateway integration,payment depot pricing,30,0,35.71,informational,0.7
+payment gateway integration,stripe us pricing,30,18,2.75,commercial,0.52
+payment gateway integration,stripe vs square vs clover,30,0,16.24,informational,0.67
+payment gateway integration,paypal integration api,30,34,20.47,informational,0.52
+payment gateway integration,stripe docs ai,30,24,,navigational,0.02
+payment gateway integration,paytm payment gateway,30,32,,navigational,0.6
+payment gateway integration,cashfree payment gateway,30,21,12.95,commercial,0.56
+payment gateway integration,stripe api endpoints,30,31,,navigational,0.04
+payment gateway integration,payment gateway fees comparison,20,17,18.39,commercial,0.43
+payment gateway integration,who pays stripe fees,20,16,14.95,informational,0.17
+payment gateway integration,stripe integration api,20,44,4.38,navigational,0.68
+payment gateway integration,cheapest online payment processing for small business,20,,66.78,commercial,0.83
+payment gateway integration,stripe fee calculator indy,20,,,navigational,0
+payment gateway integration,stripe vs square vs paypal fees,20,47,16.31,commercial,0.43
+payment gateway integration,is paypal a payment gateway,20,23,,informational,0.14
+payment gateway integration,payment gateway integration cost,10,10,,commercial,
+payment gateway integration,stripe payment gateway integration in laravel,10,,,informational,
+payment gateway integration,how to add payment gateway in website html,10,,43.5,informational,0.79
+payment gateway integration,payment gateway api free,10,,,informational,0.86
+payment gateway integration,free payment gateway api for testing,10,,,informational,
+payment gateway integration,payment gateway api example,10,,,informational,0
+payment gateway integration,payment gateway api for website,10,,,commercial,
+payment gateway integration,free payment gateway api for developers,10,,,commercial,0
+payment gateway integration,stripe payment gateway login,10,,,navigational,0.17
+payment gateway integration,stripe payment gateway documentation,10,72,,informational,
+payment gateway integration,instamojo payment gateway,10,15,,navigational,0.27
+payment gateway integration,how to integrate stripe payment gateway in website,10,,,informational,0.29
+payment gateway integration,stripe payment api example,10,,,informational,0.31
+payment gateway integration,how to integrate stripe payment gateway in wordpress,10,,,informational,
+payment gateway integration,stripe fee calculator international,10,,,informational,0.11
+payment gateway integration,stripe micropayments fees,10,50,,informational,0.02
+payment gateway integration,is stripe payment gateway,10,45,,informational,0.29
+payment gateway integration,can you pass stripe fees to customers,10,,,informational,0
+payment gateway integration,how to avoid stripe fees,10,,,informational,0.21
+payment gateway integration,stripe pay by bank fees,10,,18.04,transactional,0.26
+payment gateway integration,stripe vs square vs quickbooks,10,,,commercial,0.29
+payment gateway integration,how to add payment method to website,10,9,36.5,informational,0.82
+payment gateway integration,how to get paypal payment gateway for my website,10,,,informational,0.86
+payment gateway integration,paypal integration documentation,10,59,16.28,informational,0.24
+payment gateway integration,stripe checkout integration builder,10,,,navigational,
+payment gateway integration,instamojo login,10,2,,navigational,
+payment gateway integration,stripe payment gateway integration tutorial,0,,,informational,
+payment gateway integration,reverse stripe fee calculator,0,,,informational,
+payment gateway integration,stripe vs square for nonprofits,0,,,informational,
+merchant services provider,john deere financial,40500,81,7.36,navigational,0.01
+merchant services provider,chase paymentech,8100,16,6.35,navigational,0.07
+merchant services provider,square credit card processing,8100,32,22.34,commercial,0.46
+merchant services provider,firstdata,5400,14,25.87,informational,0.17
+merchant services provider,credit card processor for small business,4400,11,94.14,commercial,0.7
+merchant services provider,square merchant services,2900,51,23.56,navigational,0.32
+merchant services provider,merchant services provider,2400,10,70.66,commercial,0.16
+merchant services provider,first data merchant services,1900,6,26.39,commercial,0.58
+merchant services provider,merchant payment processing,1600,41,112.73,commercial,0.22
+merchant services provider,quickbooks payments login,1300,72,0.65,navigational,0.1
+merchant services provider,stripe merchant services,1300,46,15.1,commercial,0.17
+merchant services provider,paypal business account login,1000,66,7.15,navigational,0.42
+merchant services provider,what are merchant services,1000,9,11.82,informational,0.08
+merchant services provider,john deere financial payment,880,94,7.03,navigational,0.01
+merchant services provider,chase merchant services login,720,25,,navigational,0.01
+merchant services provider,quickbooks merchant services login,720,24,10.84,navigational,0.11
+merchant services provider,merchant services credit card processing,720,19,62.63,commercial,0.7
+merchant services provider,merchant services login,590,51,19.68,navigational,0.04
+merchant services provider,merchant services for small business,590,6,87.8,commercial,0.48
+merchant services provider,leaders merchant services,590,0,39.59,navigational,0.7
+merchant services provider,best merchant services for small business,480,14,68.22,commercial,0.47
+merchant services provider,free credit card processing for small business,480,2,49.5,commercial,0.65
+merchant services provider,fiserv merchant services,480,2,26.6,commercial,0.31
+merchant services provider,merchant services company,480,33,69.68,commercial,0.51
+merchant services provider,bank of america merchant services phone number,320,14,51.67,navigational,0.13
+merchant services provider,first data merchant services phone number,320,5,52.71,informational,0.36
+merchant services provider,online credit card processing for small business,320,11,81.4,commercial,0.7
+merchant services provider,paypal business app,320,66,19.01,commercial,0.42
+merchant services provider,wells fargo merchant services phone number,260,4,12.3,navigational,0.27
+merchant services provider,quickbooks merchant services phone number,260,36,,navigational,0
+merchant services provider,paypal merchant services,210,17,28.57,commercial,0.35
+merchant services provider,top payment processing companies,210,2,47.62,commercial,0.54
+merchant services provider,merchant payment gateway,210,22,10.83,commercial,0.07
+merchant services provider,merchant card processor account,210,23,43.49,commercial,0.5
+merchant services provider,payment processing companies list,170,15,36.32,informational,0.43
+merchant services provider,first data login,170,0,23.8,navigational,0.05
+merchant services provider,merchant services bank of america,170,1,12.93,navigational,0.52
+merchant services provider,bank of america merchant services login,140,3,36.5,navigational,0.06
+merchant services provider,wells fargo merchant services login,140,37,50.02,navigational,0.02
+merchant services provider,iso merchant services,140,0,50.12,navigational,0.4
+merchant services provider,bank of america business 360 login,110,47,,navigational,0
+merchant services provider,fiserv merchant login,110,7,8.28,navigational,0.04
+merchant services provider,list of merchant service providers,90,9,96.64,informational,0.26
+merchant services provider,john deere merchant services login,90,32,,navigational,0
+merchant services provider,what is merchant services in banking,90,9,15.55,informational,0.09
+merchant services provider,chase pos login,90,4,,navigational,0.01
+merchant services provider,jpmorgan chase paymentech,90,27,9.51,navigational,0.23
+merchant services provider,quickbooks merchant services fees,90,7,31.65,commercial,0.43
+merchant services provider,is merchant services a legit company,90,0,10.5,informational,0.06
+merchant services provider,first data merchant services login,70,9,44.47,navigational,0.06
+merchant services provider,list of credit card processing companies,70,0,40.24,commercial,0.64
+merchant services provider,square merchant services phone number,70,33,77.13,navigational,0.16
+merchant services provider,square merchant card processor account,70,29,24.18,navigational,0.38
+merchant services provider,credit card payment processing companies list,70,12,40.24,commercial,0.64
+merchant services provider,fiserv merchant services phone number,70,17,16.36,informational,0.24
+merchant services provider,why is merchant services calling me,70,0,,informational,0
+merchant services provider,cheapest merchant services for small business,50,19,43.64,commercial,0.76
+merchant services provider,my john deere login pay bill,50,83,2,navigational,0
+merchant services provider,first data merchant services clover,50,25,35.14,navigational,0.56
+merchant services provider,top 10 credit card processing companies,50,12,98.46,commercial,0.73
+merchant services provider,top 100 payment processing companies,50,10,13.24,commercial,0.45
+merchant services provider,bank of america merchant services fees,40,6,11.47,informational,0.55
+merchant services provider,wells fargo e bill express login,40,20,,navigational,0
+merchant services provider,quickbooks merchant services customer service,40,27,,informational,0
+merchant services provider,intuit merchant services credit card processing,40,25,44.38,commercial,0.4
+merchant services provider,intuit gopayment app,40,23,11.2,navigational,0.51
+merchant services provider,free credit card processing app,40,14,44.73,commercial,0.78
+merchant services provider,how to start a payment processing business,40,7,13.77,informational,0.48
+merchant services provider,top merchant services providers,30,0,66.11,commercial,0.63
+merchant services provider,merchant services examples,30,5,,informational,0.31
+merchant services provider,how to become a merchant service provider,30,11,9.39,informational,0.55
+merchant services provider,wells fargo merchant portal,30,,,navigational,0.05
+merchant services provider,wells fargo credit connect sign in,30,81,,navigational,0
+merchant services provider,how to access merchant service center in quickbooks online,30,23,74.71,informational,0.22
+merchant services provider,john deere merchant toolkit,30,14,,navigational,0
+merchant services provider,best credit card processing rates for small business,30,11,64.07,commercial,0.59
+merchant services provider,online payment company list,30,16,4.65,informational,0.12
+merchant services provider,payment processing franchise for $299,30,0,7.45,commercial,0.35
+merchant services provider,is authorize net a merchant service provider,20,,11.43,informational,0.14
+merchant services provider,chase paymentech login password,20,11,,navigational,0
+merchant services provider,bank of america merchant statement,20,,11.79,navigational,0.39
+merchant services provider,first data online banking,20,37,,informational,0.05
+merchant services provider,best free credit card processing for small business,20,,53.28,commercial,0.88
+merchant services provider,free credit card processing machine,20,13,47.37,transactional,0.96
+merchant services provider,paypal merchant services phone number,20,72,,informational,0
+merchant services provider,paypal merchant list,20,21,13.68,navigational,0.32
+merchant services provider,first data merchant services address,20,0,27.13,navigational,0.06
+merchant services provider,first data merchant services reviews,20,0,88.82,commercial,0.3
+merchant services provider,is stripe a payment gateway or processor,20,32,,informational,0
+merchant services provider,merchant service provider examples,10,12,,informational,0.64
+merchant services provider,merchant services login credit card,10,,,navigational,0
+merchant services provider,list of merchant service providers in usa,10,25,,informational,0.82
+merchant services provider,merchant service provider vs payment gateway,10,0,,commercial,
+merchant services provider,merchant account providers for small business,10,10,,commercial,0
+merchant services provider,what is bank of america merchant services,10,,4.97,informational,0.29
+merchant services provider,wells fargo merchant services email,10,,,navigational,0
+merchant services provider,merchant service center login,10,37,,navigational,0.14
+merchant services provider,fiserv merchant services login,10,,,navigational,0
+merchant services provider,paypal merchant services reviews,10,,,commercial,
+merchant services provider,paypal merchant services contact,10,,,navigational,
+merchant services provider,first data merchant services credit card,10,,19.71,commercial,0.86
+merchant services provider,first data merchant services careers,10,7,,commercial,0.18
+merchant services provider,fiserv merchant services reviews,10,,,commercial,0.5
+merchant services provider,payment gateway vs payment processor examples,10,0,,informational,0.14
+merchant services provider,payment gateway vs payment processor vs merchant account,10,40,,commercial,0.07
+merchant services provider,best merchant account providers for small business,10,,,commercial,0
+merchant services provider,how to become a john deere financial merchant,0,,,informational,
+merchant services provider,list of merchants in usa,0,,,informational,
+credit card processing fees,square feet calculator,22200,26,3.07,informational,0.01
+credit card processing fees,credit card processing fees,3600,31,30.51,informational,0.3
+credit card processing fees,monthly payment credit card calculator,2400,10,6.53,informational,0.14
+credit card processing fees,square fee calculator,1600,0,4.81,informational,0.03
+credit card processing fees,credit card processing fees calculator,1300,1,4.63,informational,0.03
+credit card processing fees,credit card processing fee calculator,1300,1,4.63,informational,0.03
+credit card processing fees,credit card processing fees small business,720,3,31.81,commercial,0.35
+credit card processing fees,passing on debit card fees to customers,720,20,16.6,informational,0.08
+credit card processing fees,passing on credit card fees to customers,590,7,8.81,informational,0.21
+credit card processing fees,debit card surcharge laws by state,480,39,1.31,informational,0.01
+credit card processing fees,is it legal to charge a debit card fee,480,38,0.03,informational,0.01
+credit card processing fees,how much is square processing fee,480,37,8.9,informational,0.44
+credit card processing fees,who pays credit card transaction fees,390,17,10.94,informational,0.1
+credit card processing fees,credit card convenience fee,390,11,,informational,0.01
+credit card processing fees,credit card signage,390,12,1.71,commercial,0.35
+credit card processing fees,printable credit card fee sign,320,0,0.08,informational,1
+credit card processing fees,is it legal to charge a 3 credit card fee,260,9,4.07,informational,0.03
+credit card processing fees,how to avoid debit card transaction fees,260,8,,informational,0
+credit card processing fees,square processing fees 2026,260,37,11.9,commercial,0.45
+credit card processing fees,credit card surcharge laws by state,260,25,2.33,informational,0.07
+credit card processing fees,credit card convenience fee notice,260,0,,informational,0
+credit card processing fees,3 credit card fee sign,260,0,0.35,informational,0.93
+credit card processing fees,credit card surcharge sign template,260,0,0.11,informational,0.18
+credit card processing fees,durbin amendment debit card surcharge,210,34,4.23,informational,0.01
+credit card processing fees,are debit card surcharges legal,210,19,,informational,0.01
+credit card processing fees,credit card surcharge california,210,12,0.22,informational,0.04
+credit card processing fees,is it legal to pass credit card fees to customers,170,15,6.07,informational,0.06
+credit card processing fees,credit card fee notice,170,39,,informational,0.06
+credit card processing fees,debit card surcharge law,170,23,,transactional,0
+credit card processing fees,illinois credit card surcharge law,170,0,,informational,0.01
+credit card processing fees,how to report a business for charging debit card fees,140,23,,informational,0
+credit card processing fees,how to avoid convenience fee,140,2,,informational,0
+credit card processing fees,is it legal to charge credit card fees in california,140,9,,informational,0.02
+credit card processing fees,can you charge a convenience fee for debit cards,140,6,,informational,0.02
+credit card processing fees,what states is it illegal to charge credit card fee,110,13,,informational,0.01
+credit card processing fees,printable credit card fee sign pdf,110,0,0.05,informational,0.57
+credit card processing fees,percentage fee calculator,110,32,,informational,0
+credit card processing fees,square fee calculator 2025,110,1,,informational,0.07
+credit card processing fees,3.5 credit card fee calculator,90,2,9.3,informational,0.07
+credit card processing fees,processing fee calculator,90,0,22.87,informational,0.06
+credit card processing fees,federal credit card surcharge law,70,37,6.74,informational,0.05
+credit card processing fees,debit card convenience fee,70,6,,informational,0
+credit card processing fees,3 percent credit card fee calculator,50,4,2.05,commercial,0.06
+credit card processing fees,how to calculate credit card processing fees,50,1,,informational,0.14
+credit card processing fees,why is everyone charging credit card fees,50,7,,informational,0.02
+credit card processing fees,are debit card surcharges legal in texas,50,3,,informational,0
+credit card processing fees,pennsylvania credit card surcharge law,50,0,,informational,0.01
+credit card processing fees,3 credit card fee calculator,40,0,2.58,informational,0.07
+credit card processing fees,3.5 credit card fee sign,40,0,0.37,transactional,0.77
+credit card processing fees,quickbooks credit card fee calculator,40,0,,informational,0.21
+credit card processing fees,4 credit card fee,40,5,,informational,0.02
+credit card processing fees,ohio credit card surcharge law,40,0,,informational,0
+credit card processing fees,convenience fee sign,40,0,0.17,informational,0.28
+credit card processing fees,credit card processing fees california,30,2,,informational,0.19
+credit card processing fees,reverse square fee calculator,30,0,9.41,informational,0.04
+credit card processing fees,georgia credit card surcharge law,30,0,,informational,0.01
+credit card processing fees,free square fee calculator,30,7,33.09,informational,0.13
+credit card processing fees,square processing fee for payment link,30,49,10.5,informational,0.29
+credit card processing fees,merchants charging credit card fees,30,30,,commercial,0.16
+credit card processing fees,arizona credit card surcharge law,30,0,,informational,0
+credit card processing fees,free printable credit card fee sign pdf,30,0,,transactional,0
+credit card processing fees,credit card processing fees illegal,20,45,,informational,0.04
+credit card processing fees,2.5 credit card fee calculator,20,,,informational,0.03
+credit card processing fees,passing on credit card fees to customers california,20,,,informational,0.04
+credit card processing fees,passing on debit card fees to customers reddit,20,,,transactional,0
+credit card processing fees,how to avoid credit card fees for businesses,20,24,10.79,informational,0.68
+credit card processing fees,square calculator app,20,0,2.63,informational,0.07
+credit card processing fees,credit card convenience fee rules,20,16,0.15,informational,0.1
+credit card processing fees,credit card convenience fee vs surcharge,20,0,,commercial,0.11
+credit card processing fees,credit card surcharge notice template pdf,20,0,,informational,0.02
+credit card processing fees,credit card processing fees sign,10,0,0.37,informational,0.93
+credit card processing fees,3 processing fee calculator,10,,,informational,0.06
+credit card processing fees,square fee calculator 2024,10,18,,informational,0
+credit card processing fees,2.75 convenience fee calculator,10,,,informational,0
+credit card processing fees,ca credit card fee ban,10,,,commercial,0
+credit card processing fees,texas credit card surcharge law 2022,10,17,,informational,
+credit card processing fees,florida credit card surcharge law 2022,10,21,,informational,
+credit card processing fees,what states can charge the credit card surcharge 2022,10,21,,informational,
+credit card processing fees,credit card convenience fee california,10,9,,informational,
+credit card processing fees,credit card fee sign template word,10,,0.04,transactional,0.69
+credit card processing fees,free credit card surcharge sign,10,,1.92,transactional,0.1
+credit card processing fees,wording for credit card surcharge,10,0,,informational,0
+credit card processing fees,2.99 credit card fee calculator,10,,,transactional,0.04
+credit card processing fees,passing on credit card fees to customers 2022,10,58,,informational,0
+credit card processing fees,square fees 2024,10,38,,informational,0
+credit card processing fees,can companies pass on credit card fees,10,,,informational,0.1
+credit card processing fees,texas attorney general credit card surcharge,10,0,,informational,0
+credit card processing fees,credit card laws in texas,10,3,,informational,0
+credit card processing fees,oklahoma credit card surcharge law 2023,10,3,,informational,
+credit card processing fees,credit card fee notice template,10,,,informational,0
+credit card processing fees,kansas credit card surcharge law 2023,10,0,,informational,
+credit card processing fees,credit card surcharge laws by state 2023,10,16,,informational,
+credit card processing fees,california credit card surcharge 2023,10,5,,informational,
+credit card processing fees,debit card surcharge florida 2023,0,,,informational,
+credit card processing fees,credit card surcharge florida 2023,0,4,,informational,
+authorize.net alternatives,authorize.net alternatives,50,8,64.55,informational,0.73
+authorize.net alternatives,vpos authorize net,40,22,3.79,transactional,0.27
+authorize.net alternatives,how to cancel authorize net,30,26,,informational,0.02
+authorize.net alternatives,authorize.net support email,20,,6.06,navigational,0.15
+authorize.net alternatives,authorize net e00001,10,,,transactional,0
+authorize.net alternatives,authorize net postman,10,,,navigational,0
+authorize.net alternatives,authorize net reseller support phone number,10,,,informational,0
+authorize.net alternatives,authorize.net email address,0,,,navigational,
+authorize.net alternatives,authorize.net customer service hours,0,,,informational,
+clover pos,shopify careers,9900,27,4.61,navigational,0.01
+clover pos,squarespace careers,2400,18,3.11,navigational,0.01
+clover pos,my clover health login,1900,8,14.02,navigational,0.01
+clover pos,my clover login,1600,25,11.43,navigational,0.01
+clover pos,clover pos login,1300,17,21.8,navigational,0
+clover pos,clover pos vs square,1300,0,15.61,informational,0.81
+clover pos,clover app market,1300,15,12.57,navigational,0.04
+clover pos,my clover health otc login,1000,0,9.77,navigational,0
+clover pos,clover merchant,880,45,41.33,informational,0.54
+clover pos,clover pos reviews,720,6,26.31,informational,0.75
+clover pos,clover go app,590,24,27.87,navigational,0.4
+clover pos,my clover health login app,480,3,11.02,navigational,0.02
+clover pos,clover fiserv,480,30,12.37,navigational,0.34
+clover pos,square pos customer service,390,36,47.42,navigational,0.11
+clover pos,clover register login,320,11,8.52,navigational,0.02
+clover pos,lightspeed pos careers,320,27,0.58,navigational,0
+clover pos,toast pos careers,320,31,,navigational,0
+clover pos,clover sign up,320,40,45.75,navigational,0.68
+clover pos,clover health provider portal login,320,23,14.07,navigational,0.01
+clover pos,homebase app download,260,25,4.47,navigational,0.26
+clover pos,clover app download,260,38,10.22,navigational,0.4
+clover pos,clover pos logo,210,25,0.64,transactional,0.01
+clover pos,my clover health login app download,210,12,3.97,navigational,0.03
+clover pos,app market download,210,28,2.59,transactional,0.22
+clover pos,square associate product manager program,210,26,,commercial,0.02
+clover pos,clover pos machine,170,11,33.32,transactional,1
+clover pos,clover merchant portal login,170,9,,navigational,0.01
+clover pos,square pos register,170,19,4.96,navigational,1
+clover pos,clover go dashboard,140,0,26.48,navigational,0.07
+clover pos,clover homebase login,110,7,0.02,navigational,0.03
+clover pos,my clover health login app for android,110,0,,navigational,0.03
+clover pos,app homebase login,110,41,0.01,navigational,0.05
+clover pos,clover pos careers,90,0,,navigational,0
+clover pos,my clover login password,90,0,,navigational,0.02
+clover pos,capital clover login,90,0,,navigational,0
+clover pos,toast careers login,90,26,,navigational,0
+clover pos,clover pos app,70,0,11.22,navigational,0.36
+clover pos,clover vs stripe,70,0,22.18,informational,0.61
+clover pos,my clover login register,70,0,,navigational,0.01
+clover pos,my clover account,70,0,58.6,navigational,0.12
+clover pos,clover merchant login password,70,14,,navigational,0.02
+clover pos,is square pos free,70,39,9.86,informational,0.61
+clover pos,clover go app download,50,15,13,navigational,0.37
+clover pos,square pos careers,50,9,,navigational,0
+clover pos,godaddy pos vs square,50,0,14.86,commercial,0.66
+clover pos,my clover member portal sign in,50,,15.34,navigational,0.02
+clover pos,clover go app android,50,12,10.02,navigational,0.25
+clover pos,cash app careers no experience,50,10,,navigational,0.05
+clover pos,touchbistro careers,50,18,,navigational,0
+clover pos,square pos download,50,50,9.13,transactional,0.62
+clover pos,clover pos reddit,40,0,,navigational,0.25
+clover pos,square pos reddit,40,0,8.29,navigational,0.51
+clover pos,square vs clover vs toast,40,0,24.48,informational,0.14
+clover pos,how to use clover pos system,40,4,9.13,informational,0.35
+clover pos,my clover login pos,40,19,,navigational,0
+clover pos,toast growth account executive,40,0,,transactional,0.04
+clover pos,square pos sales,40,66,37.79,commercial,1
+clover pos,clover careers usa,30,13,9.95,navigational,0.02
+clover pos,fiserv sued,30,0,,transactional,0
+clover pos,fiserv clover acquisition,30,8,,transactional,0.01
+clover pos,homebase employee login password,30,,0.94,navigational,0.01
+clover pos,clover app download for android,30,53,19.08,navigational,0.29
+clover pos,square account executive salary,30,0,,informational,0
+clover pos,toast entry level jobs,30,20,,navigational,0.01
+clover pos,square pos with cash drawer,30,7,5.64,transactional,1
+clover pos,clover pos lawsuit,20,0,,informational,0
+clover pos,my clover login app,20,,6.5,navigational,0.06
+clover pos,my clover health login app for iphone,20,,21.94,navigational,0.07
+clover pos,square pos windows,20,20,22.7,transactional,1
+clover pos,clover pos reviews reddit,10,19,,informational,0.57
+clover pos,clover pos reviews complaints,10,18,11.86,informational,0.52
+clover pos,clover google reviews,10,,8.82,informational,0.23
+clover pos,clover pos logo png,10,,,informational,0
+clover pos,clover pos headquarters,10,,,navigational,0.08
+clover pos,clover pos complaints,10,,,informational,0.04
+clover pos,clover reviews bbb,10,0,9.75,informational,0.52
+clover pos,clover register login app,10,,,navigational,0.18
+clover pos,clover app market fee,10,0,,commercial,0.05
+clover pos,clover app market saas,10,,,navigational,0
+clover pos,lightspeed careers canada,10,,,navigational,
+clover pos,what is clover business,10,,,informational,0.23
+clover pos,clover pos app for android,0,,,navigational,
+clover pos,clover vs toast reddit,0,,,informational,
+clover pos,clover pos system ebay,0,,,navigational,
+clover pos,clover flex amazon,0,,,transactional,
+dual pricing credit card processing,cash discount signage,590,0,0.22,commercial,0.2
+dual pricing credit card processing,cash discount signs,590,0,0.6,commercial,0.2
+dual pricing credit card processing,visa rules,390,62,,informational,0
+dual pricing credit card processing,mastercard rules,320,40,,informational,0
+dual pricing credit card processing,dual pricing meaning,210,0,,informational,0.01
+dual pricing credit card processing,dual pricing credit card processing,110,0,,commercial,0.23
+dual pricing credit card processing,dual pricing signage,110,0,0.46,commercial,0.54
+dual pricing credit card processing,visa chargeback rules,90,31,15.56,informational,0.09
+dual pricing credit card processing,dual pricing vs cash discount,70,0,,informational,0.03
+dual pricing credit card processing,visa report merchant surcharge,70,30,17.52,informational,0.04
+dual pricing credit card processing,dual pricing vs surcharging,70,0,,informational,0.07
+dual pricing credit card processing,dual pricing examples,50,0,,informational,0.02
+dual pricing credit card processing,mastercard security rules and procedures,50,5,,informational,0.01
+dual pricing credit card processing,cash discount credit card processing,50,0,29.01,commercial,0.6
+dual pricing credit card processing,visa rules and regulations for merchants pdf,40,40,37.71,informational,0.1
+dual pricing credit card processing,visa core rules and visa product and service rules,40,22,,informational,0
+dual pricing credit card processing,visa surcharge complaint,40,23,,informational,0
+dual pricing credit card processing,visa report surcharge,40,14,,transactional,0
+dual pricing credit card processing,visa dual pricing rules,30,0,5.85,informational,0.07
+dual pricing credit card processing,cash discount signage template,30,0,0.91,informational,0.45
+dual pricing credit card processing,dual pricing signage template,30,0,,informational,0.55
+dual pricing credit card processing,report visa merchant violations,30,17,,transactional,0
+dual pricing credit card processing,mastercard rules for merchants,30,0,21.97,informational,0.06
+dual pricing credit card processing,mastercard rules 2026,20,,,transactional,0
+dual pricing credit card processing,cash discount sticker,20,,0.54,commercial,0.05
+dual pricing credit card processing,visa core rules 2026,10,,,informational,0.01
+dual pricing credit card processing,visa rules public,10,,,informational,0
+dual pricing credit card processing,visa rules pdf,10,,,informational,0
+dual pricing credit card processing,visa core rules and visa product and service rules 2025,10,,,commercial,0
+dual pricing credit card processing,visa core rules and visa product and service rules 2021,10,11,,informational,0
+dual pricing credit card processing,visa report debit surcharge,10,,,transactional,0
+dual pricing credit card processing,visa merchant surcharge disclosure form,10,,,transactional,0.09
+dual pricing credit card processing,mastercard report surcharge,10,,,informational,0
+dual pricing credit card processing,mastercard rules pdf,10,,,informational,0
+dual pricing credit card processing,mastercard rules for disputes,10,5,,informational,0
+dual pricing credit card processing,mastercard bram rules,10,,,informational,0
+dual pricing credit card processing,dual pricing advantages and disadvantages,10,,,informational,0
+dual pricing credit card processing,dual pricing transfer pricing,10,,,informational,
+dual pricing credit card processing,dual payment meaning,10,,,informational,0
+dual pricing credit card processing,cash discount verbiage,0,,,commercial,
+payment gateway for quickbooks,quickbooks payment gateway for woocommerce,10,,,commercial,0.43
+payment gateway for quickbooks,quickbooks intuit payment gateway for woocommerce,0,,,commercial,
+payment gateway for quickbooks,quickbooks payment gateway for whmcs,0,,,informational,
+payment gateway for quickbooks,quickbooks intuit payment api gateway for gravity forms,0,,,navigational,
+payment gateway for quickbooks,online payment,165000,64,18.24,informational,0.21
+payment gateway for quickbooks,metropcs payment,110000,1,3.34,navigational,0.04
+payment gateway for quickbooks,link payment,8100,14,24.45,navigational,0.31
+payment gateway for quickbooks,payment gateway,4400,34,69.7,commercial,0.32
+payment gateway for quickbooks,google payment methods,12100,50,3.99,informational,0.01
+payment gateway for quickbooks,best buy payment,49500,16,0.24,commercial,0.05
+payment gateway for quickbooks,verizon one time payment,40500,12,2.93,transactional,0
+payment gateway for quickbooks,tneb online payment,1900,19,,navigational,0
+payment gateway for quickbooks,payment google,14800,63,6.71,navigational,0.01
+payment gateway for quickbooks,zelle payment,9900,33,7.39,commercial,0.07
+payment gateway for quickbooks,echo payment portal,2400,0,11.72,navigational,0.01
+payment gateway for quickbooks,fedex payment,8100,6,,commercial,0
+payment gateway for quickbooks,ftb payment,18100,39,3.91,informational,0.02
+payment gateway for quickbooks,home depot payment,27100,21,0.39,transactional,0.14
+payment gateway for quickbooks,lic online payment,2900,15,3.29,transactional,0
+payment gateway for quickbooks,pay irs payment online,49500,41,7.22,transactional,0.02
+payment gateway for quickbooks,stripe payment gateway,5400,48,7.32,navigational,0.05
+payment gateway for quickbooks,spotify payment,14800,28,0.83,commercial,0.05
+payment gateway for quickbooks,stripe payment processing,9900,57,10.61,commercial,0.46
+payment gateway for quickbooks,jcpenney payment,22200,1,0.69,transactional,0
+payment gateway for quickbooks,payment methods google,12100,52,3.99,informational,0.01
+payment gateway for quickbooks,irs online payment,6600,50,7.1,informational,0
+payment gateway for quickbooks,tjmaxx payment online,1000,12,,transactional,0
+payment gateway for quickbooks,eftps payment,9900,17,26.36,informational,0.02
+payment gateway for quickbooks,quickbooks online payroll,6600,22,17.46,navigational,0.33
+payment gateway for quickbooks,tjmaxx payment,22200,0,0.57,transactional,0
+payment gateway for quickbooks,netflix payment,9900,21,5.08,informational,0.01
+payment gateway for quickbooks,lic premium payment online,2400,13,,transactional,0
+payment gateway for quickbooks,online citation payment,18100,36,4.31,transactional,0
+payment gateway for quickbooks,payment processors,5400,24,75.59,commercial,0.56
+payment gateway for quickbooks,verizon payment,12100,14,1.82,navigational,0.02
+payment gateway for quickbooks,txst payment portal,2900,7,,navigational,0
+payment gateway for quickbooks,payment gateway services,590,4,52.81,commercial,0.05
+payment gateway for quickbooks,njmcdirect ticket payment,2400,20,,navigational,0
+payment gateway for quickbooks,klarna payment,5400,77,3.04,commercial,0.09
+payment gateway for quickbooks,harley davidson payment,12100,14,5.17,transactional,0.02
+payment gateway for quickbooks,xfinity payment,6600,38,1.66,transactional,0.03
+payment gateway for quickbooks,amazon synchrony payment,5400,9,,informational,0
+payment gateway for quickbooks,google payment profile,2400,16,,informational,0
+payment gateway for quickbooks,amazon payment plan,5400,8,4.79,commercial,0.12
+payment gateway for quickbooks,lic payment online,880,15,,transactional,0
+payment gateway for quickbooks,amazon payment,0,46,,informational,
+payment gateway for quickbooks,amazon split payment,2900,14,4.59,commercial,0.02
+payment gateway for quickbooks,square payment processing,3600,65,17.18,navigational,0.95
+payment gateway for quickbooks,stripe payment links,5400,48,7.12,informational,0.08
+payment gateway for quickbooks,geico payment,6600,44,1.4,transactional,0.02
+payment gateway for quickbooks,tds payment online,720,43,3.26,navigational,0
+payment gateway for quickbooks,synchrony bank amazon payment,12100,14,8.02,informational,0
+payment gateway for quickbooks,digital payment course,10,23,4.33,informational,0.29
+payment gateway for quickbooks,amazon payment methods,2400,18,4.03,informational,0.02
+payment gateway for quickbooks,amazon payment revision needed,8100,0,5.89,informational,0
+payment gateway for quickbooks,uscis electronic payment mandate,18100,42,,transactional,0
+payment gateway for quickbooks,payment service network,0,17,,informational,
+payment gateway for quickbooks,irs online payment agreement,9900,35,8.26,informational,0.11
+payment gateway for quickbooks,my metropcs payment,14800,23,3.34,navigational,0.04
+payment gateway for quickbooks,apple payment history,5400,40,2.06,informational,0
+payment gateway for quickbooks,click payment,12100,1,8.26,transactional,0
+payment gateway for quickbooks,payment portal,4400,22,28.92,navigational,0.19
+payment gateway for quickbooks,square payment gateway,210,51,15.13,navigational,0.41
+payment gateway for quickbooks,quickbooks payroll online,6600,69,17.46,navigational,0.33
+payment gateway for quickbooks,hulu payment,6600,30,3.78,informational,0.06
+payment gateway for quickbooks,hmfusa.com payment,720,0,,navigational,0.01
+payment gateway for quickbooks,bescom online payment,390,0,,navigational,0
+payment gateway for quickbooks,texas state payment portal,1600,7,,navigational,0
+payment gateway for quickbooks,hctra.org payment,140,14,0.67,navigational,0.05
+payment gateway for quickbooks,best buy make a payment,4400,19,0.24,transactional,0.09
+payment gateway for quickbooks,progressive online payment,2900,23,1.89,commercial,0.01
+payment gateway for quickbooks,square payment login,1600,64,7.76,navigational,0.02
+payment gateway for quickbooks,ally auto payment,6600,56,1.13,commercial,0.04
+payment gateway for quickbooks,tjx payment,3600,16,,transactional,0
+payment gateway for quickbooks,venmo payment,2900,38,2.8,transactional,0.09
+payment gateway for quickbooks,online payment gateway,1000,38,39.38,commercial,0.08
+payment gateway for quickbooks,payment link,1900,44,39.83,informational,0.44
+payment gateway for quickbooks,hulu.com/account payment,9900,18,4.41,navigational,0.05
+payment gateway for quickbooks,payment management system,3600,2,22.74,commercial,0.08
+payment gateway for quickbooks,bmw payment,5400,23,2.33,commercial,0.03
+payment gateway for quickbooks,paypal split payment,2900,31,4.48,informational,0.05
+payment gateway for quickbooks,greensky payment,4400,5,12.05,navigational,0.01
+payment gateway for quickbooks,childcare payment portal,2400,17,13.38,navigational,0.02
+payment gateway for quickbooks,synchrony payment login,590,17,,navigational,0
+payment gateway for quickbooks,online survey with payment,12100,58,3.68,transactional,0.52
+payment gateway for quickbooks,payment gateway vs payment processor,390,0,19.03,commercial,0.26
+payment gateway for quickbooks,k12 payment center,6600,6,19.94,navigational,0
+payment gateway for quickbooks,echeck payment,2400,13,21.44,transactional,0.42
+payment gateway for quickbooks,hulu com account payment,9900,18,4.41,transactional,0.05
+payment gateway for quickbooks,netflix.com payment,6600,35,5.74,transactional,0.06
+payment gateway for quickbooks,payment processing platform,5400,64,79.43,commercial,0.03
+payment gateway for quickbooks,zego payment,3600,61,2.37,commercial,0.03
+payment gateway for quickbooks,irs payment portal,2400,56,4.52,navigational,0
+payment gateway for quickbooks,payment icon,1300,2,8.66,informational,0.01
+payment gateway for quickbooks,kia payment login,5400,13,8.55,navigational,0
+payment gateway for quickbooks,t mobile payment arrangement,9900,11,4.43,commercial,0.01
+payment gateway for quickbooks,aaa.com payment,1600,17,3.33,navigational,0.15
+payment gateway for quickbooks,ftb payment online,3600,28,3.11,transactional,0.01
+payment gateway for quickbooks,payment processing services,2900,36,28.81,commercial,0.08
+payment gateway for quickbooks,stripe payment processor,6600,67,8.63,commercial,0.09
+payment gateway for quickbooks,eversource payment,1000,15,4.04,navigational,0.01
+payment gateway for quickbooks,www njmcdirect com ticket payment online,12100,15,4.56,navigational,0.04
+payment gateway for quickbooks,tangedco online payment,480,25,,navigational,0
+payment gateway for quickbooks,metro online payment,5400,16,3.02,navigational,0.06
+payment gateway for quickbooks,verizon wireless one-time payment,8100,12,3.53,transactional,0.01
+payment gateway for quickbooks,verizon payment arrangement,6600,5,3.03,commercial,0.01
+payment gateway for quickbooks,quickbooks payment gateway,70,21,51.71,navigational,0.22
+payment gateway for quickbooks,calculator.net payment calculator,9900,48,,informational,0
+payment gateway for quickbooks,google one payment,880,44,0.79,informational,0.13
+payment gateway for quickbooks,zoho payment gateway,40,2,18.41,navigational,0.53
+payment gateway for quickbooks,six flags payment portal,4400,0,3.85,navigational,0
+payment gateway for quickbooks,split payment amazon,1600,4,2.9,commercial,0.03
+payment gateway for quickbooks,duke energy online payment,9900,14,1.16,navigational,0
+payment gateway for quickbooks,target online payment,6600,22,0.79,navigational,0.01
+payment gateway for quickbooks,paypal credit card payment,3600,43,4.85,transactional,0.04
+payment gateway for quickbooks,paypal payment link,1900,27,14.05,informational,0.16
+payment gateway for quickbooks,amazon card payment synchrony,880,38,,informational,0
+payment gateway for quickbooks,verizon one-time payment online,8100,9,2.82,transactional,0.01
+payment gateway for quickbooks,goodleap payment,1900,1,6.24,navigational,0.02
+payment gateway for quickbooks,online payment duke energy,9900,7,,navigational,0
+payment gateway for quickbooks,cash app payment link,8100,28,24.77,informational,0.04
+payment gateway for quickbooks,paypal payment gateway,880,48,35.1,commercial,0.12
+payment gateway for quickbooks,mr cooper login payment,3600,11,,navigational,0
+payment gateway for quickbooks,ach payment method,2400,12,40.54,informational,0.3
+payment gateway for quickbooks,best buy login payment,2400,14,0.22,navigational,0.09
+payment gateway for quickbooks,payment portal txst,480,5,,navigational,0
+payment gateway for quickbooks,best buy online payment,3600,31,0.26,transactional,0.07
+payment gateway for quickbooks,mobile payment app,8100,50,14.35,commercial,0.01
+payment gateway for quickbooks,contactless payment,3600,39,13.94,informational,0.19
+payment gateway for quickbooks,netflix change payment method,3600,20,4.08,informational,0.01
+payment gateway for quickbooks,nylaarp.com/service payment,2400,21,4.39,navigational,0.06
+payment gateway for quickbooks,gmo payment gateway,90,0,,navigational,0.06
+payment gateway for quickbooks,shopify payment gateway,320,64,73.33,commercial,0.29
+payment gateway for quickbooks,payment automation,140,1,221.95,commercial,0.4
+payment gateway for quickbooks,online payment solutions,390,67,48.42,commercial,0.07
+payment gateway for quickbooks,ez tag payment,4400,22,,navigational,0
+payment gateway for quickbooks,payment tracker,1000,22,10.84,commercial,0.18
+payment gateway for quickbooks,pennymac payment,3600,14,1.54,informational,0.08
+payment gateway for quickbooks,rentcafe payment,1300,33,4.93,transactional,0.01
+payment gateway for quickbooks,change payment method,720,44,4.69,informational,0.05
+payment gateway for quickbooks,chime payment,2900,30,14.55,informational,0.17
+payment gateway for quickbooks,igl bill payment,260,4,,navigational,0
+payment gateway for quickbooks,gmu payment portal,720,11,,navigational,0
+payment gateway for quickbooks,paybyplatema online payment,480,8,0.49,commercial,0
+payment gateway for quickbooks,intuit quickbooks payroll,1900,69,20.22,navigational,0.34
+credit card processing for small business,square login,368000,60,10.47,navigational,0.01
+credit card processing for small business,square dashboard,49500,47,9.06,navigational,0.03
+credit card processing for small business,square card reader,18100,32,8.62,transactional,1
+credit card processing for small business,square app,18100,63,5.48,navigational,0.53
+credit card processing for small business,stripe credit card processing,9900,33,10.61,commercial,0.46
+credit card processing for small business,square credit card reader,6600,44,14.23,transactional,1
+credit card processing for small business,credit card reader,5400,12,30.72,transactional,1
+credit card processing for small business,credit card processing for small business,4400,9,91.78,commercial,0.65
+credit card processing for small business,credit card processor companies,3600,53,86.35,commercial,0.46
+credit card processing for small business,best credit card processing for small business,2400,7,67.01,commercial,0.63
+credit card processing for small business,best credit card processor for small business,2400,7,71.14,commercial,0.57
+credit card processing for small business,square credit card processing fees,1900,49,14.6,informational,0.18
+credit card processing for small business,dashboard sign in,1900,54,19.07,navigational,0.08
+credit card processing for small business,square sign up,1900,59,16.43,navigational,0.71
+credit card processing for small business,payment processing companies,1900,30,66.35,commercial,0.63
+credit card processing for small business,credit card processing business,1600,12,64.18,commercial,0.19
+credit card processing for small business,square credit card processing for small business,1600,40,31.1,commercial,0.05
+credit card processing for small business,helcim credit card processing,1300,8,31.53,navigational,0.48
+credit card processing for small business,credit card terminal,1300,21,27.97,navigational,1
+credit card processing for small business,credit card machine for small business,1300,1,60.02,commercial,1
+credit card processing for small business,stripe credit card processing fees,1300,29,5.98,informational,0.43
+credit card processing for small business,paypal business credit card,880,31,30.77,commercial,0.74
+credit card processing for small business,how much does square cost per month,720,18,6.81,informational,0.75
+credit card processing for small business,square employee login,720,63,,navigational,0
+credit card processing for small business,credit card processor machine,480,16,44.6,transactional,0.98
+credit card processing for small business,square credit card login,390,63,10.65,navigational,0.01
+credit card processing for small business,cheapest credit card processing for small business,320,11,51.42,commercial,0.62
+credit card processing for small business,free credit card reader,320,13,47.09,transactional,0.89
+credit card processing for small business,paypal credit card processing fees,320,39,25.96,informational,0.15
+credit card processing for small business,helcim credit card processing fees,260,15,41.65,informational,0.16
+credit card processing for small business,paypal credit card reader,260,11,14.15,informational,1
+credit card processing for small business,square credit card for business,210,17,18.41,commercial,0.56
+credit card processing for small business,helcim card reader,210,5,15.6,transactional,0.75
+credit card processing for small business,free credit card machine for small business,170,7,41.1,transactional,1
+credit card processing for small business,top credit card processing companies,170,27,63.11,commercial,0.39
+credit card processing for small business,free mobile credit card reader,140,12,33.96,transactional,0.91
+credit card processing for small business,free credit card processing for nonprofits,140,15,27.84,commercial,0.73
+credit card processing for small business,free credit card reader for android,110,4,36.25,transactional,0.85
+credit card processing for small business,payment terminal machine,110,9,14.73,transactional,1
+credit card processing for small business,mobile credit card processing for small business,90,11,65.19,commercial,0.83
+credit card processing for small business,square credit card processing login,90,65,19.82,navigational,0.03
+credit card processing for small business,free credit card reader for iphone,90,14,39.31,transactional,0.96
+credit card processing for small business,paying someone on paypal with credit card,90,39,,transactional,0.06
+credit card processing for small business,stripe credit card processing reviews,90,12,24.23,informational,0.49
+credit card processing for small business,best online credit card processing for small business,70,10,88.37,commercial,0.77
+credit card processing for small business,credit card processing business for sale,70,0,24.84,transactional,0.44
+credit card processing for small business,helcim customer service number,70,12,,navigational,0
+credit card processing for small business,no monthly fee credit card processing,70,20,59.64,commercial,0.35
+credit card processing for small business,stax credit card processing fees,70,0,19.48,informational,0.68
+credit card processing for small business,credit card machine for small business price,70,3,41.54,commercial,0.92
+credit card processing for small business,square processing fee increase 2026,50,15,15.72,transactional,0.15
+credit card processing for small business,financial services business for sale,50,0,4.14,transactional,0.59
+credit card processing for small business,best mobile credit card processing for small business,40,27,50.84,commercial,0.89
+credit card processing for small business,credit card processing companies with lowest fees,40,13,80.14,commercial,0.78
+credit card processing for small business,how to start a credit card processing business,40,11,5.93,informational,0.39
+credit card processing for small business,mobile credit card processing apps,40,0,47.14,commercial,0.33
+credit card processing for small business,square w2 login,40,36,,navigational,0
+credit card processing for small business,low cost credit card processing for small business,30,13,77.09,commercial,0.8
+credit card processing for small business,free online payment processing for small business,30,13,60.99,commercial,0.83
+credit card processing for small business,best credit card processing for restaurants,30,7,50.49,commercial,0.82
+credit card processing for small business,square credit card limit,30,,25.86,navigational,0.18
+credit card processing for small business,worst credit card processing companies,30,0,14.01,commercial,0.39
+credit card processing for small business,credit card processing that charges the customer,30,19,50.91,commercial,0.78
+credit card processing for small business,best credit card processing for small business reddit,20,0,47.32,commercial,0.68
+credit card processing for small business,paypal credit card processing for small business,20,54,20.82,commercial,0.66
+credit card processing for small business,helcim credit card processing reviews,20,3,7.68,commercial,0.64
+credit card processing for small business,pay with credit card through paypal without account,20,2,,transactional,0.06
+credit card processing for small business,stripe credit card processing phone number,20,57,27.86,navigational,0.14
+credit card processing for small business,free online credit card processing for small business,10,30,,commercial,0
+credit card processing for small business,cheapest credit card processing reddit,10,0,,commercial,0.74
+credit card processing for small business,merchant services credit card processing business,10,,14.91,commercial,0.86
+credit card processing for small business,free credit card processing app for android,10,,9.56,transactional,0.57
+credit card processing for small business,list of credit card processing companies in usa,10,,33.36,commercial,0.89
+credit card processing for small business,best mobile credit card reader for nonprofits,10,,,commercial,
+credit card processing for small business,cheapest credit card processing for small business reddit,10,,,commercial,0.64
+credit card processing for small business,paypal accept credit cards in person,10,19,24.58,informational,0.71
+credit card processing for small business,square credit card fee notice,10,,7.83,transactional,0.18
+credit card processing for small business,who pays the processing fee on square,10,,18.08,commercial,0.13
+credit card processing for small business,square credit card benefits,10,,,commercial,0.2
+credit card processing for small business,flexpoint credit card processing,10,,119.05,commercial,0.29
+credit card processing for small business,money transfer business for sale,10,26,5.02,transactional,0.13
+credit card processing for small business,debt settlement business for sale,10,,,transactional,0
+credit card processing for small business,credit card processing business for sale near california,0,,,commercial,
+credit card processing for small business,credit card processing business for sale near texas,0,,,transactional,

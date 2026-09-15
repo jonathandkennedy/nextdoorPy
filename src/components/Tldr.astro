@@ -1,0 +1,7 @@
+---
+const { items = [] as string[], label = 'Short answer' } = Astro.props;
+---
+<div class="tldr">
+  <div class="lbl">{label}</div>
+  {items.map((t) => <p set:html={t} />)}
+</div>

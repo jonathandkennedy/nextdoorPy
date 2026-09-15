@@ -1,0 +1,176 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PhoneIcon from '../components/PhoneIcon.astro';
+import Faq from '../components/Faq.astro';
+import { site, tel, sms } from '../config';
+import '../styles/home.css';
+
+const faq = [
+  { q: 'What is dual pricing and is it legal?', a: 'Dual pricing means you display two prices, a cash price and a card price, and the customer chooses at checkout. The card price covers the cost of acceptance, so the business keeps its full cash price on every sale. It is permitted by the card brands when both prices are clearly displayed before payment, and it is the compliant route in states like California where credit card surcharging is restricted. See our <a href="/dual-pricing">dual pricing guide</a>.' },
+  { q: 'Do I have to give up Clover, QuickBooks, or my online store to switch?', a: 'No. We place and program Clover hardware, sync invoicing with QuickBooks, and connect gateways to WooCommerce, Shopify, Ecwid and OpenCart. Most switches keep your existing software and change only the processing behind it.' },
+  { q: 'What does the free statement analysis include?', a: 'Text or email your most recent processing statement. Within 24 hours you get an itemized breakdown of your effective rate, every junk fee we find, and a written side-by-side of what you would pay with us. If we cannot save you money we say so.' },
+  { q: 'Is there a contract?', a: 'No. Agreements are month to month with no early termination fee. Equipment placement programs have their own simple terms, which we walk through in writing before you sign anything.' },
+  { q: 'Where are you located?', a: `We are based in Southern California and support merchants in San Diego, Los Angeles and Orange County in person, and businesses nationwide by phone, text and remote setup. Call or text ${site.phoneDisplay}.` },
+];
+const faqSchema = {
+  '@context': 'https://schema.org', '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/<[^>]+>/g, '') } })),
+};
+const smsBody = 'Hi, here is my statement for a free analysis.';
+---
+<Layout title="Nextdoor Payments: Stop Paying Credit Card Processing Fees" description={`Dual pricing credit card processing, Clover POS, payment gateways and QuickBooks invoicing for small businesses. No contracts, free equipment, 24-hour setup. Call ${site.phoneDisplay}.`} schema={[faqSchema]} smsBody={smsBody}>
+
+<section class="hero">
+  <div class="c">
+    <div class="hero-ct">
+      <div class="ht">
+        <div class="tg rv">Local merchant services. Real people answer.</div>
+        <h1 class="rv d1">Stop Paying Processing Fees. <em>Keep the Software You Already Use.</em></h1>
+        <p class="sub rv d2"><strong>Dual pricing removes the 2.5% to 4% you lose on every card sale,</strong> legally and transparently. We set it up on Clover, Dejavoo, your online store, or a QuickBooks-synced invoice in 24 to 48 hours.</p>
+        <div class="prf rv d2">&#x2705; No contracts &nbsp;&nbsp; &#x2705; Free equipment programs &nbsp;&nbsp; &#x2705; Free statement analysis</div>
+        <div class="ha rv d3">
+          <a href={tel} class="bp big" data-cta="hero-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+          <a href={sms(smsBody)} class="bo" data-cta="hero-text">Text a statement photo</a>
+        </div>
+        <div class="chips rv d3">
+          <a href="/clover">Clover POS</a>
+          <a href="/gateways/switch-from-authorize-net">Leaving Authorize.net</a>
+          <a href="/quickbooks/credit-card-processing-fees">QuickBooks fees</a>
+          <a href="/dual-pricing">Dual pricing</a>
+          <a href="/industries/restaurants">Restaurants</a>
+        </div>
+      </div>
+      <div class="hi rv d2">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80" alt="Business owner taking a card payment on a countertop terminal" width="900" height="600" loading="eager">
+        <div class="bdg"><div class="bi">$0</div><div><div class="bn">Processing fees</div><div class="bl">With dual pricing enabled</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="integ">
+  <div class="c">
+    <div class="sh rv"><div class="sg">Integrations</div><h2>Works With the Tools You Already Run</h2></div>
+    <div class="istrip rv">
+      <div class="ilogo"><img src="/images/integrations/quickbooks.png" alt="QuickBooks" loading="lazy"></div>
+      <div class="ilogo"><img src="/images/integrations/woocommerce.png" alt="WooCommerce" loading="lazy"></div>
+      <div class="ilogo"><img src="/images/integrations/shopify.png" alt="Shopify" loading="lazy"></div>
+      <div class="ilogo"><img src="/images/integrations/ecwid.png" alt="Ecwid" loading="lazy"></div>
+      <div class="ilogo"><img src="/images/integrations/opencart.png" alt="OpenCart" loading="lazy"></div>
+      <div class="ilogo"><img src="/images/integrations/volution.png" alt="Volusion" loading="lazy"></div>
+    </div>
+    <p style="text-align:center;font-family:var(--fd);font-size:.82rem;color:var(--muted);font-weight:500;margin-top:12px">Plus Clover, Dejavoo, Exatouch, accept.blue, Hyfin and hundreds of carts and apps</p>
+  </div>
+</section>
+
+<section class="prob">
+  <div class="c">
+    <div class="prob-ct">
+      <div class="rv"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80" alt="Merchant processing statement with fees highlighted" width="700" height="467" loading="lazy"></div>
+      <div class="pt">
+        <div class="sg rv">The problem nobody explains</div>
+        <h2 class="rv d1">Your Processor Raised Your Rates. They Did Not Tell You.</h2>
+        <p class="rv d2">You signed at 1.69%. Six months later it is 2.1%. Then a PCI non-compliance fee for $99 a month appears. An annual fee of $149. Batch fees. Statement fees. Fees on top of fees.</p>
+        <div class="scl rv d2"><div class="sn">$200 to $600</div><div class="st">per month in avoidable fees is what we typically find on statements from businesses doing $20k to $60k a month in cards.</div></div>
+        <p class="rv d3"><strong style="color:var(--h)">Text a photo of your statement to {site.phoneDisplay}.</strong> Free analysis. 24 hours. No strings.</p>
+        <a href="/free-statement-analysis" class="bp rv d3" style="margin-top:14px">See how the analysis works &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cband">
+  <div class="c">
+    <h2 class="rv">You Send Us Your Statement. We Show You the Numbers.</h2>
+    <p class="rv d1">If we can save you money, we show you how much and in writing. If we cannot, we tell you that too.</p>
+    <a href={tel} class="bp wh rv d2" data-cta="band-call"><PhoneIcon />Call or Text {site.phoneDisplay}</a>
+  </div>
+</section>
+
+<section class="sol" id="solutions">
+  <div class="c">
+    <div class="sh rv"><div class="sg">Solutions</div><h2>One Company. Every Way Your Business Gets Paid.</h2><p>Terminals, POS systems, invoicing, QuickBooks, online payments. We match the technology to your workflow, not the other way around.</p></div>
+    <div class="sgrid">
+      <a href="/clover" class="sc rv"><div class="ci"><img src="https://images.unsplash.com/photo-1556740758-90de940da79c?w=600&q=80" alt="Clover POS station" loading="lazy" width="600" height="400"></div><div class="cb"><h3>Clover POS</h3><p>Station Duo, Mini, Flex and Kiosk with dealer pricing, dual pricing built in, and local setup instead of a 1-800 number.</p><div class="bf">&rarr; Restaurants, retail, service, any vertical</div></div></a>
+      <a href="/dual-pricing" class="sc rv d1"><div class="ci"><img src="https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=600&q=80" alt="Dejavoo countertop terminal" loading="lazy" width="600" height="400"></div><div class="cb"><h3>Dejavoo Smart Terminals</h3><p>Countertop and wireless. Dual pricing, digital signatures, SMS receipts. Swapped in 24 hours.</p><div class="bf">&rarr; Retail, service, lower volume</div></div></a>
+      <a href="/industries/retail-and-convenience" class="sc rv d2"><div class="ci"><img src="https://images.unsplash.com/photo-1556742111-a301076d9d18?w=600&q=80" alt="Exatouch point of sale in a retail store" loading="lazy" width="600" height="400"></div><div class="cb"><h3>Exatouch Full POS</h3><p>Inventory, employees, age verification, scan data rebates, loyalty and reporting for stores that sell a lot of SKUs.</p><div class="bf">&rarr; Liquor, smoke, convenience, retail</div></div></a>
+      <a href="/industries/restaurants" class="sc rv"><div class="ci"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Restaurant dining room" loading="lazy" width="600" height="400"></div><div class="cb"><h3>TableTurn for Restaurants</h3><p>Reservations, waitlist, table management and online ordering, with pay-at-table dual pricing on every ticket.</p><div class="bf">&rarr; Restaurants, QSR, bars</div></div></a>
+      <a href="/quickbooks/credit-card-processing-fees" class="sc rv d1"><div class="ci"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Invoice on a laptop with QuickBooks" loading="lazy" width="600" height="400"></div><div class="cb"><h3>Hyfin + QuickBooks</h3><p>Text-to-pay, recurring billing, ACH, and two-way QuickBooks sync. Ends the check-is-in-the-mail problem.</p><div class="bf">&rarr; Contractors, B2B, professional services</div></div></a>
+      <a href="/gateways" class="sc rv d2"><div class="ci"><img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80" alt="Online checkout on a laptop" loading="lazy" width="600" height="400"></div><div class="cb"><h3>accept.blue Gateway</h3><p>Hosted pages, tokenized vault, Level 2 and 3 data, recurring billing and an open API. The modern Authorize.net alternative.</p><div class="bf">&rarr; eCommerce, MOTO, SaaS, B2B</div></div></a>
+    </div>
+    <div style="text-align:center;margin-top:36px" class="rv"><a href={tel} class="bp big" data-cta="solutions-call"><PhoneIcon />Not sure what fits? Call {site.phoneDisplay}</a></div>
+  </div>
+</section>
+
+<section class="hiw" id="how">
+  <div class="c">
+    <div class="sh rv"><div class="sg">How it works</div><h2>Switching Takes Two Days, Not Two Months.</h2><p>Most businesses are live within 48 hours. We handle the paperwork, programming and cutover.</p></div>
+    <div class="stp">
+      <div class="st1 rv"><div class="sn1">1</div><h3>Send your statement</h3><p>Text or email it. You get an itemized fee breakdown and a written quote within 24 hours.</p></div>
+      <div class="st1 rv d1"><div class="sn1">2</div><h3>We build your setup</h3><p>Based on your volume, ticket size and workflow. No upselling. Only what fits.</p></div>
+      <div class="st1 rv d2"><div class="sn1">3</div><h3>We install and train</h3><p>We program equipment, migrate menus or inventory, handle paperwork and coordinate cutover. Zero downtime.</p></div>
+      <div class="st1 rv d3"><div class="sn1">4</div><h3>Local support</h3><p>Not a 1-800 queue. We answer the phone and fix things the same day.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:32px" class="rv"><a href="/free-statement-analysis" class="bp">Start with a free analysis &rarr;</a></div>
+  </div>
+</section>
+
+<section class="ind" id="industries">
+  <div class="c">
+    <div class="sh rv"><div class="sg">Industries</div><h2>Built for How Your Business Actually Works</h2><p>The right hardware, software and pricing model for your workflow, not a one-size bundle.</p></div>
+    <div class="igrid">
+      <a href="/industries/restaurants" class="ic rv"><div class="ii"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Restaurant point of sale" loading="lazy" width="600" height="400"></div><div class="ib"><h3>Restaurants &amp; Bars</h3><p>Faster checkout, better table flow, and no more 2% to 4% drain on every ticket.</p><ul><li>Pay-at-table with bill splitting</li><li>Online ordering integration</li><li>Kitchen display and queue boards</li><li>Dual pricing on every transaction</li></ul></div></a>
+      <a href="/industries/retail-and-convenience" class="ic rv d1"><div class="ii"><img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&q=80" alt="Convenience store checkout" loading="lazy" width="600" height="400"></div><div class="ib"><h3>Retail &amp; Convenience</h3><p>Inventory that tracks itself. Age verification that never misses. Controls that stop shrink.</p><ul><li>Real-time inventory</li><li>Built-in age verification</li><li>Employee controls and time clock</li><li>Scan data tobacco rebates</li></ul></div></a>
+      <a href="/industries/contractors-and-service" class="ic rv d2"><div class="ii"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Service contractor on a job site" loading="lazy" width="600" height="400"></div><div class="ib"><h3>Service &amp; Contractors</h3><p>Stop chasing checks. Get paid the same day with text-to-pay, ACH and QuickBooks sync.</p><ul><li>QuickBooks integration</li><li>Text-to-pay and email invoicing</li><li>ACH and eCheck processing</li><li>Recurring billing</li></ul></div></a>
+    </div>
+    <div style="text-align:center;margin-top:36px" class="rv"><a href="/industries" class="bo">See all industries &rarr;</a></div>
+  </div>
+</section>
+
+<section class="tru">
+  <div class="c">
+    <div class="sh rv"><div class="sg">Why Nextdoor</div><h2>Zero Surprises. Zero Increases. Zero Nonsense.</h2></div>
+    <div class="tgrid">
+      <div class="tf rv"><div class="ico">&#x1F4DC;</div><h4>No contracts. Period.</h4><p>Month to month. No early termination. No cancellation penalty. If we are not earning it, you leave.</p></div>
+      <div class="tf rv d1"><div class="ico">&#x1F3E0;</div><h4>Local humans, not call centers.</h4><p>Call {site.phoneDisplay} and a real person picks up. Someone who knows your name and your setup.</p></div>
+      <div class="tf rv d2"><div class="ico">&#x1F4B0;</div><h4>The rate you sign is the rate you keep.</h4><p>No rate creep. No hidden increases. No surprise fees six months in. What you agree to is what you pay.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="hfaq">
+  <div class="c">
+    <div class="sh rv"><div class="sg">Questions</div><h2>Straight Answers</h2></div>
+    <Faq items={faq} heading="" />
+  </div>
+</section>
+
+<section class="ags" id="agents">
+  <div class="c">
+    <div class="agc">
+      <div class="agt">
+        <div class="sg rv">Careers</div>
+        <h2 class="rv d1">Build <em>Recurring Income</em> That Pays You Every Month</h2>
+        <p class="rv d2">Every merchant you sign pays residuals monthly for as long as they process. Your 50th account does not replace your first. It stacks.</p>
+        <ul class="pk rv d2">
+          <li><span class="pi">&#x1F393;</span> Free training, no experience needed</li>
+          <li><span class="pi">&#x1F4B5;</span> Up to 70% residual split, uncapped</li>
+          <li><span class="pi">&#x1F4F1;</span> CRM, tools and territory leads provided</li>
+          <li><span class="pi">&#x1F6AB;</span> No desk fees. No quotas. No contracts.</li>
+        </ul>
+        <a href="/opportunity" class="bp rv d3">See the agent program &rarr;</a>
+      </div>
+      <div class="agi rv d1"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80" alt="Sales agent meeting a business owner" loading="lazy" width="600" height="400"></div>
+    </div>
+  </div>
+</section>
+
+<section class="fct">
+  <div class="c">
+    <h2 class="rv">Stop Giving Away Your Revenue. Start Keeping It.</h2>
+    <p class="rv d1">Free analysis. Free equipment programs. Free setup. No contracts. No risk.</p>
+    <div class="pb rv d2"><a href={tel} data-cta="final-num">{site.phoneDisplay}</a></div>
+    <a href={tel} class="bp big rv d3" style="background:var(--teal-b)" data-cta="final-call"><PhoneIcon />Call or text right now</a>
+  </div>
+</section>
+</Layout>

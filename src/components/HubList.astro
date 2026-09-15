@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+const { category, ids } = Astro.props as { category?: string; ids?: string[] };
+let items = await getCollection('articles', ({ data }) => !data.draft);
+if (ids) items = ids.map((id) => items.find((a) => a.id === id)).filter(Boolean) as typeof items;
+else if (category) items = items.filter((a) => a.data.category === category);
+items.sort((a, b) => b.data.updated.getTime() - a.data.updated.getTime());
+---
+<div class="grid3">
+  {items.map((a) => (
+    <a href={`/${a.id}`} class="card">
+      <div class="kicker">Updated {a.data.updated.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</div>
+      <h3>{a.data.h1 ?? a.data.title}</h3>
+      <p>{a.data.description}</p>
+      <div class="more">Read &rarr;</div>
+    </a>
+  ))}
+</div>

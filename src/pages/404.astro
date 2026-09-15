@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { site, tel } from '../config';
+---
+<Layout title="Page not found" description="That page does not exist. Call or text Nextdoor Payments for help." noindex={true}>
+  <section class="sec"><div class="c" style="text-align:center;padding:40px 0">
+    <h1 style="font-family:var(--fd);font-weight:900;font-size:2rem;color:var(--h);margin-bottom:10px">That page moved or never existed</h1>
+    <p style="margin-bottom:20px">Try the <a href="/" style="color:var(--teal);font-weight:700">homepage</a>, or just call <a href={tel} style="color:var(--teal);font-weight:700">{site.phoneDisplay}</a> and ask.</p>
+    <a href="/free-statement-analysis" class="bp">Get a free statement analysis</a>
+  </div></section>
+</Layout>

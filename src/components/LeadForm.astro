@@ -1,0 +1,54 @@
+---
+// Posts to PUBLIC_FORM_ENDPOINT (Formspree, Basin, Web3Forms, or your own function).
+// With no endpoint configured, submit opens the SMS composer with the details prefilled, so a lead is never lost.
+import { site, sms, tel } from '../config';
+const { kind = 'statement', title = 'Get your free statement analysis', submitLabel = 'Send my statement for review' } = Astro.props;
+const endpoint = site.formEndpoint ?? '';
+---
+<form class="form" method="POST" action={endpoint || '#'} data-form={kind} data-endpoint={endpoint}>
+  <input type="hidden" name="form" value={kind}>
+  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+  <h3 style="font-family:var(--fd);font-weight:800;color:var(--h);font-size:1.15rem;margin-bottom:14px">{title}</h3>
+  <div class="row">
+    <div><label for={`${kind}-name`}>Your name</label><input id={`${kind}-name`} name="name" required autocomplete="name"></div>
+    <div><label for={`${kind}-business`}>Business name</label><input id={`${kind}-business`} name="business" autocomplete="organization"></div>
+  </div>
+  <div class="row">
+    <div><label for={`${kind}-phone`}>Mobile number</label><input id={`${kind}-phone`} name="phone" type="tel" required autocomplete="tel" placeholder="(555) 555-5555"></div>
+    <div><label for={`${kind}-email`}>Email</label><input id={`${kind}-email`} name="email" type="email" autocomplete="email"></div>
+  </div>
+  <div class="row">
+    <div><label for={`${kind}-processor`}>Current processor or software</label><input id={`${kind}-processor`} name="processor" placeholder="Square, Clover, Authorize.net, QuickBooks..."></div>
+    <div><label for={`${kind}-volume`}>Monthly card volume</label>
+      <select id={`${kind}-volume`} name="volume">
+        <option value="">Select one</option>
+        <option>Under $10k</option><option>$10k to $30k</option><option>$30k to $75k</option><option>$75k to $200k</option><option>Over $200k</option>
+      </select></div>
+  </div>
+  <div class="row" style="grid-template-columns:1fr">
+    <div><label for={`${kind}-notes`}>What do you want to fix?</label><textarea id={`${kind}-notes`} name="notes" rows="3" placeholder="Fees too high, need a new POS, want QuickBooks sync, leaving Authorize.net..."></textarea></div>
+  </div>
+  <button type="submit" class="bp big" style="width:100%">{submitLabel}</button>
+  <p class="fine">Fastest option: text a photo of your statement to <a href={tel} style="color:var(--teal);font-weight:700">{site.phoneDisplay}</a>. No contracts, no obligation. We never sell your information.</p>
+  <div class="ok" role="status">Got it. We will text you within one business day. Want an answer faster? Call <a href={tel} style="color:var(--teal);font-weight:700">{site.phoneDisplay}</a>.</div>
+</form>
+<script define:vars={{ smsBase: sms('') }}>
+  document.querySelectorAll('form[data-form]').forEach((f) => {
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(f);
+      const endpoint = f.dataset.endpoint;
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'lead_submit', form: f.dataset.form });
+      if (typeof gtag === 'function') gtag('event', 'generate_lead', { form: f.dataset.form });
+      if (endpoint) {
+        try {
+          const r = await fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+          if (r.ok) { f.querySelectorAll('.row,button,.fine,h3').forEach((el) => (el.style.display = 'none')); f.querySelector('.ok').style.display = 'block'; return; }
+        } catch (_) {}
+      }
+      const body = `New ${f.dataset.form} request: ${data.get('name')} / ${data.get('business')} / ${data.get('phone')} / ${data.get('processor')} / ${data.get('volume')} / ${data.get('notes')}`;
+      window.location.href = smsBase + '?&body=' + encodeURIComponent(body);
+    });
+  });
+</script>

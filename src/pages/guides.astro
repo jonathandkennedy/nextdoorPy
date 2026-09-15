@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HubList from '../components/HubList.astro';
+import { getCollection } from 'astro:content';
+const all = await getCollection('articles', ({ data }) => !data.draft);
+const ids = all.filter((a) => ['guides', 'compare'].includes(a.data.category)).map((a) => a.id);
+---
+<Layout title="Guides: Credit Card Processing Fees, Statements and Comparisons" description="Plain-English guides to reading a merchant statement, effective rates, interchange-plus vs flat rate, PCI fees, and comparisons between processors and POS systems.">
+  <section class="phero"><div class="c">
+    <div class="sg">Guides</div>
+    <h1>Credit Card Processing, Explained Without the Sales Pitch</h1>
+    <p class="lead">How fees work, how to read your statement, and how the options compare. Written by people who set this up every week.</p>
+  </div></section>
+  <section class="sec"><div class="c"><HubList ids={ids} /></div></section>
+</Layout>

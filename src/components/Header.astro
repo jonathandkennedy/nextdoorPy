@@ -1,0 +1,20 @@
+---
+import { site, tel, nav } from '../config';
+import PhoneIcon from './PhoneIcon.astro';
+---
+<div class="topbar">
+  <div class="c">
+    <a href={tel} class="tb-phone" data-cta="topbar"><PhoneIcon />Call or Text: {site.phoneDisplay}</a>
+    <a href="/free-statement-analysis" class="tb-agent">Free statement analysis in 24 hours &rarr;</a>
+  </div>
+</div>
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="c">
+    <a href="/" class="nav-logo" aria-label="Nextdoor Payments home"><img src="/images/logo.png" alt="Nextdoor Payments" width="160" height="36"></a>
+    <button class="mtog" aria-label="Open menu" aria-expanded="false" onclick="const n=document.querySelector('.navr');n.classList.toggle('op');this.setAttribute('aria-expanded',n.classList.contains('op'))"><span></span><span></span><span></span></button>
+    <div class="navr">
+      {nav.map((n) => <a href={n.href}>{n.label}</a>)}
+      <a href={tel} class="nav-cta" data-cta="nav">{site.phoneDisplay}</a>
+    </div>
+  </div>
+</nav>

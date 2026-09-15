@@ -1,0 +1,10 @@
+---
+import { site, tel, sms } from '../config';
+import PhoneIcon from './PhoneIcon.astro';
+const { smsBody = 'Hi, I would like a free statement analysis.' } = Astro.props;
+---
+<a href={tel} class="fcta" data-cta="float"><div class="rng"></div><PhoneIcon />{site.phoneDisplay}</a>
+<div class="callbar" role="navigation" aria-label="Call or text">
+  <a href={tel} data-cta="callbar-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+  <a href={sms(smsBody)} class="txt" data-cta="callbar-text">Text us</a>
+</div>

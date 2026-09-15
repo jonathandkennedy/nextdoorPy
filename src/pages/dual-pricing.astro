@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HubList from '../components/HubList.astro';
+import CallCta from '../components/CallCta.astro';
+import Faq from '../components/Faq.astro';
+import Tldr from '../components/Tldr.astro';
+import PhoneIcon from '../components/PhoneIcon.astro';
+import { site, tel, sms } from '../config';
+const smsBody = 'Hi, I want to know if dual pricing works for my business.';
+const faq = [
+  { q: 'What is dual pricing?', a: 'A pricing model where a business displays two prices for every item or service: a cash price and a card price. The card price includes the cost of card acceptance. The customer picks a payment method and pays the matching price. The business nets the same amount either way.' },
+  { q: 'Is dual pricing the same as a surcharge?', a: 'No. A surcharge adds a fee at checkout on top of a single posted price, is capped by the card brands at 3% for Visa, cannot be applied to debit cards, and is restricted in several states. Dual pricing posts both prices up front, applies to credit and debit equally, and is not a surcharge under card brand rules when done correctly.' },
+  { q: 'Is dual pricing legal in California?', a: 'Yes, when both prices are clearly displayed before the customer chooses how to pay and the card price is the price actually charged. California restricts surcharges and, since July 2024, prohibits advertising a price that excludes mandatory fees. Displaying both prices satisfies that. Surcharging by adding a fee at the register does not. See our California dual pricing guide for the details.' },
+  { q: 'Will customers get upset?', a: 'Some ask about it in the first two weeks. Almost none leave. Gas stations have done it for decades. The card price is typically 3% to 4% higher, which on a $40 ticket is about $1.40. Businesses that run it well post clear signage and train staff on a one-sentence explanation.' },
+  { q: 'Does dual pricing work on my existing equipment?', a: 'It depends on the terminal and processor. Clover, Dejavoo, Exatouch, PAX and most modern terminals support it when the processor enables it. Older terminals may need a swap, which we do at no cost through equipment programs.' },
+];
+const schema = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }];
+---
+<Layout title="Dual Pricing Credit Card Processing: How It Works and When It Is Legal" description={`Dual pricing shows a cash price and a card price so the business pays 0% in processing fees. How it differs from surcharging and cash discounts, California rules, signage, and setup on Clover and Dejavoo.`} schema={schema} smsBody={smsBody}>
+  <section class="phero"><div class="c">
+    <div class="sg">Dual pricing</div>
+    <h1>Dual Pricing: Pay 0% in Card Fees Without Breaking the Rules</h1>
+    <p class="lead">Two posted prices. The customer chooses. You keep your full cash price on every sale. Here is how it works, how it differs from surcharging and cash discounting, where it is legal, and what it looks like on the counter.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
+      <a href={tel} class="bp big" data-cta="dp-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+      <a href={sms(smsBody)} class="bo" data-cta="dp-text">Text a question</a>
+    </div>
+  </div></section>
+  <section class="sec"><div class="c" style="max-width:860px">
+    <Tldr items={[
+      'Dual pricing posts a cash price and a card price on every item. The card price is usually 3% to 4% higher and covers the cost of acceptance, so the merchant nets the cash price on every transaction and pays $0 in processing fees.',
+      'It is not a surcharge. Surcharges add a fee to one posted price, are capped at 3% by Visa, cannot touch debit, and are restricted in California, Connecticut, Massachusetts and Maine. Dual pricing applies to credit and debit alike and is compliant when both prices are visible before payment.',
+      'Setup takes one day on Clover, Dejavoo, Exatouch and most modern terminals. Signage at the entrance and register is required.',
+    ]} />
+    <div class="prose">
+      <h2>How the numbers work</h2>
+      <table>
+        <thead><tr><th>Item</th><th>Traditional processing</th><th>Dual pricing</th></tr></thead>
+        <tbody>
+          <tr><td>Posted price</td><td>$40.00</td><td>$40.00 cash / $41.56 card</td></tr>
+          <tr><td>Customer pays by card</td><td>$40.00</td><td>$41.56</td></tr>
+          <tr><td>Processing cost (3.9% program)</td><td>$1.16 at 2.9%</td><td>$1.56, funded by the card price</td></tr>
+          <tr><td>Merchant nets</td><td>$38.84</td><td>$40.00</td></tr>
+          <tr><td>On $30,000 a month in cards</td><td>Merchant pays about $870 to $1,200</td><td>Merchant pays $0</td></tr>
+        </tbody>
+      </table>
+      <p>The card price is set once in the terminal. Receipts show the price paid and the payment method. The customer-facing screen shows both prices before the card is tapped, which is the disclosure the card brands look for.</p>
+      <img src="/images/dualprice.jpg" alt="Receipt comparison: same sale paid by card at the card price and by cash at the cash price" loading="lazy" width="800" height="600">
+    </div>
+  </div></section>
+  <section class="sec alt"><div class="c">
+    <div class="sh"><div class="sg">Guides</div><h2>Rules, Comparisons and Setup</h2></div>
+    <HubList category="dual-pricing" />
+  </div></section>
+  <section class="sec"><div class="c" style="max-width:860px">
+    <CallCta heading="Want to see dual pricing on your actual volume?" body="Text your monthly card volume and average ticket. We reply with what you pay now, what you would pay under dual pricing (zero) and what your customers would see on the screen." smsBody={smsBody} />
+    <Faq items={faq} />
+  </div></section>
+</Layout>

@@ -1,0 +1,111 @@
+---
+import Layout from './Layout.astro';
+import Tldr from '../components/Tldr.astro';
+import Faq from '../components/Faq.astro';
+import CallCta from '../components/CallCta.astro';
+import PhoneIcon from '../components/PhoneIcon.astro';
+import { site, tel, sms } from '../config';
+import { getCollection } from 'astro:content';
+
+const { entry, headings } = Astro.props;
+const d = entry.data;
+const path = `/${entry.id}`;
+const cat: Record<string, { label: string; href: string }> = {
+  clover: { label: 'Clover POS', href: '/clover' },
+  gateways: { label: 'Payment gateways', href: '/gateways' },
+  'dual-pricing': { label: 'Dual pricing', href: '/dual-pricing' },
+  quickbooks: { label: 'QuickBooks', href: '/gateways' },
+  guides: { label: 'Guides', href: '/guides' },
+  industries: { label: 'Industries', href: '/industries' },
+  compare: { label: 'Comparisons', href: '/guides' },
+};
+const c = cat[d.category];
+const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const all = await getCollection('articles', ({ data }) => !data.draft);
+const related = d.related.length
+  ? all.filter((a) => d.related.includes(a.id))
+  : all.filter((a) => a.data.category === d.category && a.id !== entry.id).slice(0, 4);
+
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${site.url}${path}#article`,
+  headline: d.h1 ?? d.title,
+  description: d.description,
+  datePublished: d.published.toISOString(),
+  dateModified: d.updated.toISOString(),
+  author: { '@type': 'Person', name: d.author, url: `${site.url}/contact` },
+  publisher: { '@id': `${site.url}/#organization` },
+  mainEntityOfPage: `${site.url}${path}`,
+  keywords: d.keywords.join(', '),
+  about: c.label,
+};
+const faq = d.faq.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: d.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/<[^>]+>/g, '') } })),
+    }
+  : null;
+const crumbs = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
+    { '@type': 'ListItem', position: 2, name: c.label, item: `${site.url}${c.href}` },
+    { '@type': 'ListItem', position: 3, name: d.h1 ?? d.title, item: `${site.url}${path}` },
+  ],
+};
+const schema = [article, crumbs, ...(faq ? [faq] : [])];
+const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const smsBody = d.cta?.smsBody ?? 'Hi, here is my statement for a free analysis.';
+---
+<Layout title={d.title} description={d.description} type="article" published={d.published} updated={d.updated} schema={schema} smsBody={smsBody}>
+  <section class="phero">
+    <div class="c">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href={c.href}>{c.label}</a></nav>
+      <div class="sg">{c.label}</div>
+      <h1>{d.h1 ?? d.title}</h1>
+      <p class="lead">{d.description}</p>
+      <div class="byline">
+        <span>By <strong>{d.author}</strong>, {site.name}</span>
+        <span>Updated <strong><time datetime={d.updated.toISOString()}>{fmt(d.updated)}</time></strong></span>
+        <span>Published <time datetime={d.published.toISOString()}>{fmt(d.published)}</time></span>
+      </div>
+    </div>
+  </section>
+  <section class="art">
+    <div class="c art-grid">
+      <div>
+        <Tldr items={d.tldr} />
+        {toc.length > 3 && (
+          <nav class="toc" aria-label="On this page" style="margin-bottom:28px">
+            <div class="lbl">On this page</div>
+            <ol>{toc.map((h) => <li class={h.depth === 3 ? 'h3' : ''}><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
+          </nav>
+        )}
+        <article class="prose">
+          <slot />
+        </article>
+        <CallCta heading={d.cta?.heading} body={d.cta?.body} smsBody={smsBody} />
+        <Faq items={d.faq} />
+        {related.length > 0 && (
+          <section class="related">
+            <h2>Related reading</h2>
+            <ul>{related.map((r) => <li><a href={`/${r.id}`}>{r.data.h1 ?? r.data.title}<span>{r.data.description}</span></a></li>)}</ul>
+          </section>
+        )}
+      </div>
+      <aside class="side">
+        <div class="sidecta">
+          <h3>Find out what you are really paying</h3>
+          <p>Text a photo of your statement. Real numbers back within 24 hours. No contracts, no pressure, no sales script.</p>
+          <a href={tel} class="num" data-cta="side-num">{site.phoneDisplay}</a>
+          <a href={tel} class="bp" data-cta="side-call"><PhoneIcon />Call now</a>
+          <a href={sms(smsBody)} class="bo" data-cta="side-text">Text a statement photo</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Layout>

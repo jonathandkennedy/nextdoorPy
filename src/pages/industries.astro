@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HubList from '../components/HubList.astro';
+import CallCta from '../components/CallCta.astro';
+import PhoneIcon from '../components/PhoneIcon.astro';
+import { site, tel } from '../config';
+---
+<Layout title="Industries: Payment Processing and POS by Business Type" description="Restaurants, retail and convenience, contractors and service businesses, ecommerce. The right terminal, POS and pricing model for how each business actually takes payments.">
+  <section class="phero"><div class="c">
+    <div class="sg">Industries</div>
+    <h1>Payments Set Up for How Your Business Actually Works</h1>
+    <p class="lead">A taco shop, a liquor store and an HVAC company all take cards. They should not get the same terminal, the same software or the same pricing. Pick your business type.</p>
+    <a href={tel} class="bp big" style="margin-top:16px" data-cta="ind-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+  </div></section>
+  <section class="sec"><div class="c"><HubList category="industries" /></div></section>
+  <section class="sec alt"><div class="c" style="max-width:860px"><CallCta heading="Do not see your industry?" body="We have set up salons, auto shops, dispensaries' non-cannabis retail, law offices, churches, gyms and food trucks. Call and describe how you take payments today." /></div></section>
+</Layout>
