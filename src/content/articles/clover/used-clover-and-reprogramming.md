@@ -1,7 +1,7 @@
 ---
 title: "Can a Clover POS Be Reprogrammed or Bought Used? Clover Is Locked to the Processor, and Here Is What That Means"
 h1: "Reprogramming a Clover or Buying One Used: Locked to the Processor, Not to You"
-description: "Clover devices are locked to the processor they were built for, not to your merchant account. When a Clover can be re-boarded to a new account, when it cannot, what to check before buying used, and how to switch providers and keep the hardware."
+description: "Clover devices are locked to the processor they were built for, not your merchant account. When a Clover can be re-boarded, when it cannot, and what to check before."
 category: clover
 published: 2026-09-15
 updated: 2026-09-15
