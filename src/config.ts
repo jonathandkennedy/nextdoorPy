@@ -17,6 +17,8 @@ export const site = {
   founderName: 'Jonathan Kennedy',
   social: {} as Record<string, string>,
   // Set in .env for production. Empty values disable the feature.
+  // Google Tag Manager container. Fires on every page; call_click, text_click and lead_submit are pushed to dataLayer.
+  gtmId: (import.meta.env.PUBLIC_GTM_ID as string | undefined) || 'GTM-THTHFFN9',
   gaId: import.meta.env.PUBLIC_GA_ID as string | undefined,
   formEndpoint: import.meta.env.PUBLIC_FORM_ENDPOINT as string | undefined,
   callscalerSrc: import.meta.env.PUBLIC_CALLSCALER_SRC as string | undefined,

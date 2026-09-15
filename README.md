@@ -41,7 +41,8 @@ Node 22 or newer.
 
 Copy `.env.example` to `.env`. All optional:
 
-- `PUBLIC_GA_ID`: GA4 measurement ID. Enables gtag and call_click / text_click / generate_lead events.
+- `PUBLIC_GTM_ID`: Google Tag Manager container. Defaults to GTM-THTHFFN9. The site pushes `call_click`, `text_click` and `lead_submit` to dataLayer with `cta` and `page` fields; create triggers for them in GTM.
+- `PUBLIC_GA_ID`: GA4 measurement ID, only if you want gtag loaded directly instead of through GTM. Enables gtag and call_click / text_click / generate_lead events.
 - `PUBLIC_FORM_ENDPOINT`: POST endpoint for the statement-analysis, contact and agent forms (Formspree, Basin, Web3Forms or a Vercel function). Without it, submitting a form opens the SMS composer with the details prefilled.
 - `PUBLIC_CALLSCALER_SRC`: CallScaler dynamic number insertion script URL.
 
