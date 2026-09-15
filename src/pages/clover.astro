@@ -28,10 +28,10 @@ const devices = [
   { name: 'Go', href: '/clover/go', screen: 'Phone app', printer: 'No', drawer: 'No', mobile: 'Via phone', list: '$49 to $199', fit: 'Occasional mobile sales' },
 ];
 const deviceIds = ['clover/station-duo', 'clover/station-solo', 'clover/mini', 'clover/flex', 'clover/kiosk', 'clover/compact', 'clover/go'];
-const compareIds = ['clover/station-duo-vs-solo', 'clover/flex-vs-mini', 'clover/vs-square', 'clover/vs-toast', 'clover/reseller-vs-direct'];
-const priceIds = ['clover/pricing', 'clover/dual-pricing', 'clover/reviews', 'clover/used-clover-and-reprogramming'];
-const industryIds = ['clover/for-restaurants', 'clover/for-quick-service', 'clover/for-bars', 'clover/for-coffee-shops', 'clover/for-retail', 'clover/for-salons', 'clover/for-food-trucks'];
-const opsIds = ['clover/setup-and-training', 'clover/offline-mode', 'clover/online-ordering', 'clover/gift-cards-and-loyalty', 'clover/quickbooks-integration'];
+const compareIds = ['clover/station-duo-vs-solo', 'clover/flex-vs-mini', 'clover/vs-square', 'clover/vs-toast', 'clover/vs-square-vs-toast', 'clover/reseller-vs-direct'];
+const priceIds = ['clover/pricing', 'clover/software-plans', 'clover/contract-and-fees', 'clover/dual-pricing', 'clover/app-market', 'clover/reviews', 'clover/used-clover-and-reprogramming'];
+const industryIds = ['clover/for-restaurants', 'clover/for-quick-service', 'clover/for-bars', 'clover/for-coffee-shops', 'clover/for-retail', 'clover/for-salons', 'clover/for-food-trucks', 'clover/for-medical-dental', 'clover/for-auto-repair'];
+const opsIds = ['clover/support', 'clover/troubleshooting', 'clover/how-to-use-clover', 'clover/refunds-and-voids', 'clover/setup-and-training', 'clover/offline-mode', 'clover/dining', 'clover/kitchen-display', 'clover/online-ordering', 'clover/gift-cards-and-loyalty', 'clover/quickbooks-integration'];
 ---
 <Layout title="Clover POS: Devices, Pricing, Comparisons and Setup From a Local Dealer" description={`Every Clover device compared, dealer vs clover.com pricing, dual pricing to eliminate processing fees, setups for restaurants, bars, cafes, retail and salons, and the operational answers. Local installs in San Diego and LA. Call ${site.phoneDisplay}.`} schema={schema} smsBody={smsBody}>
   <section class="phero"><div class="c">
@@ -79,7 +79,7 @@ const opsIds = ['clover/setup-and-training', 'clover/offline-mode', 'clover/onli
   </div></section>
 
   <section class="sec alt"><div class="c">
-    <div class="sh"><div class="sg">Running it</div><h2>Setup, Outages, Online Ordering, Gift Cards, QuickBooks</h2></div>
+    <div class="sh"><div class="sg">Running it</div><h2>Support, Troubleshooting, How-To, Dining, Kitchen Display and Integrations</h2><p>Clover support is 1-855-853-8340, 24 hours a day. The pages below answer the calls before you make them.</p></div>
     <HubList ids={opsIds} />
   </div></section>
 
