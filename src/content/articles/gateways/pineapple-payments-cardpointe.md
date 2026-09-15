@@ -1,7 +1,7 @@
 ---
 title: "Pineapple Payments and Transax After Fiserv: CardPointe, What Changed, and Merchant Options"
 h1: "Pineapple Payments Is Now Fiserv: Where Transax and CardPointe Merchants Stand"
-description: "Fiserv acquired Pineapple Payments (and its Transax gateway) in 2021 for $206 million; pineapplepayments.com now redirects to CardConnect. What Transax and CardPointe..."
+description: "Fiserv acquired Pineapple Payments and its Transax gateway in 2021; the site now redirects to CardConnect. What CardPointe merchants are on and their options."
 category: gateways
 published: 2026-09-15
 updated: 2026-09-15

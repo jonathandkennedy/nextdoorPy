@@ -1,7 +1,7 @@
 ---
 title: "linked2pay: White-Label Gateway for ISOs, Cards and ACH, and What Merchants Should Know"
 h1: "linked2pay: The White-Label Gateway Behind Many Processor Brands, and How to Evaluate an Account on It"
-description: "linked2pay is a white-label payment gateway and CRM sold to ISOs and financial institutions, covering cards, ACH, remote deposit capture, virtual terminal."
+description: "linked2pay is a white-label gateway and CRM sold to ISOs: cards, ACH, remote deposit capture, virtual terminal and invoicing. What that means for merchants."
 category: gateways
 published: 2026-09-15
 updated: 2026-09-15

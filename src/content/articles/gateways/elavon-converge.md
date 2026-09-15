@@ -1,7 +1,7 @@
 ---
 title: "Elavon Converge Gateway: Features, Quote-Based Pricing, and Whether to Stay on It"
 h1: "Elavon Converge (VirtualMerchant): What the U.S. Bank Gateway Does, What It Costs, and Your Options"
-description: "Converge is Elavon's omnichannel gateway, also known as ConvergePay and VirtualMerchant: virtual terminal, card on file, recurring, hosted payments."
+description: "Converge is Elavon's gateway (ConvergePay, VirtualMerchant): virtual terminal, card on file, recurring, hosted payments. Quote-based pricing and how to compare."
 category: gateways
 published: 2026-09-15
 updated: 2026-09-15

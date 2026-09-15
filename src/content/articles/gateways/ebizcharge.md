@@ -1,7 +1,7 @@
 ---
 title: "EBizCharge Review: ERP and QuickBooks Payment Integration, Fees, and Alternatives"
 h1: "EBizCharge: Payments Embedded in QuickBooks, NetSuite, Sage and Dynamics, and What It Costs to Get Them"
-description: "EBizCharge (Century Business Solutions) embeds card and ACH payments in 100+ ERP and accounting systems with email pay, customer portal."
+description: "EBizCharge embeds card and ACH payments in QuickBooks, NetSuite, Sage, Dynamics and 100+ systems with email pay and a customer portal. Pricing model and alternatives."
 category: gateways
 published: 2026-09-15
 updated: 2026-09-15

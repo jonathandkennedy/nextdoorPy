@@ -1,7 +1,7 @@
 ---
 title: "Transaction Express and TransIT (TSYS / Global Payments): Retirement Dates and Where to Move"
 h1: "Transaction Express Is Being Retired: What TransIT Merchants Should Do Before October 1, 2026"
-description: "Global Payments sunset the TXP gateway in July 2023 and is retiring the Transaction Express virtual terminal on October 1, 2026."
+description: "Global Payments retired the TXP gateway in 2023 and retires the Transaction Express virtual terminal on October 1, 2026. What to export and where to move."
 category: gateways
 published: 2026-09-15
 updated: 2026-09-15

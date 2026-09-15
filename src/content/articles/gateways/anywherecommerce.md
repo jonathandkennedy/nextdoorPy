@@ -1,7 +1,7 @@
 ---
 title: "AnywhereCommerce Mobile POS and Readers: What It Is, Who Sells It, and Processing Options"
 h1: "AnywhereCommerce: Mobile POS Hardware and the AnyPay App, and How the Processing Behind It Gets Priced"
-description: "AnywhereCommerce makes mobile POS terminals (AC Glass line), Bluetooth readers (Walker, Nomad) and the AnyPay app."
+description: "AnywhereCommerce makes the AC Glass terminals, Walker and Nomad readers and the AnyPay app. What the hardware does, what it is not, and how to check the account."
 category: gateways
 published: 2026-09-15
 updated: 2026-09-15

@@ -1,7 +1,7 @@
 ---
 title: "PayTrace Gateway: B2B Level 3 Processing, Pricing Ranges, and Alternatives"
 h1: "PayTrace: What the B2B Gateway Does, What Merchants Typically Pay, and When to Compare"
-description: "PayTrace is a North-owned gateway built for B2B: Level 2 and 3 optimization, virtual terminal, AR automation, ACH and surcharging. Typical pricing ranges."
+description: "PayTrace is a North-owned B2B gateway: Level 2 and 3 optimization, virtual terminal, AR automation, ACH and surcharging. Typical pricing and how to compare."
 category: gateways
 published: 2026-09-15
 updated: 2026-09-15

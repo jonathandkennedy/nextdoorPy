@@ -1,7 +1,7 @@
 ---
 title: "Dejavoo iPOSpays Gateway: Virtual Terminal, Payment Links, Dual Pricing and Terminal Integration"
 h1: "Dejavoo's iPOSpays Gateway: One Platform for the Terminal on the Counter and the Payments Online"
-description: "iPOSpays is Dejavoo's omni-commerce gateway: hosted checkout, cloud POS virtual terminal, recurring payments, payment links, tokenization."
+description: "iPOSpays is Dejavoo's gateway: hosted checkout, cloud virtual terminal, recurring, payment links and Level 2 and 3 auto-fill on the same account as your terminal."
 category: gateways
 published: 2026-09-15
 updated: 2026-09-15

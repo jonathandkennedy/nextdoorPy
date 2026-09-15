@@ -1,7 +1,7 @@
 ---
 title: "Global Payments Integrated (OpenEdge): The Processing Built Into Your Practice Software, and What It Costs"
 h1: "Global Payments Integrated, Formerly OpenEdge: What You Are Paying Through Your Software's Built-In Processing"
-description: "Global Payments Integrated (OpenEdge) is the processor embedded in many practice management, veterinary, dental and vertical software products."
+description: "Global Payments Integrated (OpenEdge) is the processor built into many practice and vertical software products. Why the bill grows and how to change processing."
 category: gateways
 published: 2026-09-15
 updated: 2026-09-15
