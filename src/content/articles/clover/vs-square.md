@@ -18,7 +18,7 @@ faq:
   - q: "Is Square or Clover better for retail?"
     a: "Square for Retail handles small inventories well and is easy to set up. Clover's Retail Growth plan with a Station Duo (built-in barcode scanner) and the App Market handles bigger inventories, vendors and employees. High-SKU liquor and smoke shops usually need a dedicated system like Exatouch rather than either."
   - q: "Can I use Clover hardware with Square, or Square hardware with Clover?"
-    a: "No. Both are closed ecosystems. Clover devices are locked to the Clover merchant account they were boarded on; Square hardware runs only Square software. Switching means new hardware either way, which is why dealers place Clover hardware at no charge to remove the switching cost."
+    a: "No. Both are closed ecosystems. Clover devices are locked to the processor they were boarded on and can only move between accounts on that processor; Square hardware runs only Square software. Switching between the two means new hardware, which is why dealers place Clover hardware at no charge to remove the switching cost."
   - q: "Does Square offer dual pricing or cash discount?"
     a: "Square does not offer a dual pricing or cash discount program. It offers surcharging in permitted markets, which is capped at 3%, cannot be applied to debit, and is restricted in California and several other states. Dual pricing on Clover applies to all cards and works in every state when both prices are disclosed."
 cta:

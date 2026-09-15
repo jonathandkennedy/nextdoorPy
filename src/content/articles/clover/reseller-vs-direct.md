@@ -16,7 +16,7 @@ faq:
   - q: "Can a Clover dealer give me free hardware?"
     a: "Yes, through equipment placement programs, where the dealer places the device at no charge as long as you process with them. The device usually stays the dealer's property. This is different from a lease, which charges you monthly and is often non-cancellable."
   - q: "What happens to my Clover if I leave my dealer?"
-    a: "Clover devices are boarded to a specific merchant account. When you leave, the device has to be released by the old processor and re-boarded by the new one. Placed devices go back. Purchased devices are yours, but only some generations can be re-boarded, so ask before you buy used or switch."
+    a: "Clover devices are locked to the processor they were boarded on, not to your merchant account. If the new provider is on the same processor, the device is re-boarded to your new account and stays on the counter. If not, it cannot be used and new hardware is placed. Placed devices go back to the dealer; purchased devices are yours within that processor. Ask which processor before you switch or buy used."
   - q: "Are Clover dealers authorized by Clover?"
     a: "Clover and Fiserv run a partner and referral program, and most dealers are independent sales organizations (ISOs) or agents under a Fiserv-affiliated processor. Authorization does not mean their pricing is regulated. Ask for the fee schedule regardless."
 cta:

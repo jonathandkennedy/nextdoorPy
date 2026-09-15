@@ -1,72 +1,85 @@
 ---
-title: "Can a Clover POS Be Reprogrammed or Bought Used? Why Clover Devices Are Locked, and Your Options"
-h1: "Reprogramming a Clover or Buying One Used: Why It Usually Does Not Work, and What to Do Instead"
-description: "Clover devices are locked to the account they were boarded on. Why a used Clover is usually a brick, when re-boarding works, what happens when you switch processors."
+title: "Can a Clover POS Be Reprogrammed or Bought Used? Clover Is Locked to the Processor, and Here Is What That Means"
+h1: "Reprogramming a Clover or Buying One Used: Locked to the Processor, Not to You"
+description: "Clover devices are locked to the processor they were built for, not to your merchant account. When a Clover can be re-boarded to a new account, when it cannot, what to check before buying used, and how to switch providers and keep the hardware."
 category: clover
 published: 2026-09-15
 updated: 2026-09-15
 tldr:
-  - "Clover runs a closed system. Each device is boarded to a specific merchant account with a specific processor, and processors cannot reprogram another processor's Clover the way they could with older terminals. A used Clover bought without its original account is a paperweight."
-  - "If you switch processors, the payment functions on your existing Clover stop working with the new one. The exception is when the original selling processor or dealer releases and re-boards the device, which happens but cannot be counted on."
-  - "This is why dealers place hardware at no charge: the switching cost would otherwise be the price of the Clover. If your Clover is locked to a processor you want to leave, the placement program replaces it and the processing terms are what you should be comparing."
+  - "A Clover device is locked to the processor it was boarded on (the processing platform behind your account), not to your individual merchant account. A new merchant account on the same processor can take over the device; a different processor cannot use it at all."
+  - "That is why switching dealers is often possible without new hardware and switching processors is not. Before you sign with anyone, find out which processor your Clover is on and which processor the new provider boards with. If they match, the device is re-boarded to your new account. If they do not, the new provider places new hardware."
+  - "A used Clover works only for a buyer whose account is on the processor the device is locked to, and only after the old merchant account is deactivated on it. Buying used without knowing the processor is a gamble; buying from a dealer who boards on that processor is fine."
 keywords: ["reprogram clover pos", "can clover be reprogrammed", "used clover pos", "buy used clover", "clover locked to processor", "switch processors clover", "clover pos different merchant account", "transfer clover to new owner"]
 faq:
+  - q: "Is a Clover locked to the merchant account or the processor?"
+    a: "The processor. A Clover boarded on a given processing platform can be moved to a different merchant account on that same platform, which is how you can change dealers and keep the hardware. It cannot be reprogrammed to run on a different processor, which is why a processor change means new devices."
   - q: "Can I reprogram my Clover to a different processor?"
-    a: "Generally no. Clover devices are boarded to a merchant account and processor at activation, and other processors cannot reprogram them. Some devices can be released and re-boarded by a dealer within the same processing family, but that depends on the original dealer's cooperation and the device generation. Plan on new hardware when changing processors."
+    a: "No. Clover's platform, owned by Fiserv, does not allow a device built for one processor to be re-boarded on another. What you can do is move the device to a new merchant account with a new provider on the same processor. Ask both providers which processor they use before deciding."
   - q: "Is it safe to buy a used Clover on eBay?"
-    a: "Usually not. A used Clover without the merchant account it was boarded on cannot process payments and cannot simply be activated on yours. Sellers often do not know this. Unless the seller is the original dealer and will re-board it on your account, assume it will not work."
-  - q: "What happens to my Clover if I switch processors?"
-    a: "Payment functions stop working with the new processor. The device may still open apps but cannot take cards on the new account. Dealers deal with this by placing new hardware at no charge for qualifying merchants when they take over the account, which is what we do."
+    a: "Only if you know which processor the device is locked to and your account is, or will be, on that processor, and the previous merchant account has been deactivated on the device. A used Clover locked to a different processor than yours will never take a payment. Buying from a dealer who boards on the matching processor and will activate it for you is the safe version."
+  - q: "What happens to my Clover if I switch providers?"
+    a: "If the new provider boards on the same processor, the device is deactivated from the old account and boarded to the new one; your menu and settings are exported and re-imported. If the new provider is on a different processor, the device cannot be used and the new provider places replacement hardware, which is what free-equipment programs are for."
   - q: "I bought my Clover outright. Do I own it?"
-    a: "You own the hardware, but the payment capability is tied to the account it was boarded on. Ownership does not transfer the ability to use it with another processor. This is the most common frustration with Clover and the reason to ask any seller about it before buying."
+    a: "You own the hardware. Its payment capability is tied to the processor it was built for. On that processor it can serve any merchant account; on any other processor it cannot process. Ownership matters when you move between providers on the same platform, and it does not help when you change platforms."
   - q: "Can a new owner of my business use my Clover?"
-    a: "If the merchant account transfers to the new owner (a change of ownership on the same account with the same processor), the devices continue working. If the new owner opens a different account with a different processor, the devices need to be re-boarded by the original dealer or replaced."
+    a: "Yes, if the new owner's merchant account is on the same processor: the device is deactivated from your account and boarded to theirs. If their new account is on a different processor, the device needs replacing."
 cta:
-  heading: "Stuck with a locked Clover? Get it replaced at no charge."
-  body: "Text a photo of the device and the name on your current statement. We check whether it can be re-boarded, and if not, place replacement hardware where you qualify and quote the processing so you can compare."
-  smsBody: "Hi, my Clover is locked to my old processor and I want to switch."
+  heading: "Find out whether your Clover can come with you"
+  body: "Text a photo of the device and the name on your current statement. We identify the processor, tell you whether we can re-board it to a new account or place replacement hardware, and quote the processing so you can compare."
+  smsBody: "Hi, I have a Clover and want to switch providers without losing it."
 related: ["clover/reseller-vs-direct", "clover/pricing", "clover/station-duo-vs-solo", "guides/how-to-read-a-merchant-statement"]
 ---
 
-"Can you reprogram my Clover?" is the first question from most merchants who want to leave their processor, and the answer disappoints them. This page explains why Clover works the way it does, when re-boarding is possible, why used units are risky, and how dealers solve the problem.
+"Can you reprogram my Clover?" is the first question from most merchants who want to leave their provider, and the answer is "it depends on the processor." Clover devices are not locked to you; they are locked to the processing platform they were built for. That distinction decides whether you keep your hardware when you switch, and whether a used Clover is a bargain or a brick.
 
-## Why Clover devices are locked
+## What the lock actually is
 
-Older countertop terminals were generic: any processor could load its software and run them. Clover is not. Each device is activated (boarded) against a specific merchant ID at a specific processor, and the device's payment functions are tied to that boarding. Clover's platform, owned by Fiserv, does not allow another processor to reprogram a device that was boarded elsewhere. The closed system is deliberate, for security and for control of the sales channel.
+Older countertop terminals were generic: any processor could load its software and run them. Clover is not. Each device is built and activated for a specific processor, meaning the processing platform (the acquirer's front end) behind the merchant account. On that processor, the device can serve any merchant account: it is deactivated from one and boarded to another. On a different processor, it cannot process at all, and no one can reprogram it to. Clover's platform, owned by Fiserv, is closed by design.
 
 Consequences:
 
-- A Clover from a previous processor does not work with a new one.
-- A used Clover bought online cannot be activated on your account unless the original dealer releases and re-boards it.
-- "Owning" the hardware does not change either point.
+- Changing providers on the same processor: the hardware can move with you.
+- Changing processors: the hardware stays behind; new devices are placed.
+- Buying used: works only if the device's processor matches your account's processor.
+- Owning the hardware: matters within a processor, not across processors.
 
-## When re-boarding works
+## Same processor: how a re-board works
 
-Sometimes. A device can be released by the processor or dealer it is boarded with and re-boarded on a new account when:
+1. Confirm the device's processor from the serial number or the old account's statement.
+2. Confirm the new provider boards on the same processor.
+3. Export menu, inventory, employees and customers from the old dashboard.
+4. The old merchant account is deactivated on the device (the old provider releases it, or the new provider handles the deactivation where the platform allows).
+5. The device is boarded to the new merchant account, data imported, printers and settings reconfigured.
+6. Test transactions on the new account.
 
-- The new account is within the same processing family and the dealer has the tools to release it.
-- The original dealer cooperates. They are not obligated to.
-- The device generation is still supported.
+Usually a day, sometimes two if the old provider is slow to release. The device does not leave the counter.
 
-We check by serial number before quoting. If it can be re-boarded, good. If not, the answer is placement.
+## Different processor: what happens instead
+
+The device cannot be used. This is the case free-equipment programs exist for: the new provider places replacement hardware at no charge for qualifying merchants so the switching cost is not the price of a Station Duo. The placed device stays the provider's property and goes back if you leave. Your data still moves; it exports from the old dashboard and imports to the new account before install.
 
 ## Buying used
 
-The risk is total: the device either works on your account or does not, and most used listings cannot tell you which. The only safe used purchase is from the original dealer who will re-board it for you. Otherwise the money is better spent on new hardware through a placement program, which costs the merchant nothing.
-
-## Switching processors with Clover
-
-| Situation | What happens |
+| Situation | Outcome |
 |---|---|
-| Stay with the same processor, change dealer | Devices may transfer if the new dealer is on the same processing platform and the old one releases the account; ask |
-| Change processors | Existing Clover payment functions stop working on the new account; new hardware is placed |
-| Sell the business, same account transferred | Devices keep working |
-| Sell the business, new account opened | Devices need re-boarding or replacement |
+| Device locked to your processor, old account deactivated, dealer on that processor activates it | Works |
+| Device locked to your processor, old account still active on it | Works once the old account is deactivated, which needs the previous owner's provider |
+| Device locked to a different processor | Never works on your account |
+| Processor unknown | A gamble; most online listings cannot tell you |
 
-## Why placement programs exist
+If you are set on used, buy from a dealer who boards on the matching processor and will activate it, or send us the serial number first.
 
-If a merchant had to pay $1,899 for a Station Duo to leave a bad processor, most would stay. Dealers place hardware at no charge for qualifying merchants precisely so the hardware is not the reason to stay. The placed device stays the dealer's property and goes back if you leave; you get a working system without the switching cost. What you should be comparing is the processing: the rate, the fees, the term. The eight questions to ask are on [Clover reseller vs direct](/clover/reseller-vs-direct), and the pricing comparison is on the [Clover pricing page](/clover/pricing).
+## Switching providers with Clover
 
-## Your data moves even when the hardware does not
+| Situation | What happens to the hardware |
+|---|---|
+| New provider on the same processor | Re-boarded to your new account; you keep it |
+| New provider on a different processor | Cannot be used; replacement hardware placed |
+| Business sold, buyer's account on the same processor | Re-boarded to the buyer |
+| Business sold, buyer on a different processor | Replaced |
 
-Menus, inventory, customer lists and reports export from the Clover dashboard. On a new account we import them before install, so a replacement Duo opens with your menu on it. Ask any dealer to confirm that in writing before you switch.
+The question to ask any new provider, including us: which processor do you board on, and is it the one my Clover is on? We tell you the answer on the first call and quote either the re-board or the placement. The pricing comparison that should decide the switch is on the [Clover pricing page](/clover/pricing), and the questions to ask any seller are on [Clover reseller vs direct](/clover/reseller-vs-direct).
+
+## Your data moves either way
+
+Menus, inventory, customer lists and reports export from the Clover dashboard. On a new account we import them before the re-board or the install, so the counter opens with your menu on it. Ask any provider to confirm that in writing before you switch.

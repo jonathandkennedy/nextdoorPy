@@ -16,7 +16,7 @@ faq:
   - q: "What are the most common complaints about Clover?"
     a: "App fees adding up, devices being locked to the original processor, limited inventory tools for large catalogs, and support quality. On review sites, a large share of negative reviews are about reseller contracts, leases and rate increases rather than the product."
   - q: "Are Clover complaints about the product or the reseller?"
-    a: "Both, and it matters which. Locked devices, app fees and inventory limits are Clover. Leases, early termination fees, teaser rates, PCI and annual fees, and unreachable support are the reseller. Reading a Clover review without knowing who sold the account is like reviewing a car by the dealership."
+    a: "Both, and it matters which. Processor-locked devices, app fees and inventory limits are Clover. Leases, early termination fees, teaser rates, PCI and annual fees, and unreachable support are the reseller. Reading a Clover review without knowing who sold the account is like reviewing a car by the dealership."
   - q: "How reliable is Clover hardware?"
     a: "Very. Station Duo, Mini and Flex units routinely run for years; the Flex battery is the component that ages. Failures are typically routers and printers, not the Clover itself. Clover's platform has had outages like every cloud POS; offline mode on Flex and Mini and LTE backup mitigate them."
   - q: "Should I buy Clover from clover.com or a dealer?"
@@ -41,7 +41,7 @@ Clover reviews online are a mess, and not because Clover is a mess. The same pro
 ## What merchants consistently complain about
 
 - **App fees.** Each App Market addition carries a monthly fee, often $10 to $60. A restaurant that adds five apps has doubled its software bill. Buy the ones you will use.
-- **Locked devices.** A Clover cannot be reprogrammed by another processor, and used units are usually unusable. This surprises people and it should be disclosed before purchase. Details on [used Clover and reprogramming](/clover/used-clover-and-reprogramming).
+- **Locked devices.** A Clover is locked to the processor it was boarded on. It can move between accounts on that processor, but it cannot be reprogrammed for a different one, so a used unit only works if the processors match. This surprises people and it should be disclosed before purchase. Details on [used Clover and reprogramming](/clover/used-clover-and-reprogramming).
 - **Inventory depth.** Purchase orders, vendors, case breaks and age verification are thin. High-SKU stores outgrow it.
 - **Multi-location.** Workable for a few locations, weak for chains.
 - **Support.** Clover's own support is adequate; the experience depends heavily on whether a dealer stands in front of it.
