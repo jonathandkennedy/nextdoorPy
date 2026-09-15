@@ -225,3 +225,15 @@ Each gateway page answers the same fan-out set, which is how a consistent templa
 Feature pages (Level 3, recurring, ACH, 3DS, PCI, virtual terminal, high risk) each answer: what it is, what it costs or saves, who needs it, which gateways support it, how to set it up, what can go wrong.
 
 Platform pages (WooCommerce, Shopify, others) each answer: which gateways connect, does the platform charge extra, bundled vs merchant account cost at three volumes, subscriptions and stored cards, PCI, how to switch.
+
+## Clover cluster pages (added September 15, 2026)
+
+Device pages (Station Duo, Station Solo, Mini, Flex, Kiosk, Compact, Go) each answer: what it is, specs, price direct and through a dealer, what is in the box, what it cannot do, which businesses it fits, which alternative device to consider, dual pricing on that device.
+
+Comparison pages (Duo vs Solo vs Mini, Flex vs Mini, Clover vs Square, Clover vs Toast) each answer: side-by-side table with dated prices, where each option wins, worked cost example, the decision by business size, the risks on each side.
+
+Vertical pages (restaurants, quick service, bars, coffee shops, retail, salons, food trucks) each answer: the device layout, the plan, menu or inventory design, the feature that matters most for that business (tabs, kiosk, modifiers, inventory limits, tips by stylist, offline), integrations, dual pricing math on a realistic volume, cost through a dealer.
+
+Operations pages (setup and training, offline mode, online ordering, gift cards and loyalty, QuickBooks integration, used and reprogramming, reviews) each answer: how it works, how to enable or set it up, what it costs, what can go wrong, what is Clover's fault versus the seller's.
+
+Head-query sub-queries verified against People Also Ask on the live SERPs for clover pos pricing, clover vs square, clover flex, clover mini and clover pos reviews.
