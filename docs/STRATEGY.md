@@ -82,6 +82,10 @@ This is where clients come from in the first 90 days. The site's job is to make 
 
 **Links.** No amount of on-page work replaces a few real links. Sources, in order of effort: your equipment vendors' dealer directories (Clover partner directory, Dejavoo, Exatouch, TableTurn, Hyfin, accept.blue partner pages), local chambers of commerce in San Diego and LA, restaurant and retail association member listings, a guest post on one POS or restaurant-industry blog per quarter, and merchants you install who have websites (a "payments by Nextdoor" footer link on a client site is a legitimate local link).
 
+## Gateway cluster (built September 15, 2026)
+
+Twenty-nine gateway pages now cover the topic end to end: basics, pricing, features (Level 3, recurring, ACH, 3D Secure, PCI, virtual terminal, high risk), one page per gateway on your call lists (Authorize.net, accept.blue, NMI, USAePay, Fluidpay, PayTrace, EBizCharge, linked2pay, Dejavoo iPOSpays, Stripe, Braintree, Helcim, Elavon Converge, Global Payments Integrated, Pineapple/CardPointe, AnywhereCommerce), the two retiring gateways (Payflow, Transaction Express) and the platforms (WooCommerce, Shopify, other carts). The keyword map and outbound page-per-prospect table are in `research/gateway-cluster.md`. Add a page for each additional gateway on your lists using the same structure; the template is any of the existing gateway pages.
+
 ## Content calendar: first 12 weeks
 
 Pages built now are marked done. Each new page gets a fan-out map before writing, an answer block, a table, an FAQ, dated facts, and links to three existing pages.

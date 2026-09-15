@@ -3,37 +3,89 @@ import Layout from '../layouts/Layout.astro';
 import HubList from '../components/HubList.astro';
 import CallCta from '../components/CallCta.astro';
 import Faq from '../components/Faq.astro';
+import Tldr from '../components/Tldr.astro';
 import PhoneIcon from '../components/PhoneIcon.astro';
 import { site, tel, sms } from '../config';
 const smsBody = 'Hi, I want to compare my gateway fees.';
 const faq = [
-  { q: 'What is the difference between a payment gateway and a payment processor?', a: 'The gateway is the software that securely captures the card and sends it for authorization: Authorize.net, NMI and accept.blue are gateways. The processor and acquiring bank move the money and set the interchange-plus-markup pricing. Most merchants pay both a gateway fee and processing fees, often to two different companies. We supply both, so there is one bill and one phone number.' },
-  { q: 'Can I keep my shopping cart or software if I switch gateways?', a: 'Almost always. WooCommerce, Shopify, Ecwid, OpenCart, Volusion, QuickBooks and most SaaS billing tools support multiple gateways. Switching is a matter of installing the new plugin or entering new API keys. We do it with you on a call.' },
-  { q: 'Do I lose my stored customer cards when I leave Authorize.net?', a: 'Not necessarily. Authorize.net will export stored customer payment profiles to another PCI-compliant gateway on request. The export is PGP-encrypted, runs on a schedule, and there may be a fee for CIM or ARB data. We coordinate the migration so recurring customers do not have to re-enter cards.' },
-  { q: 'What does accept.blue cost?', a: 'accept.blue is sold through partners like us rather than directly, so pricing is set per merchant. Ask for a written quote that shows the gateway monthly fee, per-transaction fee and processing markup on one page. That is the only way to compare it fairly against your current Authorize.net bill.' },
+  { q: 'What is the difference between a payment gateway and a payment processor?', a: 'The gateway is the software that securely captures the card and sends it for authorization: Authorize.net, NMI, accept.blue, Fluidpay and PayTrace are gateways. The processor and acquiring bank move the money and charge interchange plus markup. Most merchants pay both, often to two companies. We supply both on one bill, or re-price the processing behind the gateway you keep.' },
+  { q: 'Can I keep my shopping cart or software if I switch gateways?', a: 'Almost always. WooCommerce, Magento, BigCommerce, Ecwid, OpenCart, QuickBooks and most billing and practice tools support several gateways. Switching is a plugin install or new API keys. Shopify is the exception: it charges a fee for third-party gateways, so the math is different there.' },
+  { q: 'Do I lose stored customer cards when I change gateways?', a: 'No. Gateways export vaulted cards to another PCI-compliant gateway on request, encrypted to the receiving party. The new gateway imports them and your software is remapped to new tokens. Authorize.net, Stripe, Braintree, CardPointe and Elavon all support this. Allow two to five weeks with recurring billing.' },
+  { q: 'Which gateway is cheapest?', a: 'The gateway fee is $0 to $30 a month and is rarely the deciding factor. Under about $10,000 a month a bundled provider with no monthly fee (Stripe, WooPayments, Square) is cheapest in total. Above that, a standalone gateway with interchange-plus processing wins, usually by 0.4% to 0.8% of volume.' },
+  { q: 'My gateway is being retired. What do I do?', a: 'PayPal Payflow and Global Payments’ Transaction Express are both being retired in 2026. Export your reporting, request a stored-card export to a new PCI-compliant gateway, and use the forced change to re-price the processing. The pages for each gateway below have the dates and steps.' },
 ];
-const schema = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }];
+const schema = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Payment gateways', url: `${site.url}/gateways`, about: 'Payment gateway pricing, features, comparisons and migration for small businesses' }];
+const basics = ['gateways/what-is-a-payment-gateway', 'gateways/pricing', 'gateways/hosted-payment-page-and-pci', 'gateways/virtual-terminal'];
+const features = ['gateways/level-3-processing', 'gateways/recurring-billing', 'gateways/ach-payment-gateway', 'gateways/3d-secure-and-chargebacks', 'gateways/high-risk-payment-gateway'];
+const compared = ['gateways/authorize-net-fees', 'gateways/authorize-net-alternatives', 'gateways/accept-blue', 'gateways/nmi', 'gateways/usaepay', 'gateways/fluidpay', 'gateways/paytrace', 'gateways/ebizcharge', 'gateways/linked2pay', 'gateways/dejavoo-ipospays', 'gateways/stripe-fees', 'gateways/braintree', 'gateways/helcim-review', 'gateways/elavon-converge', 'gateways/global-payments-integrated', 'gateways/pineapple-payments-cardpointe', 'gateways/anywherecommerce'];
+const retiring = ['gateways/paypal-payflow', 'gateways/transaction-express-transit', 'gateways/switch-from-authorize-net'];
+const platforms = ['gateways/woocommerce', 'gateways/shopify', 'gateways/ecommerce-platforms', 'quickbooks/credit-card-processing-fees'];
 ---
-<Layout title="Payment Gateways: Authorize.net Alternatives, Fees and Switching" description={`Compare Authorize.net, NMI and accept.blue gateway fees. Keep your cart, QuickBooks or software, cut the monthly gateway bill, and migrate stored cards safely. Call ${site.phoneDisplay}.`} schema={schema} smsBody={smsBody}>
+<Layout title="Payment Gateways: Pricing, Comparisons, Migration and Which One Fits Your Software" description={`Every major gateway compared on fees, features and integrations: Authorize.net, NMI, accept.blue, Fluidpay, PayTrace, Stripe, Braintree, Helcim, Converge, CardPointe and more. Keep your software, cut the bill. ${site.phoneDisplay}.`} schema={schema} smsBody={smsBody}>
   <section class="phero"><div class="c">
     <div class="sg">Payment gateways</div>
-    <h1>Payment Gateways for Businesses That Already Have Software</h1>
-    <p class="lead">You built your store, your billing, or your QuickBooks workflow around a gateway years ago. You should not have to rebuild it to stop overpaying. We connect accept.blue and other gateways to what you already run, migrate stored cards, and put gateway plus processing on one bill.</p>
+    <h1>Payment Gateways, Explained and Compared, for Businesses That Already Have Software</h1>
+    <p class="lead">You built your store, your billing or your practice software around a gateway years ago. You should not have to rebuild it to stop overpaying. Below: how gateways and processors fit together, what each gateway charges, which ones are being retired, and how to move without losing stored cards or orders.</p>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
       <a href={tel} class="bp big" data-cta="gw-call"><PhoneIcon />Call {site.phoneDisplay}</a>
-      <a href="/gateways/switch-from-authorize-net" class="bo">Leaving Authorize.net? Start here</a>
+      <a href={sms(smsBody)} class="bo" data-cta="gw-text">Text a gateway invoice</a>
     </div>
   </div></section>
-  <section class="sec"><div class="c">
-    <div class="sh"><div class="sg">Guides</div><h2>Gateway Fees, Alternatives and Migration</h2></div>
-    <HubList category="gateways" />
-  </div></section>
-  <section class="sec alt"><div class="c">
-    <div class="sh"><div class="sg">QuickBooks</div><h2>Invoicing and QuickBooks Payments</h2></div>
-    <HubList category="quickbooks" />
-  </div></section>
+
   <section class="sec"><div class="c" style="max-width:860px">
-    <CallCta heading="Send your gateway and processing statements together" body="Gateway fees hide on a separate invoice from processing fees. Send both. We total them, show your true all-in cost per transaction, and quote one number to beat." smsBody={smsBody} />
+    <Tldr label="The short version" items={[
+      'A gateway captures the card; a processor moves the money. On standalone gateways (Authorize.net, NMI, accept.blue, Fluidpay, PayTrace) you pay both, often to two companies. On bundled providers (Stripe, Braintree, WooPayments, Shopify Payments) one flat rate covers both.',
+      'The gateway fee is $0 to $30 a month and almost never decides the bill. The processing model does: flat 2.9% + 30¢ versus interchange plus a stated markup. Above roughly $10,000 to $15,000 a month card-not-present, standalone plus interchange-plus wins by 0.4% to 0.8% of volume.',
+      'Every gateway below can export stored cards to another PCI-compliant gateway. Migrations take one to five weeks. We supply gateway and processing on one month-to-month bill, or re-price the processing behind the gateway you keep.',
+    ]} />
+  </div></section>
+
+  <section class="sec alt"><div class="c">
+    <div class="sh"><div class="sg">Start here</div><h2>How Gateways Work and What They Cost</h2></div>
+    <HubList ids={basics} />
+  </div></section>
+
+  <section class="sec"><div class="c">
+    <div class="sh"><div class="sg">Features</div><h2>Level 3, Recurring, ACH, 3D Secure and High Risk</h2><p>What each feature does, what it saves or prevents, and which gateways have it.</p></div>
+    <HubList ids={features} />
+  </div></section>
+
+  <section class="sec alt"><div class="c">
+    <div class="sh"><div class="sg">Gateways compared</div><h2>One Page Per Gateway: Fees, Features, Who Sells It, Who It Fits</h2><p>Written for the merchant who already has the account and wants to know what it should cost. Prices are dated on each page.</p></div>
+    <HubList ids={compared} />
+  </div></section>
+
+  <section class="sec"><div class="c">
+    <div class="sh"><div class="sg">Retiring gateways and switching</div><h2>Being Moved Off a Gateway? Dates, Exports and Where to Go</h2></div>
+    <HubList ids={retiring} />
+  </div></section>
+
+  <section class="sec alt"><div class="c">
+    <div class="sh"><div class="sg">By platform</div><h2>WooCommerce, Shopify, Magento, BigCommerce, QuickBooks and Others</h2></div>
+    <HubList ids={platforms} />
+  </div></section>
+
+  <section class="sec"><div class="c" style="max-width:860px">
+    <div class="prose">
+      <h2>Quick reference: published gateway pricing, September 2026</h2>
+      <table>
+        <thead><tr><th>Gateway</th><th>Monthly</th><th>Per transaction</th><th>Processing</th><th>Sold by</th></tr></thead>
+        <tbody>
+          <tr><td>Authorize.net gateway only</td><td>$25</td><td>10¢ + 10¢ daily batch</td><td>Separate</td><td>Direct, resellers</td></tr>
+          <tr><td>Authorize.net all-in-one</td><td>$25</td><td>2.9% + 30¢</td><td>Included</td><td>Direct</td></tr>
+          <tr><td>NMI, USAePay, accept.blue, Fluidpay, linked2pay, iPOSpays</td><td>Reseller-set, commonly $10 to $25</td><td>Reseller-set, commonly 5¢ to 15¢</td><td>Separate</td><td>Partners only</td></tr>
+          <tr><td>PayTrace</td><td>Indicative $15 to $35</td><td>10¢ to 30¢ + 0.20% to 0.40% margin</td><td>Interchange-plus typical</td><td>Direct, partners</td></tr>
+          <tr><td>Stripe</td><td>$0</td><td>2.9% + 30¢ online, 2.7% + 5¢ in person</td><td>Included</td><td>Direct</td></tr>
+          <tr><td>Braintree</td><td>$0</td><td>2.59% + 49¢; PayPal 3.49% + 49¢</td><td>Included</td><td>Direct</td></tr>
+          <tr><td>Helcim</td><td>$0</td><td>Interchange + 0.50% + 25¢ online, + 0.40% + 8¢ in person</td><td>Included</td><td>Direct</td></tr>
+          <tr><td>Shopify third-party gateway</td><td>Plan fee</td><td>Gateway rate + 2%, 1%, 0.6% or 0.2% by plan</td><td>Gateway's</td><td>Via Shopify</td></tr>
+          <tr><td>Elavon Converge, CardPointe, Global Payments Integrated</td><td>Quote-based</td><td>Quote-based</td><td>Tied to that acquirer</td><td>Bank, direct, resellers</td></tr>
+        </tbody>
+      </table>
+      <p>Sources are each provider's pricing page or documentation as of the dates on the individual pages. Reseller-priced gateways vary by who sold them; compare the all-in effective rate, not the gateway line.</p>
+    </div>
+    <CallCta heading="Send your gateway and processing statements together" body="Gateway fees hide on a separate invoice from processing fees. Send both. We total them, show your true all-in cost per transaction, and quote one number to beat, with migration steps if the gateway should change." smsBody={smsBody} />
     <Faq items={faq} />
   </div></section>
 </Layout>

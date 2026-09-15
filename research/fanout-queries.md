@@ -205,3 +205,23 @@ Fan-out: what is dual pricing, is it legal, do I need new equipment, contract te
 ## Monitoring
 
 Once Search Console has 60 days of data, run the queries it shows for each page against this map and add any sub-query with impressions that the page does not answer. Every quarter, ask Google AI Mode, ChatGPT and Perplexity the head query for each page and record whether nextdoorpayments.com is cited and which competitor is. Keep the log in `research/ai-citation-log.md`.
+
+## Gateway cluster pages (added September 15, 2026)
+
+Each gateway page answers the same fan-out set, which is how a consistent template earns citations across the whole cluster:
+
+| Fan-out sub-query | Section on every gateway page |
+|---|---|
+| What is [gateway] | Intro and TL;DR |
+| Who owns [gateway] | Intro or history table |
+| [gateway] features (vault, recurring, virtual terminal, Level 3, ACH) | Feature list or table |
+| [gateway] pricing / fees / cost | Pricing section (published, indicative, or "set by reseller" with typical ranges) |
+| Can I sign up directly | FAQ |
+| [gateway] vs Authorize.net / NMI / Stripe | Comparison table or section |
+| Is [gateway] being shut down | Timeline (Payflow, Transaction Express) or FAQ |
+| How to switch from [gateway], migrate stored cards | Migration outline |
+| Who should stay on [gateway] | Stay or move section |
+
+Feature pages (Level 3, recurring, ACH, 3DS, PCI, virtual terminal, high risk) each answer: what it is, what it costs or saves, who needs it, which gateways support it, how to set it up, what can go wrong.
+
+Platform pages (WooCommerce, Shopify, others) each answer: which gateways connect, does the platform charge extra, bundled vs merchant account cost at three volumes, subscriptions and stored cards, PCI, how to switch.
