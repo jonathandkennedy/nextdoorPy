@@ -179,4 +179,4 @@ Targets: by day 90, 40 indexed pages, 300 organic clicks a month, first AI citat
 
 ## Budget notes
 
-OpenSEO credits used for this research: about 1,800 of 4,817. Remaining credits cover a rank tracker for 50 keywords for several months plus periodic SERP checks. Vercel hobby tier is sufficient until traffic grows. CallScaler DNI is included on all plans. Everything else in this plan is time.
+OpenSEO credits used for this research: about 500 of 4,817. The remaining 4,300 cover a rank tracker for 50 keywords for several months plus periodic SERP checks. Vercel hobby tier is sufficient until traffic grows. CallScaler DNI is included on all plans. Everything else in this plan is time.
