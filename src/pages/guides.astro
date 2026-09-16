@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import HubList from '../components/HubList.astro';
+import CallCta from '../components/CallCta.astro';
 import { getCollection } from 'astro:content';
 const all = await getCollection('articles', ({ data }) => !data.draft);
-const ids = all.filter((a) => ['guides', 'compare'].includes(a.data.category)).map((a) => a.id);
+const ids = ['guides/how-to-read-a-merchant-statement', 'dual-pricing/dual-pricing-vs-surcharging-vs-cash-discount', 'dual-pricing/is-dual-pricing-legal-in-california', 'quickbooks/credit-card-processing-fees', 'gateways/pricing', 'gateways/what-is-a-payment-gateway', 'clover/pricing', 'clover/reseller-vs-direct', 'clover/vs-square-vs-toast', 'clover/contract-and-fees'].filter((id) => all.some((a) => a.id === id));
 ---
 <Layout title="Guides: Credit Card Processing Fees, Statements and Comparisons" description="Plain-English guides to reading a merchant statement, effective rates, interchange-plus vs flat rate, PCI fees, and comparisons between processors and POS systems.">
   <section class="phero"><div class="c">
@@ -12,4 +13,5 @@ const ids = all.filter((a) => ['guides', 'compare'].includes(a.data.category)).m
     <p class="lead">How fees work, how to read your statement, and how the options compare. Written by people who set this up every week.</p>
   </div></section>
   <section class="sec"><div class="c"><HubList ids={ids} /></div></section>
+  <section class="sec alt"><div class="c" style="max-width:860px"><CallCta heading="Skip the reading and send the statement" body="Every guide here ends the same way: send a statement, get the effective rate and a written quote in 24 hours." /></div></section>
 </Layout>
