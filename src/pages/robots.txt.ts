@@ -52,6 +52,7 @@ User-agent: DuckAssistBot
 Allow: /
 
 Sitemap: ${site.url}/sitemap-index.xml
+Sitemap: ${site.url}/sitemap.txt
 `;
 
 export const GET: APIRoute = () => new Response(body, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
