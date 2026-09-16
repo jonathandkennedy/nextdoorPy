@@ -1,0 +1,94 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import CallCta from '../../../components/CallCta.astro';
+import Faq from '../../../components/Faq.astro';
+import PhoneIcon from '../../../components/PhoneIcon.astro';
+import { site, tel, sms } from '../../../config';
+import { regions, cities, industryLinks } from '../../../data/locations';
+export function getStaticPaths() { return cities.map((c) => ({ params: { region: c.region, city: c.slug }, props: { c } })); }
+const { c } = Astro.props;
+const r = regions.find((x) => x.slug === c.region)!;
+const onsite = c.service === 'onsite';
+const smsBody = `Hi, I have a business in ${c.name} and want a quote.`;
+const setups: Record<string, string> = {
+  'restaurants': 'Clover Station Duo at the server station, Flex for pay at table, kitchen printer or KDS, Table Service plan, dual pricing on every check including tips',
+  'quick service': 'Station Duo at the counter, Kiosk when lines form, Kitchen Display, online ordering and delivery integrations, Counter Service plan',
+  'bars': 'Station at the rail with pre-authorized tabs, Flex for the patio, bar printer, tips by bartender',
+  'bars and breweries': 'Station or Mini at the taproom counter with tabs and pre-auth, Flex for the patio, dual pricing on pours',
+  'coffee shops and cafes': 'One Clover Mini with a modifier-first drink menu, tips on screen, loyalty and pickup ordering',
+  'bakeries and cafes': 'Clover Mini with a modifier menu, tips on screen, pre-orders online',
+  'retail': 'Station Duo with built-in scanner and drawer or a Mini with hub scanner, Retail Growth plan, two prices on shelf labels',
+  'liquor and convenience stores': 'Exatouch with age verification, scan data rebates and case-to-unit inventory, with a Clover or Dejavoo payment device',
+  'salons and barbershops': 'Clover Mini at the front desk, tips by stylist, retail on the same ticket, booking app connected',
+  'medical and dental practices': 'Mini at check-in, Flex for treatment rooms, stored cards for balances, HSA and FSA accepted, alongside practice software',
+  'auto repair and tire shops': 'Mini or Compact at the service counter, Flex for the lot, text-to-pay for approved estimates, Level 2 data for fleet cards',
+  'contractors and home services': 'Text-to-pay and ACH invoicing synced to QuickBooks, a Flex for on-site payment, dual-priced invoices',
+  'food trucks': 'Clover Flex on LTE with offline mode enabled, dock in the truck, pre-orders online',
+  'ecommerce and B2B': 'accept.blue or NMI gateway on your cart with Level 3 data, vault and recurring billing, interchange-plus',
+  'B2B and wholesale': 'Gateway with Level 2 and 3 data, virtual terminal, ACH, invoicing; commercial card interchange lowered',
+  'professional services': 'Virtual terminal and invoicing with stored cards, QuickBooks sync, a Mini or Compact at the desk',
+  'hotels and hospitality': 'Clover for the restaurant and retail outlets, gateway for bookings, dual pricing at food and beverage counters',
+  'wineries and tasting rooms': 'Clover at the tasting bar with tabs and tips, vault and recurring billing for wine club memberships, gateway for online orders',
+  'golf and recreation': 'Clover for the pro shop and grill, memberships on recurring billing',
+};
+const setupFor = (label: string) => setups[label] ?? 'Clover or Dejavoo at the counter, gateway online, dual pricing or interchange-plus';
+const nearby = c.nearby.map((s) => cities.find((x) => x.slug === s)).filter(Boolean);
+const ind = c.industries.map((i) => industryLinks[i] ?? { label: i, href: '/industries' });
+const faq = [
+  { q: `Do you come out to ${c.name}?`, a: onsite ? `Yes. ${c.name} is in our in-person area. Installs, cutovers, staff training and same-day support are done on site, and replacement hardware is delivered by hand.` : `${c.name} is served with pre-programmed hardware shipped to you, setup and training by phone or video, and on-site visits arranged for multi-device installs. Most single-counter businesses are live the day the box arrives.` },
+  { q: `How quickly can a ${c.name} business be live?`, a: 'Two to five business days from signed paperwork for a new POS, with the menu or inventory built before install day. A replacement terminal on an existing account is usually 24 to 48 hours.' },
+  { q: 'Do I need new equipment?', a: 'Not always. A Clover on a processor we board with can move to your new account. Older terminals from other processors usually cannot, and we place replacement hardware at no charge for qualifying businesses rather than lease it. Text a photo of what you have and we tell you.' },
+  { q: `Is dual pricing legal in ${c.name}?`, a: 'Yes, across California, when both prices are shown before the customer chooses and the card price is the price charged. Surcharging is what California restricts. Our California dual pricing page covers the rules.' },
+  { q: 'Can I keep my online store, QuickBooks or practice software?', a: 'Yes. Those connect to a gateway we place (accept.blue, NMI or Fluidpay), with stored cards migrated from your old gateway. The terminal at the counter and the gateway online run on one merchant account.' },
+];
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'Service', name: `Merchant services in ${c.name}, CA`, serviceType: 'Credit card processing, Clover POS and payment gateways', provider: { '@id': `${site.url}/#organization` }, areaServed: { '@type': 'City', name: c.name, containedInPlace: { '@type': 'AdministrativeArea', name: `${c.county} County, California` } }, description: `Dual pricing credit card processing, Clover POS placed at no charge for qualifying businesses, Dejavoo terminals, payment gateways and QuickBooks invoicing for businesses in ${c.name}, California.` },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site.url }, { '@type': 'ListItem', position: 2, name: 'Service area', item: `${site.url}/locations` }, { '@type': 'ListItem', position: 3, name: r.name, item: `${site.url}/locations/${r.slug}` }, { '@type': 'ListItem', position: 4, name: c.name, item: `${site.url}/locations/${r.slug}/${c.slug}` }] },
+];
+---
+<Layout title={`Merchant Services in ${c.name}, CA: Clover POS, Dual Pricing, Gateways`} description={`${onsite ? 'In-person' : 'Shipped hardware and phone-setup'} credit card processing for ${c.name} businesses: dual pricing at $0 processing, Clover POS placed at no charge for qualifying merchants, gateways and QuickBooks invoicing. ${site.phoneDisplay}.`} schema={schema} smsBody={smsBody}>
+  <section class="phero"><div class="c">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/locations">Service area</a><span>/</span><a href={`/locations/${r.slug}`}>{r.name}</a></nav>
+    <div class="sg">{onsite ? 'In person' : 'Shipped hardware, phone setup'}</div>
+    <h1>Merchant Services and Clover POS in {c.name}, California</h1>
+    <p class="lead">{c.name} is a city of {c.population} in {c.county} County. {c.note}</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
+      <a href={tel} class="bp big" data-cta="city-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+      <a href={sms(smsBody)} class="bo" data-cta="city-text">Text a statement photo</a>
+    </div>
+  </div></section>
+  <section class="sec"><div class="c art-grid">
+    <div class="prose">
+      <h2>Where we install in {c.name}</h2>
+      <ul>{c.districts.map((d) => <li>{d}</li>)}</ul>
+      <h2>What {c.name} businesses run, and what we set up for each</h2>
+      <table>
+        <thead><tr><th>Business</th><th>Setup</th></tr></thead>
+        <tbody>{ind.map((i) => <tr><td><a href={i.href}>{i.label.charAt(0).toUpperCase() + i.label.slice(1)}</a></td><td>{setupFor(i.label)}</td></tr>)}</tbody>
+      </table>
+      <h2>How it works in {c.name}</h2>
+      <p>{onsite ? `We come to you. The account and menu or inventory are built first, hardware is placed and programmed, and the cutover happens in a quiet window with us on site through the first hours of trade. Support afterward is a cell number, and same-day in ${c.name}.` : `Hardware ships to ${c.name} pre-programmed with your menu or inventory loaded. Setup and staff training are a phone or video call, usually under an hour. For multi-device installs we schedule an on-site visit. Support afterward is a cell number.`} Agreements are month to month, hardware is placed or purchased and never leased, and the fee schedule is on one page before you sign.</p>
+      <h2>Dual pricing in {c.name}</h2>
+      <p>Both a cash price and a card price are shown before the customer chooses, on the customer-facing screen and on signage, and the receipt shows the price paid. Debit and credit are treated the same. The business nets its cash price on every sale and pays $0 in processing. It is the model that fits California's rules, where surcharging is restricted; the detail is on <a href="/dual-pricing/is-dual-pricing-legal-in-california">is dual pricing legal in California</a>. Businesses that prefer one posted price get interchange-plus instead.</p>
+      <h2>Start with the statement</h2>
+      <p>Text a photo of last month's processing statement to {site.phoneDisplay} or <a href="/free-statement-analysis">send it online</a>. Within 24 hours you get your effective rate, every fee labeled, and a written quote for {c.name}. If your current deal is good, we say so.</p>
+      {nearby.length > 0 && <><h2>Nearby</h2><ul>{nearby.map((n) => <li><a href={`/locations/${n.region}/${n.slug}`}>Merchant services in {n.name}</a></li>)}<li><a href={`/locations/${r.slug}`}>All of {r.name}</a></li></ul></>}
+    </div>
+    <aside class="side">
+      <div class="sidecta">
+        <h3>Get a quote for your {c.name} business</h3>
+        <p>Text a photo of your statement or tell us what you need. Numbers back within 24 hours.</p>
+        <a href={tel} class="num" data-cta="side-num">{site.phoneDisplay}</a>
+        <a href={tel} class="bp" data-cta="side-call"><PhoneIcon />Call now</a>
+        <a href={sms(smsBody)} class="bo" data-cta="side-text">Text us</a>
+        <a href="/free-statement-analysis" class="bo" data-cta="side-fsa">Send a statement online</a>
+      </div>
+      <nav class="sidenav" aria-label="Start here"><div class="lbl">Start here</div><a href="/free-statement-analysis">Free statement analysis</a><a href="/clover">Clover POS</a><a href="/gateways">Payment gateways</a><a href="/dual-pricing">Dual pricing</a><a href="/industries">Industries we serve</a><a href={`/locations/${r.slug}`}>{r.name}</a></nav>
+    </aside>
+  </div></section>
+  <section class="sec alt"><div class="c" style="max-width:860px">
+    <CallCta heading={`Talk to the person who will set it up in ${c.name}`} body="No sales team. Jon answers, quotes and handles the install. Text your business type and monthly card volume." smsBody={smsBody} />
+    <Faq items={faq} />
+  </div></section>
+</Layout>

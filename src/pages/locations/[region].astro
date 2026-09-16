@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CallCta from '../../components/CallCta.astro';
+import Faq from '../../components/Faq.astro';
+import PhoneIcon from '../../components/PhoneIcon.astro';
+import { site, tel, sms } from '../../config';
+import { regions, cities, industryLinks } from '../../data/locations';
+export function getStaticPaths() { return regions.map((r) => ({ params: { region: r.slug }, props: { r } })); }
+const { r } = Astro.props;
+const list = cities.filter((c) => c.region === r.slug);
+const smsBody = `Hi, I have a business in ${r.short} and want a quote.`;
+const onsite = r.service === 'onsite';
+const faq = [
+  { q: `Do you come on site in ${r.name}?`, a: onsite ? `Yes. Installs, cutovers, staff training and same-day support are in person across ${r.name}. ${r.logistics}` : `For ${r.name} we ship hardware pre-programmed with your menu or inventory loaded, do setup and training by phone or video, and arrange on-site visits for multi-device installs. ${r.logistics}` },
+  { q: 'How fast can a business be live?', a: 'Two to five business days from signed paperwork for most single-location businesses: the account is built first, hardware is placed and programmed, and cutover happens in a quiet window. Replacement terminals for an existing account are usually 24 to 48 hours.' },
+  { q: 'Is dual pricing legal in California?', a: 'Yes, when both the cash price and the card price are displayed before the customer chooses and the card price is the price charged. California restricts surcharges and, since July 2024, requires advertised prices to include mandatory fees, which is why dual pricing rather than surcharging is what we set up. Details on our California dual pricing page.' },
+  { q: 'Can I keep my current software?', a: 'Usually. Clover devices come with our accounts; your online store, invoicing tool, QuickBooks or practice software connects to a gateway we place. If you already run Clover on a processor we board with, the hardware can often move to your new account.' },
+];
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'Service', name: `Merchant services in ${r.name}`, serviceType: 'Credit card processing, Clover POS and payment gateways', provider: { '@id': `${site.url}/#organization` }, areaServed: r.counties.map((c) => ({ '@type': 'AdministrativeArea', name: `${c} County, California` })), description: `Dual pricing credit card processing, Clover POS, Dejavoo terminals, payment gateways and QuickBooks invoicing for businesses in ${r.name}.` },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site.url }, { '@type': 'ListItem', position: 2, name: 'Service area', item: `${site.url}/locations` }, { '@type': 'ListItem', position: 3, name: r.name, item: `${site.url}/locations/${r.slug}` }] },
+];
+---
+<Layout title={`Merchant Services in ${r.name}: Clover POS, Dual Pricing, Gateways`} description={`${onsite ? 'In-person' : 'Shipped hardware and phone-setup'} merchant services for ${r.name}: dual pricing at $0 processing, Clover POS placed at no charge for qualifying businesses, payment gateways, QuickBooks invoicing. ${site.phoneDisplay}.`} schema={schema} smsBody={smsBody}>
+  <section class="phero"><div class="c">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/locations">Service area</a></nav>
+    <div class="sg">{onsite ? 'In person' : 'Shipped hardware, phone setup'}</div>
+    <h1>Merchant Services in {r.name}</h1>
+    <p class="lead">{r.intro}</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
+      <a href={tel} class="bp big" data-cta="region-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+      <a href={sms(smsBody)} class="bo" data-cta="region-text">Text a statement photo</a>
+    </div>
+  </div></section>
+  <section class="sec"><div class="c art-grid">
+    <div class="prose">
+      <h2>What {r.short} businesses run</h2>
+      <p>{r.mix}</p>
+      <ul>{r.industries.map((i) => industryLinks[i] ? <li><a href={industryLinks[i].href}>{industryLinks[i].label.charAt(0).toUpperCase() + industryLinks[i].label.slice(1)}</a></li> : <li>{i}</li>)}</ul>
+      <h2>What we set up</h2>
+      <table>
+        <thead><tr><th>Need</th><th>What we install</th><th>What it costs you in processing</th></tr></thead>
+        <tbody>
+          <tr><td>Counter or restaurant POS</td><td><a href="/clover">Clover</a> Station, Mini, Flex or Kiosk, placed at no charge for qualifying businesses; Exatouch for high-SKU retail</td><td>$0 under <a href="/dual-pricing">dual pricing</a>, or interchange-plus</td></tr>
+          <tr><td>Card terminal only</td><td>Dejavoo or <a href="/clover/compact">Clover Compact</a>, placed</td><td>$0 under dual pricing</td></tr>
+          <tr><td>Online store, invoicing, phone orders</td><td><a href="/gateways">accept.blue, NMI or Fluidpay gateway</a> on your existing software</td><td>Interchange-plus, typically 2.2% to 2.5% all-in</td></tr>
+          <tr><td>QuickBooks invoicing and text-to-pay</td><td>Hyfin with two-way <a href="/quickbooks/credit-card-processing-fees">QuickBooks</a> sync</td><td>Interchange-plus, or a dual-priced invoice</td></tr>
+          <tr><td>Leaving Authorize.net, Payflow or a bank gateway</td><td>Gateway migration with stored cards moved</td><td>Interchange-plus on one bill</td></tr>
+        </tbody>
+      </table>
+      <h2>How we work in {r.name}</h2>
+      <p>{r.logistics} Agreements are month to month, hardware is never leased, and the fee schedule is on one page before anything is signed. Every engagement starts with a <a href="/free-statement-analysis">free statement analysis</a>: send last month's statement, get the effective rate and a written quote within 24 hours.</p>
+      <h2>Cities in {r.name}</h2>
+      <ul>{list.map((c) => <li><a href={`/locations/${r.slug}/${c.slug}`}>Merchant services in {c.name}</a>: {c.districts.slice(0, 3).join(', ')}</li>)}</ul>
+    </div>
+    <aside class="side">
+      <div class="sidecta">
+        <h3>Get a quote for your {r.short} business</h3>
+        <p>Text a photo of your statement or tell us what you need. Numbers back within 24 hours.</p>
+        <a href={tel} class="num" data-cta="side-num">{site.phoneDisplay}</a>
+        <a href={tel} class="bp" data-cta="side-call"><PhoneIcon />Call now</a>
+        <a href={sms(smsBody)} class="bo" data-cta="side-text">Text us</a>
+        <a href="/free-statement-analysis" class="bo" data-cta="side-fsa">Send a statement online</a>
+      </div>
+      <nav class="sidenav" aria-label="Start here"><div class="lbl">Start here</div><a href="/free-statement-analysis">Free statement analysis</a><a href="/clover">Clover POS</a><a href="/gateways">Payment gateways</a><a href="/dual-pricing">Dual pricing</a><a href="/industries">Industries we serve</a><a href="/locations">All service areas</a></nav>
+    </aside>
+  </div></section>
+  <section class="sec alt"><div class="c" style="max-width:860px">
+    <CallCta heading={`Talk to the person who will install it in ${r.short}`} body="No sales team. Jon answers, quotes and shows up. Text your business type and monthly card volume." smsBody={smsBody} />
+    <Faq items={faq} />
+  </div></section>
+</Layout>

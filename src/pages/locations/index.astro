@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CallCta from '../../components/CallCta.astro';
+import PhoneIcon from '../../components/PhoneIcon.astro';
+import { site, tel } from '../../config';
+import { regions, cities } from '../../data/locations';
+const schema = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Service area', url: `${site.url}/locations`, about: 'Merchant services, Clover POS and payment gateways across Southern California' }];
+---
+<Layout title="Service Area: Merchant Services Across Southern California" description="In-person installs in San Diego, Los Angeles, Orange County, the Inland Empire and Temecula Valley; shipped, pre-programmed hardware with phone setup for Ventura, Santa Barbara, Bakersfield and the Coachella Valley." schema={schema}>
+  <section class="phero"><div class="c">
+    <div class="sg">Service area</div>
+    <h1>Merchant Services From Bakersfield to Chula Vista</h1>
+    <p class="lead">Based in San Diego. In person across San Diego County, Los Angeles County, Orange County, the Inland Empire and Temecula Valley. Pre-programmed hardware shipped with phone setup, and on-site visits by arrangement, for Ventura County, Santa Barbara, Kern County and the Coachella Valley. Nationwide by phone for everything that does not need a truck.</p>
+    <a href={tel} class="bp big" style="margin-top:16px" data-cta="loc-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+  </div></section>
+  {regions.map((r) => (
+    <section class={`sec ${regions.indexOf(r) % 2 ? 'alt' : ''}`}><div class="c">
+      <div class="sh" style="text-align:left;margin-bottom:20px"><div class="sg">{r.service === 'onsite' ? 'In person' : 'Shipped and phone setup'}</div><h2><a href={`/locations/${r.slug}`} style="color:inherit">{r.name}</a></h2><p style="margin:0;max-width:none">{r.intro}</p></div>
+      <div class="grid3">
+        {cities.filter((c) => c.region === r.slug).map((c) => (
+          <a href={`/locations/${r.slug}/${c.slug}`} class="card"><h3>{c.name}</h3><p>{c.districts.slice(0, 3).join(', ')}</p><div class="more">Merchant services in {c.name} &rarr;</div></a>
+        ))}
+      </div>
+    </div></section>
+  ))}
+  <section class="sec"><div class="c" style="max-width:860px"><CallCta heading="Not on the list?" body="We serve businesses across the state by phone and shipped hardware, and most of the country the same way. Text your city and what you need." /></div></section>
+</Layout>
