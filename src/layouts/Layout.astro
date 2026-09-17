@@ -21,7 +21,9 @@ const {
   title, description, canonical, type = 'website', published, updated, noindex = false, schema = [], smsBody,
   ogImage = '/images/dualprice.jpg',
 } = Astro.props;
-const canonicalUrl = new URL(canonical ?? Astro.url.pathname, site.url).href.replace(/\/$/, '') || site.url;
+// build.format 'file' makes Astro.url.pathname end in .html at build time; strip it so canonicals match the clean URLs Vercel serves.
+const cleanPath = (canonical ?? Astro.url.pathname).replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+const canonicalUrl = new URL(cleanPath, site.url).href.replace(/\/$/, '') || site.url;
 const fullTitle = title.includes('Nextdoor Payments') ? title : `${title} | Nextdoor Payments`;
 
 const org = {
