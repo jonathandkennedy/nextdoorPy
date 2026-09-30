@@ -3,7 +3,7 @@
 // Key file is served at https://nextdoorpayments.com/<key>.txt from /public.
 import { readFileSync, readdirSync } from 'node:fs';
 
-const KEY = '2c145ebe707b442fb252d480a370e406';
+const KEY = '67d175b984c344a1897ea37e2fd795c6';
 const HOST = 'nextdoorpayments.com';
 const files = readdirSync('dist').filter((f) => /^sitemap-\d+\.xml$/.test(f));
 const urls = files.flatMap((f) => [...readFileSync(`dist/${f}`, 'utf8').matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]));

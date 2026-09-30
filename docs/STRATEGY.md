@@ -155,7 +155,7 @@ To add, in order:
 
 1. Create the Vercel project from this repo. Framework preset: Astro. Build `npm run build`, output `dist`. Set the three environment variables.
 2. Point nextdoorpayments.com at Vercel (A record 76.76.21.21 and CNAME www to cname.vercel-dns.com, or as Vercel instructs). Keep Ionos DNS but change records; or move DNS to Vercel. Set the apex as canonical and redirect www.
-3. Confirm https://nextdoorpayments.com/2c145ebe707b442fb252d480a370e406.txt serves the key. Run `npm run indexnow` once.
+3. Confirm https://nextdoorpayments.com/67d175b984c344a1897ea37e2fd795c6.txt serves the key. Run `npm run indexnow` once.
 4. Google Search Console: add the domain property, submit /sitemap-index.xml, request indexing for the homepage and the five hubs.
 5. Bing Webmaster Tools: import from Search Console, submit sitemap. Bing powers ChatGPT search results, so this is not optional.
 6. GA4 property, key events, link to Search Console.
