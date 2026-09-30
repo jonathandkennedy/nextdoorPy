@@ -2,16 +2,59 @@
 import Layout from '../layouts/Layout.astro';
 import HubList from '../components/HubList.astro';
 import CallCta from '../components/CallCta.astro';
+import Tldr from '../components/Tldr.astro';
 import { getCollection } from 'astro:content';
+import { site } from '../config';
 const all = await getCollection('articles', ({ data }) => !data.draft);
-const ids = ['guides/how-to-read-a-merchant-statement', 'dual-pricing/dual-pricing-vs-surcharging-vs-cash-discount', 'dual-pricing/is-dual-pricing-legal-in-california', 'quickbooks/credit-card-processing-fees', 'gateways/pricing', 'gateways/what-is-a-payment-gateway', 'clover/pricing', 'clover/reseller-vs-direct', 'clover/vs-square-vs-toast', 'clover/contract-and-fees'].filter((id) => all.some((a) => a.id === id));
+const have = (ids: string[]) => ids.filter((id) => all.some((a) => a.id === id));
+
+const statementIds = have(['guides/how-to-read-a-merchant-statement']);
+const pricingModelIds = have(['dual-pricing/dual-pricing-vs-surcharging-vs-cash-discount', 'dual-pricing/is-dual-pricing-legal-in-california']);
+const softwareIds = have(['quickbooks/credit-card-processing-fees', 'gateways/pricing', 'gateways/what-is-a-payment-gateway']);
+const posIds = have(['clover/pricing', 'clover/reseller-vs-direct', 'clover/vs-square-vs-toast', 'clover/contract-and-fees']);
+
+const schema = [{
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Credit card processing guides',
+  url: `${site.url}/guides`,
+  about: 'How merchant statements, processing fees, pricing models, gateways and point of sale systems work',
+}];
 ---
-<Layout title="Guides: Credit Card Processing Fees, Statements and Comparisons" description="Plain-English guides to reading a merchant statement, effective rates, interchange-plus vs flat rate, PCI fees, and comparisons between processors and POS systems.">
+<Layout title="Guides: Credit Card Processing Fees, Statements and Comparisons" description="Plain-English guides to reading a merchant statement, effective rates, interchange-plus vs flat rate, PCI fees, and comparisons between processors and POS systems." schema={schema}>
   <section class="phero"><div class="c">
     <div class="sg">Guides</div>
     <h1>Credit Card Processing, Explained Without the Sales Pitch</h1>
     <p class="lead">How fees work, how to read your statement, and how the options compare. Written by people who set this up every week.</p>
   </div></section>
-  <section class="sec"><div class="c"><HubList ids={ids} /></div></section>
+
+  <section class="sec"><div class="c" style="max-width:860px">
+    <Tldr label="If you only read one thing" items={[
+      'Your effective rate is the only number that matters. Take total fees for the month, divide by total card volume. Everything a sales rep quotes you is a piece of that number, not the number itself.',
+      'There are three ways to stop paying processing fees, and they are not interchangeable: dual pricing, surcharging and cash discount. Only one of them is clean under both card brand rules and California law.',
+      'Point of sale hardware and payment processing are sold together but priced separately. The hardware is a one-time cost. The processing is forever, which is where the money actually is.',
+    ]} />
+  </div></section>
+
+  <section class="sec alt"><div class="c">
+    <div class="sh"><div class="sg">Start here</div><h2>Read Your Own Statement First</h2><p>Before comparing anyone's offer, find out what you pay today. Every other decision on this page depends on that one number.</p></div>
+    <HubList ids={statementIds} />
+  </div></section>
+
+  <section class="sec"><div class="c">
+    <div class="sh"><div class="sg">Pricing models</div><h2>Dual Pricing, Surcharging and What California Allows</h2><p>These three programs get used as synonyms by sales reps. They are not the same thing, they carry different card brand rules, and one of them is restricted in California.</p></div>
+    <HubList ids={pricingModelIds} />
+  </div></section>
+
+  <section class="sec alt"><div class="c">
+    <div class="sh"><div class="sg">Software and gateways</div><h2>What the Software Layer Actually Costs</h2><p>Gateway fees, invoicing fees and platform markups sit on top of processing. On a low-volume account they can cost more than the interchange does.</p></div>
+    <HubList ids={softwareIds} />
+  </div></section>
+
+  <section class="sec"><div class="c">
+    <div class="sh"><div class="sg">Point of sale</div><h2>Choosing and Buying a POS Without Getting Locked In</h2><p>Where you buy the same hardware changes what you pay for years. So does what the contract says about cancellation and who the equipment is locked to.</p></div>
+    <HubList ids={posIds} />
+  </div></section>
+
   <section class="sec alt"><div class="c" style="max-width:860px"><CallCta heading="Skip the reading and send the statement" body="Every guide here ends the same way: send a statement, get the effective rate and a written quote in 24 hours." /></div></section>
 </Layout>

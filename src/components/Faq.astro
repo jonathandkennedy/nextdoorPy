@@ -4,7 +4,7 @@ const { items = [] as Item[], heading = 'Frequently asked questions' } = Astro.p
 ---
 {items.length > 0 && (
   <section class="faq" id="faq">
-    <h2>{heading}</h2>
+    {heading && <h2>{heading}</h2>}
     {items.map((it) => (
       <details>
         <summary>{it.q}</summary>

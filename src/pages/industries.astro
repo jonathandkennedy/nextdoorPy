@@ -2,16 +2,86 @@
 import Layout from '../layouts/Layout.astro';
 import HubList from '../components/HubList.astro';
 import CallCta from '../components/CallCta.astro';
+import Faq from '../components/Faq.astro';
+import Tldr from '../components/Tldr.astro';
 import PhoneIcon from '../components/PhoneIcon.astro';
-import { site, tel } from '../config';
+import { site, tel, sms } from '../config';
+
+const smsBody = 'Hi, I would like a setup recommendation for my business type.';
+
+const setups = [
+  { type: 'Full service restaurant', gear: 'Clover Station Duo plus Flex handhelds', why: 'Table map, coursing and bar tabs on the station; servers close out at the table on the Flex instead of walking to a terminal.' },
+  { type: 'Quick service and fast casual', gear: 'Clover Station Solo, Kiosk when lines form', why: 'Order-ahead and self-order cut the counter line. Kitchen display replaces paper tickets so orders stop getting lost.' },
+  { type: 'Bar and nightclub', gear: 'Clover Station Duo plus Flex', why: 'Pre-authorized tabs, fast re-fire of the last round, and tip adjustment after close.' },
+  { type: 'Coffee shop and cafe', gear: 'Clover Mini, second Mini at peak', why: 'One small footprint register, modifiers for milk and syrups, loyalty built in rather than bolted on.' },
+  { type: 'Retail and convenience', gear: 'Clover Station Duo with scanner and scale', why: 'Barcode inventory, age verification prompts, and cash drawer accountability per shift.' },
+  { type: 'Salon, barber and spa', gear: 'Clover Mini with appointment app', why: 'Booking, per-stylist commission splits and tip reporting in one place.' },
+  { type: 'Contractor and field service', gear: 'Clover Flex or Hyfin with QuickBooks', why: 'Take a deposit on site, invoice the balance, and have it post to QuickBooks without rekeying.' },
+  { type: 'Medical, dental and veterinary', gear: 'Dejavoo terminal or Clover Compact', why: 'Card on file for balances after insurance, text-to-pay for statements, no tip screen.' },
+  { type: 'Auto repair and tire', gear: 'Clover Flex plus a counter station', why: 'Approve the estimate, take payment at the bay, and keep the ticket attached to the vehicle.' },
+  { type: 'Ecommerce and B2B invoicing', gear: 'accept.blue gateway, ACH enabled', why: 'Hosted checkout or your existing cart, recurring billing, and ACH for large invoices where cards are too expensive.' },
+];
+
+const faq = [
+  { q: 'Does my business type change what I pay to process?', a: 'It changes the interchange your transactions qualify for, which is the wholesale cost underneath every pricing model. A card swiped in person at a restaurant costs less than the same card keyed into an invoice. Business type also determines whether you can run dual pricing at all, since some verticals collect payment where a price display is impractical.' },
+  { q: 'Do I need a full POS or just a terminal?', a: 'A terminal takes payments. A point of sale system takes payments and runs the business: inventory, menu, staff, reporting. If you track what you sell item by item, or you have staff who need their own logins, you want a POS. If you just need to get paid, a terminal is cheaper and faster to set up.' },
+  { q: 'Can I run dual pricing in my industry?', a: 'Most retail, restaurant, service and repair businesses can. It requires that the cash price and card price both display before the customer pays, which is straightforward at a counter or on a handheld. Card-not-present and recurring billing need more care, and a few verticals with regulated pricing cannot use it at all. We check yours before proposing it.' },
+  { q: 'What if I use industry-specific software already?', a: 'That usually stays. Most vertical software takes payments through a gateway, so we change the gateway credentials underneath it rather than replacing the software you have trained your staff on. If your software is locked to one processor, we will tell you that up front instead of after you sign.' },
+  { q: 'How long does a switch take for my business?', a: 'Two business days is typical: one to underwrite and build the account, one to configure hardware and train. Restaurants with a large menu and retailers with a big inventory file take longer, because we build the menu or import the item list before you go live rather than handing you a blank screen.' },
+];
+
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Payment processing by industry', url: `${site.url}/industries`, about: 'Point of sale and payment processing setups matched to business type' },
+];
 ---
-<Layout title="Industries: Payment Processing and POS by Business Type" description="Restaurants, retail and convenience, contractors and service businesses, ecommerce. The right terminal, POS and pricing model for how each business actually takes payments.">
+<Layout title="Industries: Payment Processing and POS by Business Type" description="Restaurants, retail and convenience, contractors and service businesses, ecommerce. The right terminal, POS and pricing model for how each business actually takes payments." schema={schema} smsBody={smsBody}>
   <section class="phero"><div class="c">
     <div class="sg">Industries</div>
     <h1>Payments Set Up for How Your Business Actually Works</h1>
     <p class="lead">A taco shop, a liquor store and an HVAC company all take cards. They should not get the same terminal, the same software or the same pricing. Pick your business type.</p>
-    <a href={tel} class="bp big" style="margin-top:16px" data-cta="ind-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
+      <a href={tel} class="bp big" data-cta="ind-call"><PhoneIcon />Call {site.phoneDisplay}</a>
+      <a href={sms(smsBody)} class="bo" data-cta="ind-text">Text us your business type</a>
+    </div>
   </div></section>
-  <section class="sec"><div class="c"><HubList category="industries" /></div></section>
-  <section class="sec alt"><div class="c" style="max-width:860px"><CallCta heading="Do not see your industry?" body="We have set up salons, auto shops, dispensaries' non-cannabis retail, law offices, churches, gyms and food trucks. Call and describe how you take payments today." /></div></section>
+
+  <section class="sec"><div class="c" style="max-width:860px">
+    <Tldr label="The short version" items={[
+      'The question is not which POS is best. It is where the customer stands when they pay you. A counter, a table, a truck and an emailed invoice each want different hardware.',
+      'Your industry sets the interchange your transactions qualify for, which is the wholesale cost under every pricing model. Card present beats keyed in, every time.',
+      'Most vertical software keeps working after a switch. It takes payments through a gateway, so the gateway credentials change underneath and your staff notice nothing.',
+    ]} />
+  </div></section>
+
+  <section class="sec alt"><div class="c">
+    <div class="sh"><div class="sg">Match</div><h2>What We Put In, By Business Type</h2><p>These are the setups we install most often. Yours may differ once we see how you actually take payments, but this is the starting point.</p></div>
+    <div class="prose" style="max-width:none">
+      <table>
+        <thead><tr><th>Business type</th><th>Typical setup</th><th>Why that one</th></tr></thead>
+        <tbody>{setups.map((s) => <tr><td><strong>{s.type}</strong></td><td>{s.gear}</td><td>{s.why}</td></tr>)}</tbody>
+      </table>
+    </div>
+  </div></section>
+
+  <section class="sec"><div class="c">
+    <div class="sh"><div class="sg">Deep dives</div><h2>Industry Setup Guides</h2><p>Full walkthroughs of the hardware, the software configuration and the pricing that fits each of these.</p></div>
+    <HubList category="industries" />
+  </div></section>
+
+  <section class="sec alt"><div class="c" style="max-width:860px">
+    <div class="sh"><div class="sg">How we scope it</div><h2>Three Questions Before We Recommend Anything</h2></div>
+    <div class="prose">
+      <p><strong>Where does the customer stand when they pay?</strong> At a counter facing you, at a table, in their driveway, or nowhere at all because you emailed them an invoice. That answer picks the hardware before anything else does.</p>
+      <p><strong>What has to happen after the sale?</strong> If inventory has to come down, a commission has to split, or the sale has to land in QuickBooks, that is a point of sale build. If none of that applies, a terminal is the cheaper and faster answer.</p>
+      <p><strong>What are you paying now?</strong> Send a recent processing statement. We calculate your effective rate, show you what the same volume costs under dual pricing or interchange-plus, and tell you plainly if switching is not worth it for you.</p>
+      <p>We have set up salons, auto shops, non-cannabis retail, law offices, churches, gyms, food trucks, veterinary clinics and B2B distributors. If your industry is not listed above, it is almost certainly one we have configured before.</p>
+    </div>
+  </div></section>
+
+  <section class="sec"><div class="c" style="max-width:860px">
+    <Faq items={faq} heading="Questions We Get by Industry" />
+  </div></section>
+
+  <section class="sec alt"><div class="c" style="max-width:860px"><CallCta heading="Do not see your industry?" body="Call and describe how you take payments today. We will tell you what we would put in and what it would cost, before you commit to anything." smsBody={smsBody} /></div></section>
 </Layout>
