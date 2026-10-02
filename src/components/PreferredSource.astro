@@ -1,0 +1,24 @@
+---
+// Google "preferred sources" opt-in band.
+// Readers who add us see our pages flagged with a "preferred" badge in Top Stories,
+// AI Mode and AI Overviews. Google's publisher.js renders the official localized
+// button into the empty div; the deeplink below it works when that script is blocked.
+// Docs: https://developers.google.com/search/docs/appearance/preferred-sources
+import { site } from '../config';
+const domain = site.url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+const deeplink = `https://www.google.com/preferences/source?q=${domain}`;
+---
+<section class="psb" aria-labelledby="psb-h">
+  <div class="c">
+    <div class="psb-in">
+      <div class="psb-txt">
+        <h2 id="psb-h">Make {site.name} a preferred source on Google</h2>
+        <p>One click tells Google you want our answers first. Our pricing breakdowns and Clover guides then carry a <strong>preferred</strong> badge for you in Top Stories, AI Mode and AI Overviews when they match what you searched for.</p>
+      </div>
+      <div class="psb-btn">
+        <div google-add-preferred-source-btn data-theme="light" data-lang="en"></div>
+        <a href={deeplink} class="psb-link" target="_blank" rel="noopener" data-cta="preferred-source">Add as a preferred source on Google</a>
+      </div>
+    </div>
+  </div>
+</section>

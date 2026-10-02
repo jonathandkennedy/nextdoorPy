@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { site, tel } from '../config';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import PreferredSource from '../components/PreferredSource.astro';
 import StickyCall from '../components/StickyCall.astro';
 
 export interface Props {
@@ -93,6 +94,8 @@ const blocks = [org, website, ...schema];
       <script is:inline define:vars={{ id: site.gaId }}>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config',id);</script>
     </>
   )}
+  <!-- Google preferred sources button library. https://developers.google.com/search/docs/appearance/preferred-sources -->
+  <script is:inline async src="https://news.google.com/swg/js/v1/publisher.js"></script>
   <slot name="head" />
 </head>
 <body class="has-callbar">
@@ -101,6 +104,7 @@ const blocks = [org, website, ...schema];
   <main id="main">
     <slot />
   </main>
+  <PreferredSource />
   <Footer />
   <StickyCall smsBody={smsBody} />
   <script is:inline>
