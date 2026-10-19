@@ -71,7 +71,7 @@ Instant bank verification (the customer logs into their bank through a widget in
 
 ## Which gateways handle ACH
 
-accept.blue: cards, signature debit, eChecks and ACH through one vault and virtual terminal, with recurring. NMI and USAePay: ACH through the Customer Vault alongside cards. Fluidpay: unified card and ACH handling. Authorize.net: Gateway + eCheck plan at 0.75% with a $10 minimum. All of them let a customer pay an invoice link by bank or card and store the bank account for recurring.
+accept.blue: cards, signature debit, eChecks and ACH through one vault and virtual terminal, with recurring. [NMI gateway](/gateways/nmi) and USAePay: ACH through the Customer Vault alongside cards. Fluidpay: unified card and ACH handling. Authorize.net: Gateway + eCheck plan at 0.75% with a $10 minimum. All of them let a customer pay an invoice link by bank or card and store the bank account for recurring.
 
 Pricing on a merchant account is set by the provider. Ours is a flat per-item fee, quoted on the same page as the card pricing.
 
@@ -80,3 +80,5 @@ Pricing on a merchant account is set by the provider. Ours is a flat per-item fe
 Contractors and trades taking deposits and progress payments. Professional services on retainers. Property managers. B2B suppliers. Nonprofits with monthly donors. Gyms and memberships. Anyone with an average ticket over about $300 or a recurring relationship. For a restaurant or a retail counter, ACH is irrelevant.
 
 The contractor setup, with text-to-pay and QuickBooks sync, is on the [contractors and service businesses page](/industries/contractors-and-service).
+
+ACH is also the lower price in an online dual pricing setup, where the payment page shows a bank price and a card price side by side. See [dual pricing on a hosted payment page](/dual-pricing/hosted-payment-page) for how that is configured.

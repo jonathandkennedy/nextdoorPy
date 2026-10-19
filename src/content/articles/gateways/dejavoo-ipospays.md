@@ -47,7 +47,7 @@ Sold to ISOs, ISVs and resellers as part of Dejavoo's partner ecosystem. Merchan
 
 ## How it fits with the terminals
 
-A Dejavoo terminal (the Z-series countertop units, the wireless and mobile units) is boarded to a merchant account and processor. iPOSpays sits on the same account for everything that is not a tap or dip at the counter. The benefit is one login and one reconciliation for in-store, online, keyed and recurring. The limitation is that iPOSpays is Dejavoo's gateway; if your website, practice management or invoicing software has a native integration to accept.blue, NMI or Authorize.net and not to iPOSpays, those are the better fit for the online side while Dejavoo stays on the counter.
+A Dejavoo terminal (the Z-series countertop units, the wireless and mobile units) is boarded to a merchant account and processor. iPOSpays sits on the same account for everything that is not a tap or dip at the counter. The benefit is one login and one reconciliation for in-store, online, keyed and recurring. The limitation is that iPOSpays is Dejavoo's gateway; if your website, practice management or invoicing software has a native integration to accept.blue, [NMI gateway](/gateways/nmi) or Authorize.net and not to iPOSpays, those are the better fit for the online side while Dejavoo stays on the counter.
 
 ## Dual pricing on Dejavoo
 

@@ -107,3 +107,5 @@ Restaurant, $61,000 in monthly volume, 1,600 transactions, tiered pricing.
 The "1.69%" that sold the account applies to less than a third of volume. Under interchange-plus at 0.25% + 8¢ the same month would run about $1,420 (2.33%) with the lease and junk removed. Under dual pricing the merchant's cost would be the software fee and nothing else.
 
 Ten minutes with a calculator, or text us the pages and we do it.
+
+Once you have your effective rate, compare it against typical ranges and published flat rates in our guide to [credit card processing fees](/guides/credit-card-processing-fees), which includes a fee calculator.

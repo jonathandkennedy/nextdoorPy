@@ -62,7 +62,7 @@ Fluidpay is the gateway we reach for when a merchant wants dual pricing in store
 
 ## Fluidpay vs NMI vs accept.blue
 
-| | Fluidpay | NMI | accept.blue |
+| | Fluidpay | [NMI](/gateways/nmi) | accept.blue |
 |---|---|---|---|
 | Sold by | Partners only | Partners only | ISOs only |
 | Vault, recurring, virtual terminal | Yes | Yes | Yes |

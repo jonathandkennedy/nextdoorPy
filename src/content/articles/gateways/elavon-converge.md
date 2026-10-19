@@ -82,4 +82,4 @@ The statement shows tiered pricing or an effective rate over 2.5% on a normal mi
 4. Import, token remap, recurring schedules recreated after the last Elavon billing run.
 5. Live tests, cutover, close Elavon after two clean cycles.
 
-The gateway comparison for the receiving side is on the [Authorize.net alternatives page](/gateways/authorize-net-alternatives), which covers NMI, accept.blue and Fluidpay in the same terms.
+The gateway comparison for the receiving side is on the [Authorize.net alternatives page](/gateways/authorize-net-alternatives), which covers [NMI gateway](/gateways/nmi), accept.blue and Fluidpay in the same terms.

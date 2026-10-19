@@ -40,7 +40,7 @@ Clover sells well into retail because the Station Duo looks like a register and 
 | Curbside or sidewalk sales | Add a Flex | Same plan |
 | Pop-ups and markets | Flex or Go | Same plan |
 
-Hardware is placed at no charge for qualifying stores through us; list prices are on the [Clover pricing page](/clover/pricing).
+Hardware is placed at no charge for qualifying stores through us; list prices are on the [Clover POS pricing and fees](/clover/pricing).
 
 ## What the Retail Growth plan does
 

@@ -1,15 +1,15 @@
 ---
-title: "NMI Payment Gateway: Features, Pricing Model, Customer Vault, and NMI vs Authorize.net"
-h1: "NMI Gateway: What It Does, How It Is Priced, and When to Choose It Over Authorize.net"
+title: "NMI Gateway Pricing and Review (2026): Fees, Login, Customer Vault, NMI vs Authorize.net"
+h1: "NMI Gateway: What It Is, What It Costs, and When to Choose It Over Authorize.net"
 description: "NMI is a partner-sold gateway with a Customer Vault, recurring billing and 150+ processor connections. Reseller pricing, NMI vs Authorize.net, and how to migrate."
 category: gateways
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "NMI is one of the largest payment gateways in the US, sold only through ISOs, agents and software partners (NMI reports 6,000 channel partners and 150+ processor connections). It also owns USAePay, acquired in 2021. Merchants cannot sign up with NMI directly."
   - "Because it is reseller-priced, the gateway fee varies: commonly $10 to $25 a month plus 5¢ to 15¢ per transaction, with processing on a separate merchant account. The all-in cost depends on the processing markup far more than the gateway fee."
   - "Choose NMI when your cart, billing or practice software has a native NMI connection, when you need multiple merchant IDs under one login, or when you are moving off Authorize.net and want the broadest plugin catalog. Choose accept.blue for a more modern interface and invoicing. Either way, price the processing on interchange-plus."
-keywords: ["nmi gateway", "nmi payment gateway", "nmi gateway pricing", "nmi gateway fees", "nmi vs authorize.net", "nmi vs stripe", "nmi customer vault", "nmi payment"]
+keywords: ["nmi gateway", "nmi pricing", "nmi payment gateway", "nmi gateway pricing", "nmi gateway fees", "nmi gateway login", "nmi vs authorize.net", "nmi vs stripe", "nmi customer vault", "nmi payment"]
 faq:
   - q: "Can I sign up for NMI directly?"
     a: "No. NMI sells through channel partners: ISOs, agents, software vendors and banks. The partner boards your merchant account, sets the gateway fee, and provides support. That makes the partner's terms and responsiveness the real decision."
@@ -36,7 +36,7 @@ Network Merchants Inc., founded in 2001, describes itself as an embedded payment
 
 Two facts shape everything else. NMI sells only through partners (it reports 6,000 channel partners and 150+ processor connections). And NMI acquired USAePay in 2021, so USAePay merchants are now on NMI-owned infrastructure with a separate login and brand. USAePay has [its own page](/gateways/usaepay).
 
-## What it costs
+## NMI pricing: what the gateway costs
 
 NMI publishes no merchant pricing. Your reseller sets it. Common ranges we see on statements:
 
@@ -49,6 +49,10 @@ NMI publishes no merchant pricing. Your reseller sets it. Common ranges we see o
 | Processing | Separate merchant account, whatever the reseller negotiated |
 
 The gateway line is small. A reseller charging $10 for the gateway and 3.2% flat for processing is more expensive than one charging $25 and interchange plus 0.3%. Compare the all-in number using the method on the [gateway pricing page](/gateways/pricing).
+
+## NMI gateway login
+
+NMI is sold white-label, so there is no single NMI login page for merchants. Your login lives at the address your reseller gave you, usually a reseller-branded subdomain or the reseller's own domain, and it is in the welcome email you received when the account was boarded. If you cannot find it, your reseller or processor can resend the link and reset your password. If your reseller has gone quiet, that is a common reason merchants move: we can board a new NMI or [accept.blue](/gateways/accept-blue) account and migrate your vault.
 
 ## NMI vs Authorize.net
 

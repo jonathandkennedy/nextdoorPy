@@ -1,10 +1,10 @@
 ---
-title: "Clover Station Solo (2026): Specs, Price, and When One Screen Is Enough"
-h1: "Clover Station Solo: The Single-Screen Station, and the Two Things It Cannot Do"
-description: "Clover Station Solo specs and its $1,799 list price, what it shares with the Duo, why it has no customer tap or semi-integrated app support, and where one screen is."
+title: "Clover Station Solo Price ($1,799) and Specs (2026): When One Screen Is Enough"
+h1: "Clover Station Solo: The $1,799 Single-Screen Station, and the Two Things It Cannot Do"
+description: "Clover Station Solo specs and its $1,799 list price, what it shares with the Duo, the two things it cannot do, and when one screen is enough for your counter."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Station Solo is the Duo without the customer-facing terminal: the same 14-inch merchant screen, built-in receipt printer and cash drawer, at $1,799 list. Staff run the whole transaction from one screen."
   - "Two limits follow from that. Customers cannot tap their own card on the Solo, so it is usually paired with a Flex or Mini for contactless, and it does not support semi-integrated third-party POS apps the way the Duo does."
@@ -62,4 +62,4 @@ Any counter where the customer faces the register: quick service, cafes, retail,
 
 ## Cost through a dealer
 
-Same as the Duo: placed at no charge for qualifying merchants or purchased outright, never leased; software at Clover's published plan prices; processing at $0 under dual pricing or on interchange-plus. Because the Solo usually needs a Flex or Mini beside it, quote the pair, not the station alone. Details on the [Clover pricing page](/clover/pricing).
+Same as the Duo: placed at no charge for qualifying merchants or purchased outright, never leased; software at Clover's published plan prices; processing at $0 under dual pricing or on interchange-plus. Because the Solo usually needs a Flex or Mini beside it, quote the pair, not the station alone. Details on the [Clover POS pricing and fees](/clover/pricing).

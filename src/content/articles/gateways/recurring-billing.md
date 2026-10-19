@@ -38,7 +38,7 @@ Recurring revenue is only as good as the billing behind it. Businesses that char
 4. **Declines are retried** on a schedule you set, and the customer can be emailed a link to update their card.
 5. **Account Updater** refreshes expired and reissued cards between cycles, so most "expired card" declines never happen.
 
-accept.blue, NMI, USAePay and Fluidpay all do this. Authorize.net does it through Automated Recurring Billing (ARB) with the Customer Information Manager (CIM) vault.
+accept.blue, [NMI gateway](/gateways/nmi), USAePay and Fluidpay all do this. Authorize.net does it through Automated Recurring Billing (ARB) with the Customer Information Manager (CIM) vault.
 
 ## The leak: card churn
 

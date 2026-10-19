@@ -28,7 +28,7 @@ cta:
 related: ["gateways/nmi", "gateways/authorize-net-alternatives", "gateways/pricing", "gateways/switch-from-authorize-net"]
 ---
 
-USAePay was one of the original independent gateways, sold by thousands of merchant services resellers through the 2000s and 2010s. In 2021 NMI bought it. If you are on USAePay you probably got it from a local processor years ago and have not thought about it since. This page covers what it is today, what it should cost, and when to leave it.
+USAePay was one of the original independent gateways, sold by thousands of merchant services resellers through the 2000s and 2010s. In 2021 [NMI gateway](/gateways/nmi) bought it. If you are on USAePay you probably got it from a local processor years ago and have not thought about it since. This page covers what it is today, what it should cost, and when to leave it.
 
 ## What USAePay is
 

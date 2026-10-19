@@ -4,10 +4,10 @@ h1: "Authorize.net Alternatives in 2026: Which Gateways Keep Your Integrations a
 description: "accept.blue, NMI, Stripe, Square, Helcim and PayPal against Authorize.net on fees, integrations, stored-card migration, Level 3 data, and who each one fits."
 category: gateways
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "For a business that already runs a cart, billing software or QuickBooks, the practical Authorize.net alternatives are accept.blue and NMI: both connect to the same platforms, both support tokenized vaults, recurring billing, ACH and Level 2 and 3 data, and both are sold through providers who can also re-price your processing."
-  - "Stripe, Square and PayPal are simpler for a new online business but bundle processing at 2.9% + 30¢ and do not let you shop the processing separately. Helcim is a good direct option for lower-volume merchants who want interchange-plus without a reseller."
+  - "Stripe, Square and PayPal are simpler for a new online business but bundle processing at roughly 2.9% to 3.5% + 30¢ or more and do not let you shop the processing separately. Helcim is a good direct option for lower-volume merchants who want interchange-plus without a reseller."
   - "Stored cards can move. Authorize.net exports customer payment profiles to another PCI-compliant gateway on request, encrypted, on a schedule. Plan two to four weeks for a migration with recurring billing."
 keywords: ["authorize.net alternatives", "authorize.net competitors", "authorize.net vs nmi", "authorize.net vs stripe", "accept.blue vs authorize.net", "best payment gateway for small business"]
 faq:
@@ -36,9 +36,9 @@ Most businesses looking for an Authorize.net alternative are not unhappy with th
 |---|---|---|---|---|---|---|---|
 | Authorize.net | $25 | 10¢ + 10¢ batch (gateway only), or 2.9% + 30¢ all-in | Direct and resellers | Yes (CIM, ARB), Account Updater $0.25 | Yes | eCheck 0.75%, $10 min | Established merchants with working integrations |
 | accept.blue | Set by provider | Set by provider | ISOs and agents only | Yes, tokenized vault, scheduled and recurring | Yes, enhanced | Yes | Ecommerce, B2B, MOTO, invoicing, merchants that want gateway and processing on one bill |
-| NMI | Set by reseller | Set by reseller | Resellers only | Yes, Customer Vault | Yes | Yes | Merchants with many integrations, multi-MID setups, ISVs |
+| [NMI](/gateways/nmi) | Set by reseller | Set by reseller | Resellers only | Yes, Customer Vault | Yes | Yes | Merchants with many integrations, multi-MID setups, ISVs |
 | Stripe | $0 | 2.9% + 30¢ online | Direct | Yes | Limited | ACH 0.8% capped | New online businesses, developers, SaaS |
-| Square | $0 | 2.9% + 30¢ online, 2.6% + 15¢ in person | Direct | Yes | No | ACH 1% | Small retail and service that wants one app |
+| Square | $0 | 3.3% + 30¢ online (free plan), 2.6% + 15¢ in person | Direct | Yes | No | ACH 1% | Small retail and service that wants one app |
 | PayPal / Braintree | $0 to $30 | About 2.99% + 49¢ (PayPal) | Direct | Yes | Limited | Yes | Marketplaces, consumer checkout with PayPal wallet |
 | Helcim | $0 | Interchange plus about 0.4% + 8¢ online | Direct | Yes | Yes | ACH 0.5% + 25¢ | Lower-volume merchants that want interchange-plus without a reseller |
 

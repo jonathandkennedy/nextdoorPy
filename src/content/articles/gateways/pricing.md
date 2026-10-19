@@ -1,18 +1,22 @@
 ---
-title: "Payment Gateway Pricing and Fees (2026): Authorize.net, NMI, accept.blue, Stripe, Braintree, Helcim Compared"
-h1: "Payment Gateway Pricing in 2026: What Each Gateway Charges and What It Adds Up To"
-description: "Monthly, per-item and processing fees for Authorize.net, NMI, accept.blue, Fluidpay, Stripe, Braintree, Helcim and Shopify, with all-in cost at three volumes."
+title: "Payment Gateway Cost (2026): Fees, Setup, Integration and Pricing Compared"
+h1: "How Much Does a Payment Gateway Cost? Fees, Setup, Integration and Pricing in 2026"
+description: "What a payment gateway costs in 2026: setup, monthly and per-transaction fees, integration, building your own, and all-in pricing for Authorize.net, NMI, Stripe and more."
 category: gateways
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Gateway fees come in two shapes. Standalone gateways charge a monthly fee and cents per transaction and leave processing to your merchant account provider: Authorize.net is $25 plus 10¢ plus a 10¢ daily batch fee. Bundled providers charge no monthly fee and one flat rate that includes processing: Stripe and WooPayments 2.9% + 30¢, Braintree 2.59% + 49¢, Shopify Payments 2.9% + 30¢ on Basic."
   - "The gateway fee itself is small. On $50,000 a month the difference between gateways is tens of dollars; the difference between flat-rate and interchange-plus processing behind the gateway is hundreds."
   - "Above roughly $10,000 a month card-not-present, a standalone gateway with interchange-plus processing beats every bundled flat rate. Below that, bundled is simpler and close enough."
-keywords: ["payment gateway pricing", "payment gateway fees", "payment gateway cost", "cheapest payment gateway", "payment gateway fees comparison", "payment gateway comparison"]
+keywords: ["payment gateway cost", "how much does a payment gateway cost", "payment gateway fees", "payment gateway pricing", "cost of payment gateway integration", "payment gateway setup fee", "how much does it cost to build a payment gateway", "cheapest payment gateway", "payment gateway fees comparison"]
 faq:
   - q: "How much does a payment gateway cost per month?"
     a: "Standalone gateways run $0 to $30 a month plus 5¢ to 15¢ per transaction. Authorize.net publishes $25 a month and 10¢. NMI, accept.blue, Fluidpay and USAePay are priced by the reseller and commonly land between $10 and $25. Bundled providers like Stripe, Braintree and WooPayments charge no monthly fee and bake everything into the transaction rate."
+  - q: "How much does it cost to integrate a payment gateway?"
+    a: "On a cart with a ready-made plugin such as Shopify, WooCommerce or BigCommerce, integration is configuration: paste the gateway credentials and test, usually under an hour and no developer. A hosted payment page or payment link needs no code at all. A custom API integration into your own software is a development project, typically days to a couple of weeks of developer time depending on whether you need a vault, recurring billing and webhooks."
+  - q: "How much does it cost to build your own payment gateway?"
+    a: "For a merchant, building a gateway almost never makes sense. A gateway that stores or transmits card data is a PCI DSS service provider, and above 300,000 transactions a year that means an annual Report on Compliance from a Qualified Security Assessor, plus processor certifications for every connection. Budgets for that are commonly six figures before the first transaction. Use an existing gateway and integrate it."
   - q: "What is the cheapest payment gateway?"
     a: "For a business under about $5,000 a month, a bundled provider with no monthly fee is cheapest in total. Above about $10,000 a month, a standalone gateway with interchange-plus processing is cheapest, because the processing markup is negotiated rather than fixed at 2.9% + 30¢. The gateway fee is rarely the deciding factor."
   - q: "Are gateway fees and processing fees the same thing?"
@@ -31,6 +35,34 @@ related: ["gateways/what-is-a-payment-gateway", "gateways/authorize-net-fees", "
 Gateway pricing is easy to compare and mostly irrelevant. Processing pricing is hard to compare and decides the bill. This page lists what each gateway publishes, then does the arithmetic that matters: all-in cost per month at three volumes, standalone versus bundled.
 
 Prices are from each provider's pricing page or documentation as of September 2026 and change without notice.
+
+## What a payment gateway costs, in five parts
+
+When someone asks how much a payment gateway costs, the honest answer has five lines. Most quotes only show the first two.
+
+| Cost line | Typical range in 2026 | Who charges it |
+|---|---|---|
+| Setup fee | $0 on most gateways today; some resellers still charge $25 to $99 | The gateway or reseller |
+| Monthly gateway fee | $0 to $30 | Standalone gateways. Bundled providers charge $0 here |
+| Per-transaction gateway fee | 5¢ to 15¢ | Standalone gateways |
+| Processing | Interchange plus a markup, or a flat 2.9% + 30¢ style rate | The merchant account or the bundled provider |
+| Integration | $0 with a plugin or hosted page; developer time for a custom build | You or your developer |
+
+The processing line is the big one. On $50,000 a month online, the gateway fee and per-item fee together are about $80. The processing is about $1,250 or more. That is why the comparison below is all-in rather than gateway fee alone.
+
+## What it costs to integrate a payment gateway
+
+Integration cost depends on where the payment happens, not on which gateway you pick.
+
+- **A cart with a plugin.** Shopify, WooCommerce, BigCommerce and most carts have ready-made connectors for Authorize.net, [NMI gateway](/gateways/nmi), accept.blue and the bundled providers. Integration is pasting credentials and running a test order. No developer, usually under an hour. Our [WooCommerce](/gateways/woocommerce) and [Shopify](/gateways/shopify) pages cover the specifics, including Shopify's extra fee for outside gateways.
+- **A hosted payment page or payment link.** The gateway hosts the checkout. You link to it from a website, invoice or text message. No code, and it keeps you in the lightest PCI scope. See [hosted payment pages and PCI](/gateways/hosted-payment-page-and-pci).
+- **A custom API integration.** Your own software calls the gateway's API. Budget developer time measured in days for a basic charge-and-refund flow, and up to a couple of weeks when you add a customer vault, recurring billing, webhooks and Level 3 data. Gateways that share the Authorize.net API format (NMI and accept.blue among them) cut that time when you are migrating.
+- **A virtual terminal only.** Staff key payments into a web page. No integration at all. See the [virtual terminal guide](/gateways/virtual-terminal).
+
+## What it costs to build your own payment gateway
+
+Some of the people asking this are founders who want to build a gateway. For a merchant, the answer is not to. A system that stores, processes or transmits card numbers is a PCI DSS service provider. Above 300,000 transactions a year that requires an annual Report on Compliance from a Qualified Security Assessor, on top of certifying the integration with each processor you connect to and keeping up with card-brand rule changes twice a year. That is commonly a six-figure project before the first live transaction, plus recurring audit and staffing cost. Integrating an existing gateway costs a small fraction of that and moves the compliance burden to a company that does it full time.
+
 
 ## Published gateway pricing, September 2026
 

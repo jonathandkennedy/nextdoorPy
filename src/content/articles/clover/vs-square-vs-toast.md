@@ -1,10 +1,10 @@
 ---
 title: "Clover vs Square vs Toast (2026): Three-Way Comparison for Restaurants and Small Businesses"
 h1: "Clover vs Square vs Toast: Which One, for Which Business, at What Cost"
-description: "Clover, Square and Toast side by side on processing and lock-in, hardware, plans, restaurant depth, contracts and support, with a decision by business type and."
+description: "Clover, Square and Toast side by side on processing and lock-in, hardware, plans, restaurant depth, contracts and support, with a pick for each type of business."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Square is the easiest start: free software, cheap hardware, no contract, flat 2.6% plus a per-item fee in person, and no way to negotiate. Toast is the deepest restaurant platform: payroll, scheduling, inventory and multi-location built in, at the price of Toast-only processing (about 2.49% + 15¢ on the paid plan, higher on the free one) and multi-year agreements. Clover is the flexible middle: strong hardware, good single-location software, and processing you choose, including dual pricing at $0 through a dealer."
   - "Under $5,000 a month or brand new: Square. Multi-location restaurant group or one-vendor operations: Toast. Single-location restaurants, bars, cafes, retail and services above $5,000 a month: Clover through a dealer with month-to-month terms."

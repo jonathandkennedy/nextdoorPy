@@ -8,8 +8,8 @@ import { site } from '../config';
 const all = await getCollection('articles', ({ data }) => !data.draft);
 const have = (ids: string[]) => ids.filter((id) => all.some((a) => a.id === id));
 
-const statementIds = have(['guides/how-to-read-a-merchant-statement']);
-const pricingModelIds = have(['dual-pricing/dual-pricing-vs-surcharging-vs-cash-discount', 'dual-pricing/is-dual-pricing-legal-in-california']);
+const statementIds = have(['guides/credit-card-processing-fees', 'guides/how-to-read-a-merchant-statement']);
+const pricingModelIds = have(['dual-pricing/dual-pricing-vs-surcharging-vs-cash-discount', 'dual-pricing/cash-discount-program', 'dual-pricing/is-dual-pricing-legal-in-california', 'dual-pricing/hosted-payment-page', 'dual-pricing/invoices']);
 const softwareIds = have(['quickbooks/credit-card-processing-fees', 'gateways/pricing', 'gateways/what-is-a-payment-gateway']);
 const posIds = have(['clover/pricing', 'clover/reseller-vs-direct', 'clover/vs-square-vs-toast', 'clover/contract-and-fees']);
 
@@ -37,7 +37,7 @@ const schema = [{
   </div></section>
 
   <section class="sec alt"><div class="c">
-    <div class="sh"><div class="sg">Start here</div><h2>Read Your Own Statement First</h2><p>Before comparing anyone's offer, find out what you pay today. Every other decision on this page depends on that one number.</p></div>
+    <div class="sh"><div class="sg">Start here</div><h2>What You Pay Now, and How to Read It</h2><p>Before comparing anyone's offer, find out what you pay today. The fee calculator turns your statement into one effective rate. Every other decision on this page depends on that one number.</p></div>
     <HubList ids={statementIds} />
   </div></section>
 

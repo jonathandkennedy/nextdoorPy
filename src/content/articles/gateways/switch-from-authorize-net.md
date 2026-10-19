@@ -50,7 +50,7 @@ Pull your Authorize.net statement and your processor's statement for the same mo
 
 ### 2. Confirm platform compatibility
 
-We check your cart or software against the new gateway's integration list. For accept.blue and NMI that covers the major carts and most billing tools. If there is no native integration, we look at an Authorize.net-compatible endpoint or a small custom change, and we tell you the cost before going further.
+We check your cart or software against the new gateway's integration list. For accept.blue and [NMI gateway](/gateways/nmi) that covers the major carts and most billing tools. If there is no native integration, we look at an Authorize.net-compatible endpoint or a small custom change, and we tell you the cost before going further.
 
 ### 3. Board the new merchant account and gateway
 

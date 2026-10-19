@@ -75,3 +75,5 @@ On a statement review we find the non-compliance fee on about a third of account
 ## Setup with us
 
 We configure the gateway's hosted page or hosted fields on your cart, enable the vault, confirm the integration keeps you on SAQ A, and sit with you for the questionnaire once. After that it is an annual renewal you can do yourself.
+
+A hosted page can also carry two prices, one for ACH and one for cards, so online customers choose and the business stops absorbing card fees. That setup is covered in [dual pricing on a hosted payment page](/dual-pricing/hosted-payment-page).

@@ -1,10 +1,10 @@
 ---
-title: "Clover Go (2026): Mobile Card Reader Price, Specs, and When to Choose a Flex Instead"
-h1: "Clover Go: The Phone-Paired Card Reader, and the Point Where a Flex Makes More Sense"
-description: "Clover Go specs (chip, swipe, contactless, Bluetooth to the Clover Go app), the $49 to $199 price by generation, what it lacks against a Flex, and the mobile uses it."
+title: "Clover Go Price ($49 to $199) and Specs (2026): When to Choose a Flex Instead"
+h1: "Clover Go: The $49 to $199 Phone Card Reader, and When a Flex Makes More Sense"
+description: "Clover Go specs (chip, swipe, contactless, Bluetooth to the Go app), the $49 to $199 price by generation, what it lacks against a Flex, and when it is enough."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Clover Go is a pocket-sized reader that pairs with your phone or tablet over Bluetooth and takes chip, swipe and contactless payments through the Clover Go app. Battery is rated for roughly 130 to 160 transactions per charge. Price runs $49 to $199 depending on generation and where you buy it."
   - "It runs on the same Clover account as your other devices, so sales at a market stall or on a service call report alongside the counter. It has no printer, no camera, no cellular; it relies on your phone."
@@ -59,5 +59,7 @@ Every day on the road. The Flex has its own LTE, an 8-hour battery, a receipt pr
 The Clover Go app shows both totals on the phone screen before the customer taps, and the receipt shows the price paid. Same program as the counter. For mobile services that invoice, a text-to-pay link is often simpler than a reader, and the customer pays from their own phone; that setup is on the [contractors and service page](/industries/contractors-and-service).
 
 ## Cost through a dealer
+
+For every Clover device price, plan and per-transaction fee in one place, see [how much Clover costs](/clover/pricing).
 
 Often included at no charge with a merchant account. No monthly software fee on payments-only. Processing at $0 under dual pricing or interchange-plus, on the same statement as your other Clover devices.

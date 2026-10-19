@@ -66,4 +66,4 @@ The fee schedule lists cash prices; a line states card prices are a set percenta
 
 ## Cost
 
-Mini and Flex placed. Essentials plan $14.95 a month, or Payments $0. Processing $0 under dual pricing or interchange-plus. Month to month, fee schedule on one page. A practice taking $60,000 a month in patient card payments at 3% is paying $1,800 a month; the comparison is on the [Clover pricing page](/clover/pricing).
+Mini and Flex placed. Essentials plan $14.95 a month, or Payments $0. Processing $0 under dual pricing or interchange-plus. Month to month, fee schedule on one page. A practice taking $60,000 a month in patient card payments at 3% is paying $1,800 a month; the comparison is on the [Clover POS pricing and fees](/clover/pricing).

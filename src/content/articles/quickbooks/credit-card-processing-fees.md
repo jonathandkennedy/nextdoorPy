@@ -4,7 +4,7 @@ h1: "QuickBooks Payments Fees in 2026, and How to Cut Them Without Leaving Quick
 description: "QuickBooks Payments charges 2.99% invoiced, 2.5% in person, 3.5% keyed, 1% ACH, 1.75% instant deposit. What it costs on real volume and the cheaper options that sync."
 category: quickbooks
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "QuickBooks Payments rates as of April 30, 2026: 2.99% for cards and digital wallets paid online or by invoice, 2.5% for in-person swipe or tap, 3.5% for keyed cards, 1% for ACH bank transfers with a $1 minimum, and 1.75% for instant deposits. No monthly fee on pay-as-you-go."
   - "A contractor invoicing $40,000 a month that gets paid 70% by card and 30% by ACH pays about $960 a month, or $11,500 a year, before any instant-deposit fees."
@@ -18,7 +18,7 @@ faq:
   - q: "Can I use a different credit card processor with QuickBooks?"
     a: "Yes. Several invoicing and payment platforms integrate with QuickBooks Online and Desktop, record payments against the right invoice, and let you choose the processing behind them. We use Hyfin for text-to-pay and invoicing with two-way QuickBooks sync, priced on interchange-plus or with the card cost passed to the payer."
   - q: "Can I pass credit card fees to customers in QuickBooks?"
-    a: "QuickBooks itself does not add a compliant surcharge or dual price to invoices, and adding a manual 'processing fee' line raises surcharge-rule and state-law questions. Third-party invoicing tools can present a card price and a bank-transfer price on the invoice so the payer chooses, which is the dual pricing model."
+    a: "QuickBooks does not offer dual pricing on invoices. Intuit staff have described a percentage surcharge setting under Settings, Sales, Invoice Payments that appears only when QuickBooks Payments enables it on the account; it is a surcharge, so the surcharge rules apply, and a manual 'processing fee' line raises the same surcharge-rule and state-law questions. Third-party invoicing tools can present a card price and a bank-transfer price on the invoice so the payer chooses, which is the dual pricing model."
   - q: "Is 1% ACH in QuickBooks a good deal?"
     a: "On a $500 invoice, $5 is fine. On a $20,000 invoice, $200 is not, and QuickBooks no longer caps it. Third-party ACH is commonly a flat fee per item or a percentage with a cap, which is where high-ticket businesses save."
 cta:
@@ -89,3 +89,5 @@ Your QuickBooks file, chart of accounts, customers and invoices. Your invoice te
 ## When QuickBooks Payments is the right choice
 
 Under about $5,000 a month, paid mostly by ACH on small invoices, with no appetite for a second login. The convenience is worth more than the 1%. Above that, or with any meaningful card volume, it is worth running the numbers. Text a screenshot of your QuickBooks Payments fee report for a month and we send back the comparison.
+
+If you invoice through QuickBooks and want card payers to cover the card cost without adding a fee line, read [dual pricing on invoices](/dual-pricing/invoices).

@@ -1,0 +1,126 @@
+---
+// Interactive fee calculator rendered under an article's summary block.
+// Numbers are computed at build time with default inputs so the page is useful
+// and crawlable without JavaScript; the inline script recalculates on input.
+// Rates mirror the published figures used in the articles (clover.com 2026, Square, Stripe).
+const { kind } = Astro.props as { kind: 'clover' | 'processing-fees' };
+
+const money = (n: number) => '$' + Math.round(n).toLocaleString('en-US');
+const pct = (n: number) => (n * 100).toFixed(2) + '%';
+
+const cloverPlans = [
+  { id: 'essentials', label: 'Essentials ($14.95/mo, 2.6% + 10¢)', fee: 14.95, rate: 0.026 },
+  { id: 'counter', label: 'Counter Service Restaurant ($59.95/mo, 2.3% + 10¢)', fee: 59.95, rate: 0.023 },
+  { id: 'retail', label: 'Retail Growth ($84.95/mo, 2.3% + 10¢)', fee: 84.95, rate: 0.023 },
+  { id: 'table', label: 'Table Service Restaurant ($89.95/mo, 2.3% + 10¢)', fee: 89.95, rate: 0.023 },
+];
+
+function clover(vol: number, avg: number, keyedPct: number, planId: string) {
+  const p = cloverPlans.find((x) => x.id === planId) ?? cloverPlans[3];
+  const tx = avg > 0 ? vol / avg : 0;
+  const k = Math.min(Math.max(keyedPct, 0), 100) / 100;
+  const inPerson = vol * (1 - k) * p.rate + tx * (1 - k) * 0.1;
+  const keyed = vol * k * 0.035 + tx * k * 0.1;
+  const processing = inPerson + keyed;
+  return { tx, inPerson, keyed, processing, software: p.fee, total: processing + p.fee, eff: vol > 0 ? processing / vol : 0 };
+}
+
+const flatRates = [
+  { label: 'Clover direct, in person (2.3% + 10¢)', rate: 0.023, per: 0.1 },
+  { label: 'Square, in person (2.6% + 15¢)', rate: 0.026, per: 0.15 },
+  { label: 'Stripe, online (2.9% + 30¢)', rate: 0.029, per: 0.3 },
+];
+
+function fees(vol: number, avg: number, rate: number, perCents: number, monthly: number) {
+  const tx = avg > 0 ? vol / avg : 0;
+  const cost = vol * (rate / 100) + tx * (perCents / 100) + monthly;
+  return { tx, cost, eff: vol > 0 ? cost / vol : 0, annual: cost * 12 };
+}
+
+const c = clover(40000, 32, 5, 'table');
+const f = fees(25000, 45, 2.6, 15, 25);
+---
+{kind === 'clover' && (
+  <section class="calc" data-calc="clover" aria-labelledby="calc-h">
+    <h2 id="calc-h">Clover fee calculator</h2>
+    <p class="calc-sub">Estimate what Clover costs you each month when bought direct from clover.com at 2026 published rates. Change any number.</p>
+    <div class="calc-in">
+      <label>Monthly card sales ($)<input type="number" inputmode="decimal" min="0" step="100" name="vol" value="40000" /></label>
+      <label>Average sale ($)<input type="number" inputmode="decimal" min="1" step="1" name="avg" value="32" /></label>
+      <label>Keyed in or online (%)<input type="number" inputmode="decimal" min="0" max="100" step="1" name="keyed" value="5" /></label>
+      <label class="wide">Clover software plan
+        <select name="plan">{cloverPlans.map((p) => <option value={p.id} selected={p.id === 'table'}>{p.label}</option>)}</select>
+      </label>
+    </div>
+    <table class="calc-out">
+      <tbody>
+        <tr><th scope="row">Transactions per month</th><td data-o="tx">{Math.round(c.tx).toLocaleString('en-US')}</td></tr>
+        <tr><th scope="row">In-person processing</th><td data-o="inPerson">{money(c.inPerson)}</td></tr>
+        <tr><th scope="row">Keyed and online processing (3.5% + 10¢)</th><td data-o="keyed">{money(c.keyed)}</td></tr>
+        <tr><th scope="row">Software plan</th><td data-o="software">{money(c.software)}</td></tr>
+        <tr class="tot"><th scope="row">Clover direct, per month</th><td data-o="total">{money(c.total)}</td></tr>
+        <tr><th scope="row">Effective processing rate</th><td data-o="eff">{pct(c.eff)}</td></tr>
+        <tr class="dp"><th scope="row">Processing cost to you with dual pricing</th><td>$0</td></tr>
+        <tr class="dp"><th scope="row">Processing you stop paying each year</th><td data-o="annual">{money(c.processing * 12)}</td></tr>
+      </tbody>
+    </table>
+    <p class="calc-note">Hardware is extra and not included. Under dual pricing, card customers pay the posted card price and cash customers pay less, so the card cost is not yours. Software and hardware terms through a dealer vary, so ask for them in writing.</p>
+  </section>
+)}
+{kind === 'processing-fees' && (
+  <section class="calc" data-calc="fees" aria-labelledby="calc-h">
+    <h2 id="calc-h">Credit card processing fee calculator</h2>
+    <p class="calc-sub">Enter the numbers from your last statement to see your monthly cost and effective rate, then compare the same volume at published flat rates.</p>
+    <div class="calc-in">
+      <label>Monthly card sales ($)<input type="number" inputmode="decimal" min="0" step="100" name="vol" value="25000" /></label>
+      <label>Average sale ($)<input type="number" inputmode="decimal" min="1" step="1" name="avg" value="45" /></label>
+      <label>Your percentage rate (%)<input type="number" inputmode="decimal" min="0" step="0.01" name="rate" value="2.6" /></label>
+      <label>Per-transaction fee (¢)<input type="number" inputmode="decimal" min="0" step="1" name="per" value="15" /></label>
+      <label>Monthly account fees ($)<input type="number" inputmode="decimal" min="0" step="1" name="monthly" value="25" /></label>
+    </div>
+    <table class="calc-out">
+      <tbody>
+        <tr><th scope="row">Transactions per month</th><td data-o="tx">{Math.round(f.tx).toLocaleString('en-US')}</td></tr>
+        <tr class="tot"><th scope="row">Your cost per month</th><td data-o="cost">{money(f.cost)}</td></tr>
+        <tr><th scope="row">Your effective rate</th><td data-o="eff">{pct(f.eff)}</td></tr>
+        <tr><th scope="row">Your cost per year</th><td data-o="annual">{money(f.annual)}</td></tr>
+      </tbody>
+    </table>
+    <table class="calc-out calc-cmp">
+      <thead><tr><th scope="col">Same volume at</th><th scope="col">Per month</th></tr></thead>
+      <tbody>
+        {flatRates.map((r, i) => <tr><th scope="row">{r.label}</th><td data-o={`flat${i}`}>{money(25000 * r.rate + f.tx * r.per)}</td></tr>)}
+        <tr class="dp"><th scope="row">Dual pricing, processing cost to you</th><td>$0</td></tr>
+      </tbody>
+    </table>
+    <p class="calc-note">Flat-rate figures exclude monthly software and any extra fees. Effective rate is total fees divided by card sales, which is the only number that lets you compare two offers fairly.</p>
+  </section>
+)}
+<script is:inline>
+(function () {
+  var money = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); };
+  var pct = function (n) { return (n * 100).toFixed(2) + '%'; };
+  var num = function (el) { var v = parseFloat(el && el.value); return isFinite(v) && v >= 0 ? v : 0; };
+  var plans = { essentials: [14.95, 0.026], counter: [59.95, 0.023], retail: [84.95, 0.023], table: [89.95, 0.023] };
+  var flats = [[0.023, 0.1], [0.026, 0.15], [0.029, 0.3]];
+  document.querySelectorAll('[data-calc]').forEach(function (box) {
+    var q = function (n) { return box.querySelector('[name="' + n + '"]'); };
+    var out = function (k, v) { var el = box.querySelector('[data-o="' + k + '"]'); if (el) el.textContent = v; };
+    function run() {
+      var vol = num(q('vol')), avg = num(q('avg')), tx = avg > 0 ? vol / avg : 0;
+      out('tx', Math.round(tx).toLocaleString('en-US'));
+      if (box.dataset.calc === 'clover') {
+        var p = plans[q('plan').value] || plans.table, k = Math.min(num(q('keyed')), 100) / 100;
+        var ip = vol * (1 - k) * p[1] + tx * (1 - k) * 0.1, ky = vol * k * 0.035 + tx * k * 0.1, proc = ip + ky;
+        out('inPerson', money(ip)); out('keyed', money(ky)); out('software', money(p[0]));
+        out('total', money(proc + p[0])); out('eff', pct(vol > 0 ? proc / vol : 0)); out('annual', money(proc * 12));
+      } else {
+        var cost = vol * num(q('rate')) / 100 + tx * num(q('per')) / 100 + num(q('monthly'));
+        out('cost', money(cost)); out('eff', pct(vol > 0 ? cost / vol : 0)); out('annual', money(cost * 12));
+        flats.forEach(function (r, i) { out('flat' + i, money(vol * r[0] + tx * r[1])); });
+      }
+    }
+    box.addEventListener('input', run); box.addEventListener('change', run);
+  });
+})();
+</script>

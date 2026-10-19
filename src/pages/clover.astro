@@ -33,7 +33,7 @@ const priceIds = ['clover/pricing', 'clover/software-plans', 'clover/contract-an
 const industryIds = ['clover/for-restaurants', 'clover/for-quick-service', 'clover/for-bars', 'clover/for-coffee-shops', 'clover/for-retail', 'clover/for-salons', 'clover/for-food-trucks', 'clover/for-medical-dental', 'clover/for-auto-repair'];
 const opsIds = ['clover/support', 'clover/troubleshooting', 'clover/how-to-use-clover', 'clover/refunds-and-voids', 'clover/setup-and-training', 'clover/offline-mode', 'clover/dining', 'clover/kitchen-display', 'clover/online-ordering', 'clover/gift-cards-and-loyalty', 'clover/quickbooks-integration'];
 ---
-<Layout title="Clover POS: Devices, Pricing, Comparisons and Setup From a Local Dealer" description={`Every Clover device compared, dealer vs clover.com pricing, dual pricing to eliminate processing fees, setups for restaurants, bars, cafes, retail and salons, and the operational answers. Local installs in San Diego and LA. Call ${site.phoneDisplay}.`} schema={schema} smsBody={smsBody}>
+<Layout title="Clover POS From a Local Dealer: Devices, Setup, Comparisons and Dual Pricing" description={`Every Clover device compared, dealer vs clover.com pricing, dual pricing to eliminate processing fees, setups for restaurants, bars, cafes, retail and salons, and the operational answers. Local installs in San Diego and LA. Call ${site.phoneDisplay}.`} schema={schema} smsBody={smsBody}>
   <section class="phero"><div class="c">
     <div class="sg">Clover POS</div>
     <h1>Clover POS With Dealer Pricing, Dual Pricing and a Local Installer</h1>
@@ -42,6 +42,7 @@ const opsIds = ['clover/support', 'clover/troubleshooting', 'clover/how-to-use-c
       <a href={tel} class="bp big" data-cta="clover-call"><PhoneIcon />Call {site.phoneDisplay}</a>
       <a href={sms(smsBody)} class="bo" data-cta="clover-text">Text for a Clover quote</a>
     </div>
+    <p style="margin-top:14px;font-size:.92rem">Looking for numbers first? See <a href="/clover/pricing" style="color:var(--teal);font-weight:700">Clover POS pricing and fees per transaction</a>, with a calculator.</p>
   </div></section>
 
   <section class="sec"><div class="c" style="max-width:860px">

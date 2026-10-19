@@ -80,6 +80,6 @@ Respond to every dispute with the evidence the reason code asks for: the 3DS aut
 
 ## Which gateways
 
-accept.blue: 3D Secure, fraud scoring and rules, Amex routing, tokenized vault. NMI and USAePay: 3DS and a fraud rules suite. Fluidpay: WatchDog rules and machine-learning scoring, 3DS. Authorize.net: Advanced Fraud Detection Suite with velocity and geographic filters; 3DS through the Accept Hosted and API integrations.
+accept.blue: 3D Secure, fraud scoring and rules, Amex routing, tokenized vault. [NMI gateway](/gateways/nmi) and USAePay: 3DS and a fraud rules suite. Fluidpay: WatchDog rules and machine-learning scoring, 3DS. Authorize.net: Advanced Fraud Detection Suite with velocity and geographic filters; 3DS through the Accept Hosted and API integrations.
 
 We enable AVS, CVV and 3DS rules on every online account we board and set the descriptor with you before the first transaction. High-risk categories that need more than that are covered on the [high-risk gateway page](/gateways/high-risk-payment-gateway).

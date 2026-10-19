@@ -86,4 +86,4 @@ Everything on the [3D Secure and chargebacks page](/gateways/3d-secure-and-charg
 
 ## What we can and cannot do
 
-We place accounts through partner acquirers for categories including CBD and hemp, supplements, subscriptions, travel and several others, with NMI, Fluidpay or accept.blue as the gateway. Some categories we cannot place, and we say so on the first call rather than after an application. Text your category and volume and you get a straight answer.
+We place accounts through partner acquirers for categories including CBD and hemp, supplements, subscriptions, travel and several others, with [NMI gateway](/gateways/nmi), Fluidpay or accept.blue as the gateway. Some categories we cannot place, and we say so on the first call rather than after an application. Text your category and volume and you get a straight answer.

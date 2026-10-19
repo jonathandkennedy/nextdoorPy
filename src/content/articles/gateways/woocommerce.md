@@ -4,7 +4,7 @@ h1: "WooCommerce Payment Gateways: WooPayments, Stripe, and When a Merchant Acco
 description: "WooPayments' 2.9% + 30¢ against Stripe, Authorize.net, NMI, accept.blue and Fluidpay on WooCommerce: fees at three volumes, subscriptions, PCI scope, and how to switch."
 category: gateways
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "WooPayments (built on Stripe) charges 2.9% + 30¢ per US card transaction plus 1.5% for international cards and 1% for currency conversion, with no monthly fee and a $15 dispute fee. It is the default and it is fine under about $10,000 a month."
   - "WooCommerce supports every major gateway through plugins: Stripe, PayPal, Square, Braintree, Authorize.net, NMI, accept.blue, Fluidpay and others. Above roughly $15,000 a month a merchant account gateway on interchange-plus saves 0.4% to 0.8% of volume."
@@ -37,10 +37,10 @@ WooCommerce's strength is that it does not care which gateway you use. That is a
 | WooPayments | Bundled (Stripe infrastructure) | 2.9% + 30¢, +1.5% international, +1% conversion | $0 | Yes | Default; wallets included; $15 disputes |
 | Stripe (official plugin) | Bundled | 2.9% + 30¢ | $0 | Yes | Same rates as WooPayments; direct Stripe dashboard |
 | PayPal Payments | Bundled | About 3.49% + 49¢ PayPal; card rates vary | $0 | Yes via vault | Keep for wallet customers |
-| Square | Bundled | 2.9% + 30¢ online | $0 | Yes | Fits stores that also use Square in person |
+| Square | Bundled | 3.3% + 30¢ online (2.9% + 30¢ on paid plans) | $0 | Yes | Fits stores that also use Square in person |
 | Braintree | Bundled | 2.59% + 49¢ | $0 | Yes | PayPal and Venmo included |
 | Authorize.net (official extension) | Gateway on your merchant account | Your processor's rate | $25 + 10¢ + batch | Yes (CIM) | Oldest integration |
-| NMI | Gateway on your merchant account | Your processor's rate | Reseller-set | Yes (Customer Vault) | Broad; multi-MID |
+| [NMI](/gateways/nmi) | Gateway on your merchant account | Your processor's rate | Reseller-set | Yes (Customer Vault) | Broad; multi-MID |
 | accept.blue | Gateway on your merchant account | Your processor's rate | Provider-set | Yes | Modern; Level 3; invoicing |
 | Fluidpay | Gateway on your merchant account | Your processor's rate | Partner-set | Yes | Native plugin or AIM emulator |
 

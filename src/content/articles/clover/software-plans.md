@@ -1,10 +1,10 @@
 ---
 title: "Clover Software Plans Compared (2026): Payments, Essentials, Counter Service, Table Service, Retail Growth"
-h1: "Clover Software Plans: What Each One Includes, What It Costs, and How to Pick the Right One"
-description: "Every Clover plan side by side: Payments ($0), Essentials ($14.95), Counter Service ($59.95), Table Service ($89.95), Retail Growth ($84.95), what each unlocks, and."
+h1: "Clover Software Plans Compared: What Each Plan Includes and Which One to Pick"
+description: "Every Clover plan side by side: Payments, Essentials, Counter Service, Table Service and Retail Growth, what each one unlocks, and which business each plan fits."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Clover has five plans as of September 2026: Payments ($0, terminal use only), Essentials ($14.95, basic POS with inventory, customers, tips, virtual terminal and Clover Go), Counter Service Restaurant ($59.95, adds online ordering, kitchen display and contactless ordering), Table Service Restaurant ($89.95, adds Clover Dining floor plans, coursing, split by seat and bar tabs) and Retail Growth ($84.95, adds variants, returns and exchanges, scale and scanner support, item cost and basic loyalty)."
   - "On clover.com the plan sets the processing rate: 2.6% + 10¢ in person on Payments and Essentials, 2.3% + 10¢ on the three business plans, 3.5% + 10¢ keyed and online on all. Through a dealer the plan fee is the same and the processing is whatever the dealer sets."
@@ -28,7 +28,7 @@ cta:
 related: ["clover/pricing", "clover/dining", "clover/for-retail", "clover/for-quick-service"]
 ---
 
-Clover's plans are priced by what kind of business you run, and the names have changed enough times that dealer sites disagree on them. This is the September 2026 lineup from clover.com with what each plan actually unlocks, the rate attached when you buy direct, and which one each business needs.
+Clover's plans are priced by what kind of business you run, and the names have changed enough times that dealer sites disagree on them. This is the September 2026 lineup from clover.com with what each plan actually unlocks, the rate attached when you buy direct, and which one each business needs. For the full monthly total with hardware and fees per transaction, see [how much Clover costs](/clover/pricing).
 
 ## The plans, side by side
 
@@ -75,4 +75,4 @@ The plan is not the whole software bill. Kiosk is about $34.95 a month per devic
 
 ## Plan and rate through a dealer
 
-The plan fee is the same either way. What changes through a dealer is processing: dual pricing takes it to $0, or interchange-plus for a single posted price, on month-to-month terms with us. The arithmetic is on the [Clover pricing page](/clover/pricing).
+The plan fee is the same either way. What changes through a dealer is processing: dual pricing takes it to $0, or interchange-plus for a single posted price, on month-to-month terms with us. The arithmetic is on the [Clover POS pricing and fees](/clover/pricing).

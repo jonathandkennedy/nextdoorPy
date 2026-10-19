@@ -58,7 +58,7 @@ Consumer cards, which are the other $50,000 in this example, get no reduction. L
 
 ## Three things that have to be true
 
-**1. The gateway passes the data.** accept.blue advertises enhanced Level 2 and 3. NMI, USAePay, Fluidpay and Authorize.net support it. Aggregator checkouts (Square, most PayPal products, Shopify Payments) do not pass Level 3 in a way that changes your cost.
+**1. The gateway passes the data.** accept.blue advertises enhanced Level 2 and 3. [NMI gateway](/gateways/nmi), USAePay, Fluidpay and Authorize.net support it. Aggregator checkouts (Square, most PayPal products, Shopify Payments) do not pass Level 3 in a way that changes your cost.
 
 **2. The data gets populated.** Three ways: your invoicing, ERP or e-commerce integration sends it automatically; staff fill the fields in the virtual terminal; or the gateway fills default line-item data so the transaction qualifies. The third option matters for businesses without integrated software. Ask the provider whether their Level 3 is "automatic" and what that means in practice.
 

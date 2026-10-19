@@ -1,10 +1,10 @@
 ---
 title: "Clover vs Toast (2026): Restaurant POS Pricing, Processing Lock-In, Hardware and Which Fits"
 h1: "Clover vs Toast for Restaurants: Costs, Lock-In, and Where Each One Belongs"
-description: "Clover vs Toast on software plans, processing and Toast's processing lock-in, hardware, contracts, back-of-house depth, worked costs for a 60-seat restaurant, and."
+description: "Clover vs Toast on software plans, processing and Toast's processing lock-in, hardware, contracts and back-of-house depth, with worked costs for a 60-seat restaurant."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Toast is a restaurant-only platform with deep back of house: payroll, scheduling, inventory, multi-location reporting, and hardware designed for kitchens. Its Starter Kit has $0 software but higher processing (around 2.99% + 15¢, higher still with $0-upfront hardware); the Point of Sale plan is about $69 a month with 2.49% + 15¢. Processing must be Toast's, and agreements are commonly multi-year."
   - "Clover is a general POS with strong restaurant software (Counter Service $59.95, Table Service $89.95 a month), broad hardware, and a choice of processing: 2.3% + 10¢ direct, or dual pricing at $0 to the merchant through a dealer. No long-term processing contract direct; month to month through us."

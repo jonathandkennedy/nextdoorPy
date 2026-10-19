@@ -71,4 +71,4 @@ The Compact displays the cash total and card total, the customer chooses, the re
 
 ## Cost through a dealer
 
-Placed at no charge for qualifying merchants, or purchased; never leased. No monthly software fee. Processing at $0 under dual pricing or on interchange-plus. A service business doing $15,000 a month in cards on a leased terminal at 2.9% is paying about $435 a month plus the lease; on a placed Compact with dual pricing it is paying nothing. The comparison method is on the [Clover pricing page](/clover/pricing).
+Placed at no charge for qualifying merchants, or purchased; never leased. No monthly software fee. Processing at $0 under dual pricing or on interchange-plus. A service business doing $15,000 a month in cards on a leased terminal at 2.9% is paying about $435 a month plus the lease; on a placed Compact with dual pricing it is paying nothing. The comparison method is on the [Clover POS pricing and fees](/clover/pricing).

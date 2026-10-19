@@ -1,10 +1,10 @@
 ---
-title: "Clover Station Duo (2026): Specs, Price, What It Includes, and Who Should Buy It"
-h1: "Clover Station Duo: The Two-Screen Counter POS, Explained"
+title: "Clover Station Duo Price ($1,899) and Specs (2026): Who Should Buy It"
+h1: "Clover Station Duo: The $1,899 Two-Screen Counter POS, Explained"
 description: "Clover Station Duo specs, the $1,899 list price and what is in the box, the customer screen's role in tips and dual pricing, and how dealer placement changes the cost."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Station Duo is Clover's flagship counter POS: a 14-inch merchant screen with camera, barcode scanner and fingerprint login, an 8-inch customer-facing screen that takes the tap, tip, signature and receipt choice, a built-in receipt printer and a cash drawer. Ethernet, Wi-Fi and LTE."
   - "List price on clover.com is $1,899 outright or bundled into a 36-month plan. Through a dealer it is placed at no charge for qualifying merchants. Software runs $59.95 to $89.95 a month on restaurant and retail plans."
@@ -65,7 +65,7 @@ The second screen is not a luxury. It moves four things off your staff and onto 
 | Setup | Self-serve | Menu or inventory built, printers routed, staff trained, on site in San Diego and LA |
 | Contract | No long-term processing contract | Month to month, in writing |
 
-On $40,000 a month in cards the processing difference is about $1,000 a month. The hardware price is a footnote. The full comparison with worked examples is on the [Clover pricing page](/clover/pricing).
+On $40,000 a month in cards the processing difference is about $1,000 a month. The hardware price is a footnote. The full comparison with worked examples is on the [Clover POS pricing and fees](/clover/pricing).
 
 ## Who should buy it
 

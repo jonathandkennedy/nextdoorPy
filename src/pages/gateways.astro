@@ -12,12 +12,12 @@ const faq = [
   { q: 'Can I keep my shopping cart or software if I switch gateways?', a: 'Almost always. WooCommerce, Magento, BigCommerce, Ecwid, OpenCart, QuickBooks and most billing and practice tools support several gateways. Switching is a plugin install or new API keys. Shopify is the exception: it charges a fee for third-party gateways, so the math is different there.' },
   { q: 'Do I lose stored customer cards when I change gateways?', a: 'No. Gateways export vaulted cards to another PCI-compliant gateway on request, encrypted to the receiving party. The new gateway imports them and your software is remapped to new tokens. Authorize.net, Stripe, Braintree, CardPointe and Elavon all support this. Allow two to five weeks with recurring billing.' },
   { q: 'Which gateway is cheapest?', a: 'The gateway fee is $0 to $30 a month and is rarely the deciding factor. Under about $10,000 a month a bundled provider with no monthly fee (Stripe, WooPayments, Square) is cheapest in total. Above that, a standalone gateway with interchange-plus processing wins, usually by 0.4% to 0.8% of volume.' },
-  { q: 'My gateway is being retired. What do I do?', a: 'PayPal Payflow and Global Payments’ Transaction Express are both being retired in 2026. Export your reporting, request a stored-card export to a new PCI-compliant gateway, and use the forced change to re-price the processing. The pages for each gateway below have the dates and steps.' },
+  { q: 'My gateway is being retired. What do I do?', a: 'PayPal Payflow is being retired, and the Global Payments Transaction Express virtual terminal now shows an end of life notice. Export your reporting, request a stored-card export to a new PCI-compliant gateway, and use the forced change to re-price the processing. The pages for each gateway below have the dates and steps.' },
 ];
 const schema = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
   { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Payment gateways', url: `${site.url}/gateways`, about: 'Payment gateway pricing, features, comparisons and migration for small businesses' }];
 const basics = ['gateways/what-is-a-payment-gateway', 'gateways/pricing', 'gateways/hosted-payment-page-and-pci', 'gateways/virtual-terminal'];
-const features = ['gateways/level-3-processing', 'gateways/recurring-billing', 'gateways/ach-payment-gateway', 'gateways/3d-secure-and-chargebacks', 'gateways/high-risk-payment-gateway'];
+const features = ['gateways/level-3-processing', 'gateways/recurring-billing', 'gateways/ach-payment-gateway', 'dual-pricing/hosted-payment-page', 'dual-pricing/invoices', 'gateways/3d-secure-and-chargebacks', 'gateways/high-risk-payment-gateway'];
 const compared = ['gateways/authorize-net-fees', 'gateways/authorize-net-alternatives', 'gateways/accept-blue', 'gateways/nmi', 'gateways/usaepay', 'gateways/fluidpay', 'gateways/paytrace', 'gateways/ebizcharge', 'gateways/linked2pay', 'gateways/dejavoo-ipospays', 'gateways/stripe-fees', 'gateways/braintree', 'gateways/helcim-review', 'gateways/elavon-converge', 'gateways/global-payments-integrated', 'gateways/pineapple-payments-cardpointe', 'gateways/anywherecommerce'];
 const retiring = ['gateways/paypal-payflow', 'gateways/transaction-express-transit', 'gateways/switch-from-authorize-net'];
 const platforms = ['gateways/woocommerce', 'gateways/shopify', 'gateways/ecommerce-platforms', 'quickbooks/credit-card-processing-fees'];
@@ -47,7 +47,7 @@ const platforms = ['gateways/woocommerce', 'gateways/shopify', 'gateways/ecommer
   </div></section>
 
   <section class="sec"><div class="c">
-    <div class="sh"><div class="sg">Features</div><h2>Level 3, Recurring, ACH, 3D Secure and High Risk</h2><p>What each feature does, what it saves or prevents, and which gateways have it.</p></div>
+    <div class="sh"><div class="sg">Features</div><h2>Level 3, Recurring, ACH, Dual Pricing Online, 3D Secure and High Risk</h2><p>What each feature does, what it saves or prevents, and which gateways have it.</p></div>
     <HubList ids={features} />
   </div></section>
 

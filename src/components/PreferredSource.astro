@@ -22,3 +22,6 @@ const deeplink = `https://www.google.com/preferences/source?q=${domain}`;
     </div>
   </div>
 </section>
+<script is:inline>
+(function(){var d=document.querySelector('[google-add-preferred-source-btn]');if(!d)return;var n=0,t=setInterval(function(){if(d.shadowRoot||d.children.length||d.offsetWidth>0){d.parentNode.classList.add('psb-ok');clearInterval(t)}else if(++n>40)clearInterval(t)},250)})();
+</script>

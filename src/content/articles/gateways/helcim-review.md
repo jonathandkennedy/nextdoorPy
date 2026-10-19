@@ -74,7 +74,7 @@ If that is you, Helcim is a good answer and we are not going to pretend otherwis
 
 **Equipment.** Placed at no charge for qualifying merchants, including Clover and Dejavoo, against Helcim's $349 terminal.
 
-**Gateway compatibility.** Helcim's online payments run through Helcim's own gateway and plugins. If your practice management, billing or vertical software connects to NMI, Authorize.net, accept.blue or Fluidpay and not to Helcim, Helcim is not an option for that channel.
+**Gateway compatibility.** Helcim's online payments run through Helcim's own gateway and plugins. If your practice management, billing or vertical software connects to [NMI gateway](/gateways/nmi), Authorize.net, accept.blue or Fluidpay and not to Helcim, Helcim is not an option for that channel.
 
 **Level 3 and B2B.** Helcim supports Level 2 and 3 data; so do the gateways we place. Comparable.
 

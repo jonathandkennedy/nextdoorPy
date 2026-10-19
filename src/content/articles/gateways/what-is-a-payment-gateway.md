@@ -53,7 +53,7 @@ A gateway-only account, like Authorize.net's Gateway Only plan, needs a merchant
 
 | Piece | Job | Examples | Charges |
 |---|---|---|---|
-| Gateway | Capture, tokenize, route, manage recurring and vault | Authorize.net, NMI, accept.blue, Fluidpay, USAePay, Payflow | Monthly fee plus per-transaction fee |
+| Gateway | Capture, tokenize, route, manage recurring and vault | Authorize.net, [NMI](/gateways/nmi), accept.blue, Fluidpay, USAePay, Payflow | Monthly fee plus per-transaction fee |
 | Processor / acquirer | Authorize, settle, fund | Fiserv, Worldpay, Elavon, TSYS, Global Payments, and the ISOs that resell them | Interchange, assessments, markup, monthly fees |
 | Merchant account | Holds settled funds, carries underwriting | Opened through the processor | Usually part of processor pricing |
 | Aggregator (all three bundled) | Everything above under one master account | Stripe, Square, PayPal, WooPayments, Shopify Payments | One flat rate, no monthly fee |

@@ -88,3 +88,5 @@ Look at a card receipt. If there is a line called fee, surcharge, adjustment or 
 ## Setup
 
 Dual pricing runs on Clover, Dejavoo, Exatouch, PAX and most terminals made in the last five years. The processor enables it on the merchant account and sets the percentage. Signage, menu wording and a staff script complete it. About a day. The Clover-specific walkthrough is in [dual pricing on Clover](/clover/dual-pricing).
+
+For a closer look at the cash-only version, including the receipt wording that keeps it compliant, see [how a cash discount program works](/dual-pricing/cash-discount-program).

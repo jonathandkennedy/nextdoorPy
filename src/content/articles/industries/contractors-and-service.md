@@ -72,3 +72,5 @@ Day one: application and QuickBooks connection. Day two: invoice template and pa
 ## Serving Southern California and beyond
 
 In-person setup in San Diego, Los Angeles and Orange County. Remote setup anywhere in the United States, which is how most contractors prefer it anyway.
+
+If most of your revenue arrives on invoices, the biggest saving is usually not the rate. It is getting card payers to cover the card cost and steering everyone else to ACH. Our guide to [dual pricing on invoices](/dual-pricing/invoices) shows the wording and the math.

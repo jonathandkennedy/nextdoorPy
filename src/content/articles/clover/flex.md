@@ -1,10 +1,10 @@
 ---
-title: "Clover Flex Gen 4 and Flex Pocket (2026): Specs, Price, Battery, and Who Needs a Handheld"
-h1: "Clover Flex: The Handheld for Pay at Table, Curbside, Deliveries and Line Busting"
-description: "Clover Flex Gen 4 specs (5.99-inch screen, 8-hour battery, LTE, printer, camera), the $699 to $749 list price, the Flex Pocket variant, offline payments, and who."
+title: "Clover Flex Price ($699 to $749) and Specs (2026): Flex 4 and Flex Pocket"
+h1: "Clover Flex: The $699 to $749 Handheld for Pay at Table, Curbside and Line Busting"
+description: "Clover Flex Gen 4 specs (5.99-inch screen, 8-hour battery, LTE, printer), the $699 to $749 price, the Flex Pocket, offline payments, and who needs a handheld."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Clover Flex Gen 4 is a handheld POS with a 5.99-inch screen, built-in receipt printer, 5MP camera for barcode scanning, about 8 hours of battery, and Wi-Fi, LTE and Bluetooth. It runs the full Clover software so a server can take an order, split a check, take a tip and print a receipt at the table."
   - "List price is $699 to $749 outright on clover.com. Flex Pocket has the same screen, processor and payments with no printer and no charging cradle, for merchants who text or email receipts. Both support offline payments."
@@ -69,4 +69,4 @@ The Flex shows the cash total and the card total on its screen; the server turns
 
 ## Cost through a dealer
 
-Flex units placed at no charge for qualifying merchants, or purchased outright; never leased. A Flex used only for payments alongside a Station runs on the account's existing software plan. Processing at $0 under dual pricing or on interchange-plus. Quote the whole setup, Station plus Flexes, on one page; the [Clover pricing page](/clover/pricing) has the worked examples.
+Flex units placed at no charge for qualifying merchants, or purchased outright; never leased. A Flex used only for payments alongside a Station runs on the account's existing software plan. Processing at $0 under dual pricing or on interchange-plus. Quote the whole setup, Station plus Flexes, on one page; the [Clover POS pricing and fees](/clover/pricing) has the worked examples.

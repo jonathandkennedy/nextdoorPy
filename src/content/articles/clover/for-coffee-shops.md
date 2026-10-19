@@ -1,10 +1,10 @@
 ---
 title: "Clover POS for Coffee Shops and Cafes (2026): One Mini, Tips on Screen, and $0 Processing"
 h1: "Clover for Coffee Shops: The One-Device Setup That Keeps the Line Moving"
-description: "The coffee shop Clover setup on one Mini: modifier-first drink menu, tips on screen, loyalty and gift cards, pickup ordering, and dual pricing math on a."
+description: "The coffee shop Clover setup on one Mini: modifier-first drink menu, tips on screen, loyalty and gift cards, pickup ordering, and the dual pricing math on small tickets."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "A coffee shop needs a fast register with a customer-facing tap and tip screen, a menu built on modifiers, and a way to run loyalty. One Clover Mini on the Counter Service plan ($59.95 a month) does all of it; a second Mini or a Flex covers a second lane or a mobile cart."
   - "Dual pricing on a $6 latte is about 24 cents. Customers notice it for a week. The cafe stops paying 2.6% to 3% on every cup, which on $22,000 a month is roughly $8,400 a year."

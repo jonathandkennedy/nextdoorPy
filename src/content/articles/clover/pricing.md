@@ -1,15 +1,16 @@
 ---
-title: "Clover POS Pricing 2026: Hardware, Software Plans and Processing Fees"
-h1: "Clover POS Pricing in 2026: What Each Device, Plan and Rate Actually Costs"
-description: "Clover Station Duo, Solo, Mini, Flex and Go prices, monthly software plans by business type, the 2.3% + 10¢ processing rate, and how dealer pricing changes the total."
+title: "Clover POS Pricing and Fees (2026): How Much Clover Costs"
+h1: "How Much Does Clover Cost? Clover POS Pricing, Monthly Fees and Fees per Transaction in 2026"
+description: "Clover POS pricing for 2026: hardware from $49 to $1,899, software from $14.95 a month, and fees of 2.3% to 3.5% + 10¢ per transaction. Fee calculator included."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Buying direct from clover.com in September 2026: hardware runs from $49 (Go) to $1,899 (Station Duo), software plans run from $14.95 to $89.95 a month depending on business type, and processing is 2.3% + 10¢ in person on the full plans (2.6% + 10¢ on Essentials) and 3.5% + 10¢ for keyed or online transactions."
   - "Those rates are the biggest cost. A restaurant doing $40,000 a month in cards pays roughly $1,100 a month in processing to Clover direct, which is more than the hardware costs in two months."
   - "An independent Clover dealer can place the same hardware through a free-equipment program and run dual pricing, which takes processing to $0 for the merchant. The trade-off is that dealer contracts vary, so get every fee in writing before you sign."
-keywords: ["clover pos pricing", "clover pos cost", "clover monthly fees", "clover processing fees", "clover station duo price", "clover flex price", "clover pos rates"]
+keywords: ["clover pos pricing", "clover pricing", "how much does clover cost", "clover fees", "clover fees per transaction", "clover transaction fee", "clover fee calculator", "clover pos cost", "clover monthly fees", "clover processing fees"]
+calculator: clover
 faq:
   - q: "How much does Clover POS cost per month?"
     a: "Software runs $14.95 a month (Essentials) to $89.95 a month (Table Service Restaurant) when bought direct, plus processing at 2.3% to 2.6% + 10¢ in person. Hardware is either paid up front ($49 to $1,899 per device) or spread over a 36-month plan. A typical single-station restaurant on clover.com lands at $150 to $250 a month before processing."
@@ -30,7 +31,7 @@ related: ["clover/reseller-vs-direct", "clover/dual-pricing", "clover/for-restau
 
 Clover pricing is confusing on purpose. Fiserv sells it direct on clover.com, and thousands of independent dealers sell the same devices with their own rates, contracts and equipment programs. The hardware price is the number everyone quotes. The processing rate is the number that decides what you actually pay.
 
-This page lists what clover.com charges as of September 2026, then shows how the total changes when a dealer places the hardware and runs dual pricing. We sell and install Clover, so read the second half knowing that. The first half is just the published numbers.
+This page lists what clover.com charges as of October 2026, then shows how the total changes when a dealer places the hardware and runs dual pricing. We sell and install Clover, so read the second half knowing that. The first half is just the published numbers. The Clover fee calculator above runs the same math on your own volume.
 
 ## Clover hardware prices (clover.com, September 2026)
 
@@ -62,6 +63,21 @@ Clover prices software by what kind of business you run, not by device. The plan
 Keyed, invoiced and online transactions are 3.5% + 10¢ on every plan. That rate matters more than people expect for restaurants doing online ordering and for any business that invoices.
 
 Clover also sells add-on apps through its App Market. Loyalty, advanced inventory, online ordering, scheduling and payroll integrations each carry their own monthly fee, typically $10 to $60. A restaurant that adds online ordering, kitchen display and a loyalty app can double its software bill.
+
+## Clover fees per transaction
+
+Clover direct charges a percentage plus 10¢ on every card sale. The percentage depends on your software plan and on whether the card was present. Here is what that works out to on common sale sizes:
+
+| Sale amount | Full plans, in person (2.3% + 10¢) | Essentials, in person (2.6% + 10¢) | Keyed, online or invoiced (3.5% + 10¢) |
+|---|---|---|---|
+| $10 | $0.33 | $0.36 | $0.45 |
+| $25 | $0.68 | $0.75 | $0.98 |
+| $50 | $1.25 | $1.40 | $1.85 |
+| $100 | $2.40 | $2.70 | $3.60 |
+
+The 10¢ matters most on small tickets. A coffee shop averaging $8 pays an effective rate closer to 3.5% than 2.3%, because the fixed 10¢ is a bigger slice of each sale. Use the calculator above with your real average sale to see it.
+
+Clover does not add separate statement, batch or PCI fees on direct accounts. Dealers often do, which is why the next sections matter.
 
 ## The number that matters: processing
 

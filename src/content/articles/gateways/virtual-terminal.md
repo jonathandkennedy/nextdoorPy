@@ -82,7 +82,7 @@ The gateway is PCI Level 1. Your side, for a virtual terminal on a dedicated wor
 | Gateway | Virtual terminal | Vault | Level 2/3 | Notes |
 |---|---|---|---|---|
 | accept.blue | Yes | Yes | Enhanced | Modern interface, invoicing suite, our default |
-| NMI / USAePay | Yes | Customer Vault | Yes | Broad integrations, multi-user permissions |
+| [NMI](/gateways/nmi) / USAePay | Yes | Customer Vault | Yes | Broad integrations, multi-user permissions |
 | Fluidpay | Yes | Yes | Yes | Partner-only, cash discount program built in |
 | Authorize.net | Yes | CIM | Yes | Familiar to most staff; gateway-only needs a separate merchant account |
 | Stripe Dashboard | Yes | Yes | Limited | Flat rate; fine at low volume |

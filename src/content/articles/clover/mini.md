@@ -1,10 +1,10 @@
 ---
-title: "Clover Mini Gen 3 (2026): Specs, $849 Price, Offline Mode, and Who It Fits"
-h1: "Clover Mini: The 8-Inch Countertop POS That Does Most of What a Station Does"
-description: "Clover Mini Gen 3 specs, the $849 list price, LTE and offline payments, its role as the customer screen for a Station Solo, and the businesses it fits better than a."
+title: "Clover Mini Price ($849) and Specs (2026): Gen 3, Offline Mode, Who It Fits"
+h1: "Clover Mini: The $849 Countertop POS That Does Most of What a Station Does"
+description: "Clover Mini Gen 3 specs, the $849 list price, LTE and offline payments, its role as a customer screen for a Station Solo, and which businesses it fits best."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Clover Mini Gen 3 is an 8-inch touchscreen POS with a built-in receipt printer, Wi-Fi and LTE, chip, swipe and contactless acceptance, and the full App Market. It runs the same restaurant and retail software plans as the Station at less than half the hardware price: $849 list."
   - "It works three ways: as the only register for a small counter, as the customer-facing payment device beside a Station Solo, or as a second lane. It supports Clover's offline payment mode, which the Station line does not rely on."
@@ -72,4 +72,4 @@ The Mini supports Clover's offline payment queue. Enable it in the dashboard und
 
 ## Cost through a dealer
 
-Placed at no charge for qualifying merchants, or purchased outright; never leased. Software at Clover's published plan prices. Processing at $0 under dual pricing or on interchange-plus for merchants who want one posted price. A cafe on a Mini doing $22,000 a month keeps roughly $8,400 a year under dual pricing versus clover.com's 2.3% + 10¢; the worked example is on the [dual pricing on Clover page](/clover/dual-pricing). Full pricing detail on the [Clover pricing page](/clover/pricing).
+Placed at no charge for qualifying merchants, or purchased outright; never leased. Software at Clover's published plan prices. Processing at $0 under dual pricing or on interchange-plus for merchants who want one posted price. A cafe on a Mini doing $22,000 a month keeps roughly $8,400 a year under dual pricing versus clover.com's 2.3% + 10¢; the worked example is on the [dual pricing on Clover page](/clover/dual-pricing). Full pricing detail on the [Clover POS pricing and fees](/clover/pricing).

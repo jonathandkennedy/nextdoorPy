@@ -78,7 +78,7 @@ If you are set on used, buy from a dealer who boards on the matching processor a
 | Business sold, buyer's account on the same processor | Re-boarded to the buyer |
 | Business sold, buyer on a different processor | Replaced |
 
-The question to ask any new provider, including us: which processor do you board on, and is it the one my Clover is on? We tell you the answer on the first call and quote either the re-board or the placement. The pricing comparison that should decide the switch is on the [Clover pricing page](/clover/pricing), and the questions to ask any seller are on [Clover reseller vs direct](/clover/reseller-vs-direct).
+The question to ask any new provider, including us: which processor do you board on, and is it the one my Clover is on? We tell you the answer on the first call and quote either the re-board or the placement. The pricing comparison that should decide the switch is on the [Clover POS pricing and fees](/clover/pricing), and the questions to ask any seller are on [Clover reseller vs direct](/clover/reseller-vs-direct).
 
 ## Your data moves either way
 

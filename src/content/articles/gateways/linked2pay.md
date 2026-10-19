@@ -74,4 +74,4 @@ Then total last month's gateway invoice and processing statement and divide by v
 
 ## Alternatives with the same shape
 
-NMI and USAePay (partner-sold, cards and ACH, broad integrations), accept.blue (ISO-sold, modern interface, invoicing, Level 3), Fluidpay (partner-only, dual pricing across channels). All white-labeled to some degree; all priced by the reseller. The gateway matters less than the terms and the person you call. Our terms: month to month, gateway and processing on one bill, interchange-plus, and a cell number.
+[NMI gateway](/gateways/nmi) and USAePay (partner-sold, cards and ACH, broad integrations), accept.blue (ISO-sold, modern interface, invoicing, Level 3), Fluidpay (partner-only, dual pricing across channels). All white-labeled to some degree; all priced by the reseller. The gateway matters less than the terms and the person you call. Our terms: month to month, gateway and processing on one bill, interchange-plus, and a cell number.

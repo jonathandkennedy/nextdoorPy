@@ -225,3 +225,28 @@ body.has-callbar{padding-bottom:58px}
 /* Google's script injects the real button into the empty div. Once it does, drop our text fallback. */
 .psb-btn:has([google-add-preferred-source-btn] > *) .psb-link{display:none}
 @media(max-width:600px){.psb-link{white-space:normal}}
+
+/* ===== FEE CALCULATOR ===== */
+.calc{background:var(--white);border:1px solid var(--border);border-radius:var(--r2);padding:22px;margin:0 0 28px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.calc h2{font-family:var(--fd);font-weight:800;font-size:1.2rem;color:var(--h);margin-bottom:4px}
+.calc-sub{font-size:.88rem;line-height:1.55;margin-bottom:16px}
+.calc-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:16px}
+.calc-in label{display:flex;flex-direction:column;gap:5px;font-size:.78rem;font-weight:700;color:var(--h);font-family:var(--fd)}
+.calc-in label.wide{grid-column:1/-1}
+.calc-in input,.calc-in select{font:inherit;font-family:var(--fb);font-weight:500;font-size:.95rem;color:var(--h);padding:10px 12px;border:1px solid var(--border);border-radius:var(--r);background:var(--bg);width:100%;min-width:0}
+.calc-in input:focus,.calc-in select:focus{outline:2px solid var(--teal);outline-offset:1px;background:var(--white)}
+.calc-out{width:100%;border-collapse:collapse;font-size:.9rem;margin-bottom:10px}
+.calc-out th,.calc-out td{padding:9px 4px;border-bottom:1px solid var(--border-l);text-align:left;font-weight:500}
+.calc-out td{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;color:var(--h);white-space:nowrap}
+.calc-out thead th{font-size:.74rem;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700}
+.calc-out thead th:last-child{text-align:right}
+.calc-out tr.tot th,.calc-out tr.tot td{font-weight:800;color:var(--h);border-top:2px solid var(--border)}
+.calc-out tr.dp th,.calc-out tr.dp td{color:var(--teal);font-weight:700}
+.calc-cmp{margin-top:6px}
+.calc-note{font-size:.78rem;line-height:1.55;color:var(--muted)}
+
+/* Grid items default to min-width:auto, which lets a wide table stretch the column past the viewport. */
+.art-grid>*{min-width:0}
+/* Preferred source band: never wider than the screen; hide our text fallback once Google's button mounts (it renders in a shadow root, which CSS cannot see). */
+.psb-btn{flex:0 1 auto;flex-wrap:wrap;gap:10px;max-width:100%;min-width:0}
+.psb-btn.psb-ok .psb-link{display:none}

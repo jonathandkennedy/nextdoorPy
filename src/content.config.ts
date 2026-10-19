@@ -19,6 +19,8 @@ const articles = defineCollection({
       .object({ heading: z.string(), body: z.string(), smsBody: z.string().optional() })
       .optional(),
     related: z.array(z.string()).default([]),
+    // Renders an interactive calculator under the summary block.
+    calculator: z.enum(['clover', 'processing-fees']).optional(),
     draft: z.boolean().default(false),
   }),
 });

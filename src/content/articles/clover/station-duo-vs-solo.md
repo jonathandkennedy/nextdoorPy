@@ -78,4 +78,4 @@ Duo shows both totals on the customer screen. Mini shows them on its screen turn
 
 ## Pricing
 
-All three placed at no charge for qualifying merchants through us, or purchased outright; never leased. Same software plans on each. Processing at $0 under dual pricing or on interchange-plus. Worked examples on the [Clover pricing page](/clover/pricing).
+All three placed at no charge for qualifying merchants through us, or purchased outright; never leased. Same software plans on each. Processing at $0 under dual pricing or on interchange-plus. Worked examples on the [Clover POS pricing and fees](/clover/pricing).

@@ -66,7 +66,7 @@ The Grow plan's $99 cap on the third-party fee is the quirk worth knowing: for a
 
 **Your category is prohibited on Shopify Payments.** CBD and hemp, supplements in many cases, vape and tobacco, firearms accessories, adult, and a long list of others. Those stores cannot use Shopify Payments at all; the choice is an external gateway with the fee or another platform. The [high-risk gateway page](/gateways/high-risk-payment-gateway) covers placement.
 
-**B2B with commercial cards.** Level 3 data through accept.blue, NMI or Fluidpay can save 0.5% to 1% on commercial card volume. On Advanced or Plus, that can outweigh the third-party fee.
+**B2B with commercial cards.** Level 3 data through accept.blue, [NMI gateway](/gateways/nmi) or Fluidpay can save 0.5% to 1% on commercial card volume. On Advanced or Plus, that can outweigh the third-party fee.
 
 **One merchant account across channels.** A retailer with a physical store running dual pricing on Clover may prefer online processing on the same merchant account for one statement and one relationship. That is a convenience decision, not a savings one, on Basic and Grow.
 

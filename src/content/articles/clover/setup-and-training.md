@@ -1,10 +1,10 @@
 ---
 title: "Clover POS Setup and Staff Training (2026): The Install-Day Checklist We Use"
 h1: "Setting Up a Clover POS: What Gets Built Before Install Day, and How Staff Learn It in an Hour"
-description: "The Clover setup sequence: menu import, taxes, modifiers, employees, printer routing, receipts, tips, offline mode, dual pricing signage, integrations, cutover and."
+description: "The Clover setup sequence: menu import, taxes, modifiers, employees, printer routing, receipts, tips, offline mode, dual pricing signage, integrations and cutover day."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "A Clover install goes well when the account is built before the hardware arrives: menu or inventory imported, taxes and modifiers set, employees and roles created, printer routing mapped, receipts designed, tips configured, offline mode enabled, and integrations connected. The device then just needs to be plugged in."
   - "Cutover happens in a quiet window (between services, before opening) with the old system left running until the first live transactions settle. Staff training by role takes about an hour on the floor; managers get another hour on the dashboard."
@@ -80,4 +80,4 @@ Check the first settlements against sales. Confirm the QuickBooks entries. Adjus
 
 ## Cost
 
-Setup and training are included with a placed Clover through us. On clover.com the account build is yours to do. The pricing comparison is on the [Clover pricing page](/clover/pricing).
+Setup and training are included with a placed Clover through us. On clover.com the account build is yours to do. The pricing comparison is on the [Clover POS pricing and fees](/clover/pricing).

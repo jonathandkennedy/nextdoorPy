@@ -4,6 +4,7 @@ import Tldr from '../components/Tldr.astro';
 import Faq from '../components/Faq.astro';
 import CallCta from '../components/CallCta.astro';
 import AuthorBox from '../components/AuthorBox.astro';
+import FeeCalculator from '../components/FeeCalculator.astro';
 import PhoneIcon from '../components/PhoneIcon.astro';
 import { site, tel, sms } from '../config';
 import { getCollection } from 'astro:content';
@@ -90,6 +91,7 @@ const smsBody = d.cta?.smsBody ?? 'Hi, here is my statement for a free analysis.
     <div class="c art-grid">
       <div>
         <Tldr items={d.tldr} />
+        {d.calculator && <FeeCalculator kind={d.calculator} />}
         {toc.length > 3 && (
           <nav class="toc" aria-label="On this page" style="margin-bottom:28px">
             <div class="lbl">On this page</div>

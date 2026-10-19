@@ -4,7 +4,7 @@ h1: "Clover POS for Restaurants: Setup, Costs and How It Compares to Toast"
 description: "Which Clover devices fit a full-service restaurant, a quick-service counter and a bar, what it costs with and without dual pricing, and where Toast wins."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "For a full-service restaurant, the standard Clover setup is a Station Duo at the host stand or counter plus one Flex per two servers for pay at table. Quick service runs a Duo or Mini plus a Kiosk if there are lines. Bars run a Duo with a printer and one Flex."
   - "Clover direct charges $89.95 a month for the Table Service plan and 2.3% + 10¢ per in-person sale. A dealer running dual pricing takes the processing to $0 and places hardware at no charge, which is the biggest cost difference available to a restaurant."
@@ -43,6 +43,8 @@ Restaurants are where Clover is most common and where the pricing spread between
 TableTurn is what we add for restaurants that need reservations, waitlist and table management beyond what Clover Dining includes. It runs alongside Clover.
 
 ## What it costs
+
+This is the restaurant-specific math. For every device price, plan and per-transaction fee, see the full [Clover POS pricing](/clover/pricing) breakdown and its fee calculator.
 
 Two ways to buy the same full-service setup: Station Duo, two Flex, a kitchen printer, Table Service plan. The restaurant does $60,000 a month in cards at a $38 average ticket, about 1,580 transactions.
 

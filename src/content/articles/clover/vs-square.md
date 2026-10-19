@@ -4,9 +4,9 @@ h1: "Clover vs Square: The Honest Comparison From a Clover Dealer"
 description: "Clover vs Square on processing rates, hardware, software plans, apps, contracts and support, where Square wins, and the one thing Clover offers that Square does not:."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
-  - "Square is cheaper to start and simpler: free reader, free basic software, no contract, 2.6% plus a small per-item fee in person and 2.9% + 30¢ online, everything from one company. Clover is more hardware, more configurable, and sold both direct (2.3% + 10¢ in person) and through dealers who set their own terms."
+  - "Square is cheaper to start and simpler: free reader, free basic software, no contract, 2.6% plus a small per-item fee in person and 3.3% + 30¢ online on the free plan (2.9% + 30¢ on paid plans), everything from one company. Clover is more hardware, more configurable, and sold both direct (2.3% + 10¢ in person) and through dealers who set their own terms."
   - "Below about $5,000 a month in cards, or for a business that wants to be live today with no sales conversation, Square is the right call and we say so. Above that, Clover through a dealer with dual pricing takes processing to $0, which Square does not offer, and that difference is worth more than every other line combined."
   - "The Clover risk is the dealer contract; the Square risk is the aggregator account: reserves, holds and closures after the fact. Read both before comparing rates."
 keywords: ["clover vs square", "clover pos vs square", "square vs clover", "clover rates vs square", "square vs clover for small business", "clover or square for restaurant", "clover vs square vs toast"]

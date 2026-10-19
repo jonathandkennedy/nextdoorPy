@@ -1,10 +1,10 @@
 ---
-title: "Clover Kiosk (2026): Price, Specs, Monthly Fee, and Whether a Self-Order Kiosk Pays"
-h1: "Clover Kiosk: The Self-Ordering Screen for Quick Service, and the Math on Whether It Pays"
-description: "Clover Kiosk specs (24-inch order screen, 8-inch payment screen, printer), pricing around $3,599 plus a monthly fee, mounting options, menu sync, and the math on."
+title: "Clover Kiosk Price (About $3,599) and Monthly Fee (2026): Does It Pay?"
+h1: "Clover Kiosk: About $3,599 for Self-Ordering, and the Math on Whether It Pays"
+description: "Clover Kiosk specs (24-inch order screen, 8-inch payment screen, printer), pricing around $3,599 plus a monthly fee, mounting, menu sync, and whether it pays off."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Clover Kiosk is a self-ordering station: a 24-inch touchscreen for the menu, an 8-inch Clover payment screen that takes tap, chip, swipe and PIN debit, and a built-in receipt printer, on a countertop frame with optional floor stand ($549) or wall mount ($99). It pulls the menu straight from your Clover POS so items and prices stay in sync."
   - "Dealer listings put the hardware around $3,599 with a software fee of about $34.95 a month per kiosk, as of 2026. Clover.com quotes it rather than listing it."
@@ -46,6 +46,8 @@ A self-order kiosk does two things a counter cannot: it takes orders while the c
 Prices from 2026 dealer listings. Confirm at quote time; Clover adjusts hardware pricing without notice.
 
 ## When it pays
+
+The kiosk is one line in a larger bill. The full breakdown of hardware, plans and fees per transaction is on the [Clover POS pricing](/clover/pricing) page.
 
 Three numbers decide it: orders per day, the share a kiosk would take, and the ticket lift from on-screen upsells.
 

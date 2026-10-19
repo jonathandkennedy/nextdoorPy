@@ -50,7 +50,7 @@ The practical read: no new features, shrinking integration support, and a shutdo
 | Option | Keeps your merchant account? | Keeps your integration? | Notes |
 |---|---|---|---|
 | accept.blue on your existing acquirer | Yes, if the acquirer is supported | Plugin or API change | Modern interface, invoicing, Level 3, vault, recurring. Our default for Payflow migrations. |
-| NMI on your existing acquirer | Yes, 150+ processor connections | Plugin or API change | Broadest integration catalog; strong for multi-MID. |
+| [NMI](/gateways/nmi) on your existing acquirer | Yes, 150+ processor connections | Plugin or API change | Broadest integration catalog; strong for multi-MID. |
 | Fluidpay on your existing acquirer | Yes, via a partner | Plugin or API change; Authorize.net AIM emulation for legacy carts | Partner-only. |
 | Authorize.net | Yes | Plugin or API change | Direct sign-up, published $25 + 10¢, oldest plugin catalog. |
 | PayPal's current bundled products | No, PayPal becomes the processor | PayPal's checkout | Simplest if you want everything inside PayPal; flat-rate pricing, aggregator underwriting. |

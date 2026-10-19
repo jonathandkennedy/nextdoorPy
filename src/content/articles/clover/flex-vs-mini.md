@@ -74,4 +74,4 @@ Restaurants with a dining room, retailers with curbside, and any business with a
 
 ## Pricing
 
-Through us both are placed at no charge for qualifying merchants, so the decision is about how you take payments, not about $100 of hardware. Software plans are identical. Processing is $0 under dual pricing or interchange-plus if you prefer one posted price. The [Clover pricing page](/clover/pricing) has the plan prices and worked examples.
+Through us both are placed at no charge for qualifying merchants, so the decision is about how you take payments, not about $100 of hardware. Software plans are identical. Processing is $0 under dual pricing or interchange-plus if you prefer one posted price. The [Clover POS pricing and fees](/clover/pricing) has the plan prices and worked examples.

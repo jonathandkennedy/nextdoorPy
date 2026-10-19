@@ -34,7 +34,7 @@ Outside Shopify, most ecommerce platforms treat the payment gateway as a plugin 
 
 | Platform | Bundled option | Platform fee for external gateway | External gateways with native or official support |
 |---|---|---|---|
-| Magento Open Source / Adobe Commerce | Braintree (bundled extension) | None | Authorize.net (official), Stripe, PayPal, NMI, accept.blue, Fluidpay (native and AIM emulator) |
+| Magento Open Source / Adobe Commerce | Braintree (bundled extension) | None | Authorize.net (official), Stripe, PayPal, [NMI](/gateways/nmi), accept.blue, Fluidpay (native and AIM emulator) |
 | BigCommerce | PayPal-powered | None on any plan | Authorize.net, Stripe, Square, Braintree, NMI-based providers, many processor gateways |
 | Ecwid (Lightspeed) | Stripe-powered | None | Authorize.net, Square, PayPal, Stripe, others by region |
 | OpenCart | None; modules included | None | Authorize.net, NMI, accept.blue, Fluidpay, Stripe, PayPal via core modules and marketplace extensions |

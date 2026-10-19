@@ -12,11 +12,14 @@ const faq = [
   { q: 'Is dual pricing the same as a surcharge?', a: 'No. A surcharge adds a fee at checkout on top of a single posted price, is capped by the card brands at 3% for Visa, cannot be applied to debit cards, and is restricted in several states. Dual pricing posts both prices up front, applies to credit and debit equally, and is not a surcharge under card brand rules when done correctly.' },
   { q: 'Is dual pricing legal in California?', a: 'Yes, when both prices are clearly displayed before the customer chooses how to pay and the card price is the price actually charged. California restricts surcharges and, since July 2024, prohibits advertising a price that excludes mandatory fees. Displaying both prices satisfies that. Surcharging by adding a fee at the register does not. See our California dual pricing guide for the details.' },
   { q: 'Will customers get upset?', a: 'Some ask about it in the first two weeks. Almost none leave. Gas stations have done it for decades. The card price is typically 3% to 4% higher, which on a $40 ticket is about $1.40. Businesses that run it well post clear signage and train staff on a one-sentence explanation.' },
+  { q: 'Does dual pricing work online and on invoices?', a: 'Yes. Online, a hosted payment page shows a card price and a lower ACH (bank transfer) price before the customer chooses. On invoices, the invoice shows a card total and a lower total for ACH or check. The rules are the same as in store: both prices visible before payment, no fee line added for cards, and debit treated like credit.' },
+  { q: 'How much does dual pricing save?', a: 'Everything you currently pay in card processing, because card customers pay the posted card price. At a 2.9% effective rate that is about $10,400 a year on $30,000 a month in cards and about $26,100 a year on $75,000 a month.' },
+  { q: 'Do I need to register dual pricing with Visa or Mastercard?', a: 'No. Surcharging requires advance written notice to your acquirer under card-brand rules. Dual pricing and cash discounting do not require registration. Your processor enables the program on your merchant account.' },
   { q: 'Does dual pricing work on my existing equipment?', a: 'It depends on the terminal and processor. Clover, Dejavoo, Exatouch, PAX and most modern terminals support it when the processor enables it. Older terminals may need a swap, which we do at no cost through equipment programs.' },
 ];
 const schema = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }];
 ---
-<Layout title="Dual Pricing Credit Card Processing: How It Works and When It Is Legal" description={`Dual pricing shows a cash price and a card price so the business pays 0% in processing fees. How it differs from surcharging and cash discounts, California rules, signage, and setup on Clover and Dejavoo.`} schema={schema} smsBody={smsBody}>
+<Layout title="Dual Pricing Credit Card Processing (2026): How It Works, Legality and Savings" description={`Dual pricing shows a cash price and a card price so the business pays 0% in processing fees. How it works in store, online and on invoices, how it differs from surcharging, and California rules.`} schema={schema} smsBody={smsBody}>
   <section class="phero"><div class="c">
     <div class="sg">Dual pricing</div>
     <h1>Dual Pricing: Pay 0% in Card Fees Without Breaking the Rules</h1>
@@ -29,7 +32,7 @@ const schema = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEnti
   <section class="sec"><div class="c" style="max-width:860px">
     <Tldr items={[
       'Dual pricing posts a cash price and a card price on every item. The card price is usually 3% to 4% higher and covers the cost of acceptance, so the merchant nets the cash price on every transaction and pays $0 in processing fees.',
-      'It is not a surcharge. Surcharges add a fee to one posted price, are capped at 3% by Visa, cannot touch debit, and are restricted in California, Connecticut, Massachusetts and Maine. Dual pricing applies to credit and debit alike and is compliant when both prices are visible before payment.',
+      'It is not a surcharge. Surcharges add a fee to one posted price, are capped at 3% by Visa, cannot touch debit, and are restricted in several states, including California. Dual pricing applies to credit and debit alike and is compliant when both prices are visible before payment.',
       'Setup takes one day on Clover, Dejavoo, Exatouch and most modern terminals. Signage at the entrance and register is required.',
     ]} />
     <div class="prose">
@@ -48,6 +51,73 @@ const schema = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEnti
       <img src="/images/dualprice.jpg" alt="Receipt comparison: same sale paid by card at the card price and by cash at the cash price" loading="lazy" width="800" height="600">
     </div>
   </div></section>
+  <section class="sec alt"><div class="c">
+    <div class="sh"><div class="sg">Channels</div><h2>Dual Pricing in Store, Online and on Invoices</h2><p>The same rule applies everywhere: the customer sees both prices before choosing how to pay. What changes is where the two prices appear.</p></div>
+    <div class="prose" style="max-width:none">
+      <table>
+        <thead><tr><th>Where you get paid</th><th>The lower price is for</th><th>Where both prices show</th><th>Setup guide</th></tr></thead>
+        <tbody>
+          <tr><td><strong>At the counter or table</strong></td><td>Cash</td><td>Shelf tags or menu, register signage, the customer screen, the receipt</td><td><a href="/clover/dual-pricing">Dual pricing on Clover</a></td></tr>
+          <tr><td><strong>Online checkout or payment link</strong></td><td>ACH bank payment</td><td>The hosted payment page, before the customer picks card or bank</td><td><a href="/dual-pricing/hosted-payment-page">Dual pricing on a hosted payment page</a></td></tr>
+          <tr><td><strong>Invoices</strong></td><td>ACH or check</td><td>The invoice itself, as two totals</td><td><a href="/dual-pricing/invoices">Dual pricing on invoices</a></td></tr>
+        </tbody>
+      </table>
+      <p>Online and invoiced payments are where card fees hurt most, because card-not-present interchange is higher than in-person. A contractor or B2B supplier taking $60,000 a month by card on invoices often pays more than $2,000 a month to accept it. Moving those customers to a clearly cheaper ACH price, or having card payers cover the card price, removes that cost.</p>
+    </div>
+  </div></section>
+
+  <section class="sec"><div class="c" style="max-width:860px">
+    <div class="prose">
+      <h2>Dual pricing, surcharging and cash discounts compared</h2>
+      <table>
+        <thead><tr><th></th><th>Dual pricing</th><th>Surcharge</th><th>Cash discount</th></tr></thead>
+        <tbody>
+          <tr><td>What is posted</td><td>Both a cash price and a card price</td><td>One price, with a fee added for credit cards</td><td>The card price, reduced for cash</td></tr>
+          <tr><td>Debit cards</td><td>Pay the card price</td><td>Cannot be surcharged</td><td>Pay the card price</td></tr>
+          <tr><td>Card-brand cap</td><td>None, the card price is the price</td><td>3% for Visa</td><td>None</td></tr>
+          <tr><td>Advance notice to your acquirer</td><td>Not required</td><td>Required</td><td>Not required</td></tr>
+          <tr><td>California</td><td>Fits when both prices are shown up front</td><td>Restricted</td><td>Expressly permitted for cash</td></tr>
+        </tbody>
+      </table>
+      <p>The full breakdown is in <a href="/dual-pricing/dual-pricing-vs-surcharging-vs-cash-discount">dual pricing vs surcharging vs cash discount</a>, and the cash-only version is explained in <a href="/dual-pricing/cash-discount-program">how a cash discount program works</a>. California specifics are in <a href="/dual-pricing/is-dual-pricing-legal-in-california">is dual pricing legal in California</a>.</p>
+
+      <h2>Doing it right: the six rules we set up</h2>
+      <ol>
+        <li><strong>Both prices are visible before payment.</strong> On the shelf or menu, at the register, on the customer screen, on the payment page or on the invoice.</li>
+        <li><strong>The card price is the price.</strong> The terminal charges exactly the posted card price. Nothing is added at checkout.</li>
+        <li><strong>No fee line for cards.</strong> A receipt or invoice line labeled as a card fee, service fee or non-cash adjustment turns the program into a surcharge in the card brands' eyes.</li>
+        <li><strong>Debit and credit are treated the same.</strong> Both pay the card price.</li>
+        <li><strong>Signage at the entrance and the point of sale.</strong> A plain sentence: prices shown are card prices, pay cash and save.</li>
+        <li><strong>Receipts show the price paid and the method.</strong> That is the record if a customer disputes a charge.</li>
+      </ol>
+      <p>This is how we configure merchants, not legal advice. If your pricing is unusual, ask a lawyer.</p>
+
+      <h2>What it saves</h2>
+      <table>
+        <thead><tr><th>Monthly card sales</th><th>Processing at a 2.9% effective rate</th><th>Per year, avoided with dual pricing</th></tr></thead>
+        <tbody>
+          <tr><td>$10,000</td><td>$290</td><td>$3,480</td></tr>
+          <tr><td>$30,000</td><td>$870</td><td>$10,440</td></tr>
+          <tr><td>$75,000</td><td>$2,175</td><td>$26,100</td></tr>
+          <tr><td>$150,000</td><td>$4,350</td><td>$52,200</td></tr>
+        </tbody>
+      </table>
+      <p>Plug your own statement numbers into the <a href="/guides/credit-card-processing-fees">credit card processing fee calculator</a> to see your current effective rate.</p>
+
+      <h2>Who it fits, and who it does not</h2>
+      <p>It fits restaurants, bars, cafes, retail and convenience stores, auto repair, salons, contractors and most B2B suppliers. Anyone with a counter, a menu, a quote or an invoice can show two prices.</p>
+      <p>It fits poorly where the price is fixed by someone else: charges set by an insurance contract, prices set by a government contract, or marketplaces that control the checkout. It also needs a little more care with recurring billing, where the customer agreed to one price up front. We check your situation before proposing it.</p>
+
+      <h2>How setup works with us</h2>
+      <ol>
+        <li>Send a recent statement. We show what you pay now and what dual pricing changes.</li>
+        <li>We enable dual pricing on your merchant account and configure the terminal, payment page or invoices.</li>
+        <li>We supply signage and the one-sentence explanation for staff.</li>
+        <li>You go live, usually within one to two business days. In San Diego and Los Angeles we do it in person.</li>
+      </ol>
+    </div>
+  </div></section>
+
   <section class="sec alt"><div class="c">
     <div class="sh"><div class="sg">Guides</div><h2>Rules, Comparisons and Setup</h2></div>
     <HubList category="dual-pricing" />

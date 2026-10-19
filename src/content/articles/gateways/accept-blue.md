@@ -84,7 +84,7 @@ Then compute the effective rate on your real volume and compare it to your curre
 ## Who it does not fit
 
 - A brand-new online business with no volume yet. Stripe or Square is faster to start and costs nothing monthly.
-- A platform with no accept.blue integration and no budget to add one. NMI or staying on Authorize.net with re-priced processing is the better answer.
+- A platform with no accept.blue integration and no budget to add one. [NMI gateway](/gateways/nmi) or staying on Authorize.net with re-priced processing is the better answer.
 - Merchants who want to buy a gateway direct with a published price and no sales relationship.
 
 ## Migration from Authorize.net

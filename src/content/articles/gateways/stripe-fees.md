@@ -4,7 +4,7 @@ h1: "Stripe Fees in 2026: What You Pay, What the Rate Sheet Leaves Out, and the 
 description: "Stripe's US fees for online, in-person, ACH, international cards, disputes and instant payouts, the costs that surprise growing stores, and where a merchant account wins."
 category: gateways
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Stripe's US pricing as of September 2026: 2.9% + 30¢ for online cards, 2.7% + 5¢ in person, 0.8% capped at $5 for ACH, plus 1.5% on international cards and 1% for currency conversion, $15 per dispute, 1.5% for instant payouts. No monthly fee."
   - "Stripe is an aggregator: every Stripe account sits under Stripe's master merchant account. That is why sign-up takes minutes and also why accounts get reserves, holds and closures without the underwriting conversation a merchant account would have had up front."
@@ -16,7 +16,7 @@ faq:
   - q: "Does Stripe offer interchange-plus or volume discounts?"
     a: "Stripe offers custom pricing, including interchange-plus, to larger businesses through its sales team, generally at volumes well into six figures a month. Standard accounts pay the flat rate regardless of card type, which means a debit card with 0.05% interchange costs the same 2.9% + 30¢ as a premium rewards card."
   - q: "Stripe fees vs Square: which is cheaper?"
-    a: "Online, both are 2.9% + 30¢. In person, Stripe Terminal is 2.7% + 5¢ and Square is 2.6% + 15¢, so Stripe is cheaper above about a $10 ticket and Square below it. Keyed, Square is 3.5% + 15¢ and Stripe is 2.9% + 30¢. Neither offers interchange-plus on standard accounts."
+    a: "Online, Stripe is 2.9% + 30¢ and Square is 3.3% + 30¢ on its free plan (2.9% + 30¢ on paid plans, per squareup.com in October 2026). In person, Stripe Terminal is 2.7% + 5¢ and Square is 2.6% + 15¢, so Stripe is cheaper above about a $10 ticket and Square below it. Keyed, Square is 3.5% + 15¢ and Stripe is 2.9% + 30¢. Neither offers interchange-plus on standard accounts."
   - q: "Why did Stripe put a reserve on my account?"
     a: "Stripe underwrites after the fact using transaction data. Fast growth, a rise in disputes, a category Stripe considers elevated risk, or large refunds can trigger a rolling reserve or a payout delay, sometimes with little notice. A merchant account underwritten to your business at the start has the risk conversation before you depend on the funds."
   - q: "Can I move stored cards off Stripe?"
@@ -78,7 +78,7 @@ The gap grows with debit share (retail, services) and with commercial card share
 | | Online | In person | ACH | Monthly |
 |---|---|---|---|---|
 | Stripe | 2.9% + 30¢ | 2.7% + 5¢ | 0.8%, $5 cap | $0 |
-| Square | 2.9% + 30¢ | 2.6% + 15¢ | 1% ($1 min) | $0 |
+| Square | 3.3% + 30¢ (free plan), 2.9% + 30¢ (paid plans) | 2.6% + 15¢ | 1% ($1 min) | $0 |
 | Braintree | 2.59% + 49¢ | n/a | 0.75%, $5 cap | $0 |
 | Helcim | Interchange + 0.50% + 25¢ | Interchange + 0.40% + 8¢ | 0.5% + 25¢, $6 cap | $0 |
 

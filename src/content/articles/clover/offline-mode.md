@@ -1,10 +1,10 @@
 ---
 title: "Clover Offline Mode (2026): How to Take Payments During an Internet Outage, Limits and Risks"
 h1: "Clover Offline Mode: Enabling It Before the Outage, What It Can and Cannot Do"
-description: "How Clover offline payments work on Flex and Mini, the dashboard setting to enable first, per-transaction limits, the sync window, the decline risk you carry, and."
+description: "How Clover offline payments work on Flex and Mini, the dashboard setting to enable first, per-transaction limits, the sync window, and the decline risk you carry."
 category: clover
 published: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 tldr:
   - "Clover Flex and Mini can keep accepting card payments when the internet is down, but only if offline payments were enabled in the Clover dashboard before the outage (Setup, Payments, Offline Payments) with a per-transaction limit set. Transactions are stored encrypted on the device and submitted for authorization when the connection returns."
   - "Offline transactions are not authorized at the time of sale. A card that declines when the queue processes, after the customer has left, is the merchant's loss. Set the limit to a ticket you can afford to lose, and keep the outage short: Clover holds offline transactions for a limited window, commonly cited as up to 7 days."
